@@ -280,7 +280,7 @@ On peut mettre du html et du dynamique:
  <span><field name="opportunity_count"/>Opportunities</span>
 ~~~
 
-Pour un champ one2many  
+Pour un champ one2many. Si on veut compter le nombre de phone calls.    
 phonecall_ids in res.partner  
 1- Ajouter un champ fonctionnel phonecall_count to res.partner  
 2- Ajouter attrs widget="statinfo"
@@ -288,6 +288,38 @@ phonecall_ids in res.partner
 <button class=".." name=".." icon="fa-star" type=".." context="..">
  <field string="Calls" name="phonecall_count" widget="statinfo"/>
 ~~~
+Comment on fait ce compte:
+~~~python 
+def _phonecall_count(self, cr, uid, ids, field_name, arg, context=None):
+        res = {}
+        for partner in self.browse(cr, uid, ids, context):
+            res[partner.id] = len(partner.phonecall_ids)
+        return res
+~~~
+On est dans l'objet res.partner...
+field_name retourne : string 'phonecall_count' qui est le nom du champ function :  
+~~~python
+ 'phonecall_count': fields.function( _phonecall_count, string = "Phonecalls", type = "integer" ),
+~~~
+arg est None  
+self.browse(cr,uid,ids,context) est un itérable avec tous les records de res.partner correspondants à liste:ids  
+Donc il faut itérer sur cet objet.
+partner.phonecall_ids on appelle le champ phonecall_ids de l'objet res.parner et on récupere un itérable de crm.phonecall (c'est défini dans 'phonecall_ids': fields.one2many( 'crm.phonecall', 'partner_id', 'Phonecalls' ),)  
+On récupere un objet qui contient tous les records phonecall.crm de res.partner correspondant à l'id.
+
+Dans la méthode _opportunity_meeting_phonecall_count:..
+~~~python
+res = dict( map( lambda x: ( x, {'opportunity_count': 0, 'meeting_count': 0} ), ids ) )
+~~~
+retourne si ids=[1,2,3,4]  
+~~~python
+{1: {'meeting_count': 0, 'opportunity_count': 0},
+ 2: {'meeting_count': 0, 'opportunity_count': 0},
+ 3: {'meeting_count': 0, 'opportunity_count': 0},
+ 4: {'meeting_count': 0, 'opportunity_count': 0}}
+~~~
+
+
 Views
 ===
 - https://www.odoo.com/documentation/8.0/reference/views.html
