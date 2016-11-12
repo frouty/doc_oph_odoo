@@ -303,7 +303,7 @@ field_name retourne : string 'phonecall_count' qui est le nom du champ function 
 ~~~
 arg est None  
 self.browse(cr,uid,ids,context) est un itérable avec tous les records de res.partner correspondants à liste:ids  
-Donc il faut itérer sur cet objet.
+Donc il faut itérer sur cet objet.  
 partner.phonecall_ids on appelle le champ phonecall_ids de l'objet res.parner et on récupere un itérable de crm.phonecall (c'est défini dans 'phonecall_ids': fields.one2many( 'crm.phonecall', 'partner_id', 'Phonecalls' ),)  
 On récupere un objet qui contient tous les records phonecall.crm de res.partner correspondant à l'id.
 
@@ -311,7 +311,7 @@ Dans la méthode _opportunity_meeting_phonecall_count:..
 ~~~python
 res = dict( map( lambda x: ( x, {'opportunity_count': 0, 'meeting_count': 0} ), ids ) )
 ~~~
-retourne si ids=[1,2,3,4]  
+retourne (si ids=[1,2,3,4])  
 ~~~python
 {1: {'meeting_count': 0, 'opportunity_count': 0},
  2: {'meeting_count': 0, 'opportunity_count': 0},
