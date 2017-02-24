@@ -3,15 +3,14 @@ le module base_calendar n'existe pas dans la 8.0
 je cherche la valeur de ref
 =============
 
-```xml
+`
 <field name="inherit_id" ref="base.view_partner_form"/\> 
-```
+`
 
 mode debug --> Edit form view --> External ID == ref
 
 
-```xml
-<field name="arch" type="xml">
+```
             <data>
             <xpath expr="//notebook/page[@string='Journals']" position="replace">
             </xpath>
@@ -22,7 +21,6 @@ mode debug --> Edit form view --> External ID == ref
             </data>
 </field>
 ```
-
 Comment supprimer le "create and edit"
 ========         
 
@@ -185,14 +183,14 @@ class FileCatNoEmpty(FileCat):
 La syntaxe c'est: *super(NomChildClass, self).nomdelafonctionparent(args)*
 
 
-model_obj.read(cr,uid,ids(liste des records à lire), [liste des champs à lire],context=context)
+### model_obj.read(cr,uid,ids(liste des records à lire), [liste des champs à lire],context=context)
 =====
 return une liste de dictionnaire de la forme:
 
 [{'start_datetime': False, 'start_date': '2016-05-30', 'id': 1}, {'start_datetime': '2016-05-29 21:00:00', 'start_date': False, 'id': 13}]
 
 
-model_obj.browse(cr,uid,[liste des id des records]ids,context=context)
+### model_obj.browse(cr,uid,[liste des id des records]ids,context=context)
 ===========
 
 return in iterable 
@@ -202,8 +200,8 @@ for record in browse_obj:
 	.... 
 
 	
-pour récuper un model
-self.pool['nom_ du_model]
+### pour récuper un model
+`self.pool['nom_ du_model`]
 
 
 Report
