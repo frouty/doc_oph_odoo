@@ -28,6 +28,7 @@ Comment supprimer le "create and edit"
 
 Dans un champ : many2one
 le widget ressemble à celui d'un champ selection
+
 on peut supprimer le "create and edit" avec :
 
 ```xml
@@ -93,7 +94,6 @@ logger.info('updating records')
 Il y a plusieurs niveaux de logging:  
 - info  
 - debug  
-
 - warning  
 - error  
 - critical  
