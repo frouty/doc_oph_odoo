@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>/home/lof/ODOO/doc_oph_odoo8/.Questions.md.html</title>
+<title>/home/lfs/ODOO/doc_oph_odoo/.Questions.md.html</title>
 
 
 <style type="text/css">
@@ -639,6 +639,35 @@ function setDocumentScrollTop(ypos)
 
 </head>
 <body class="markdown-body">
-{&quot;message&quot;: &quot;We had issues producing the response to your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists.&quot;}
+<ul> 
+ <li>[ ] Je voudrais dans la vue oph_agenda_factory pour les responsable n'afficher que un group? Ici ce serait le group doctor.</li> 
+</ul> 
+<hr /> 
+<p>CATEG_ids et tag c'est la meme chose le mieux serait d'utiliser categ_ids qui existe. state dans calendar_event.il n'y a que 2 states possible comment je peux en rajouter?</p> 
+<h2> <a id="ou-encore-dans-un-champ-selection-comment-rajouter-des-items" class="anchor" href="#ou-encore-dans-un-champ-selection-comment-rajouter-des-items" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ou encore dans un champ selection comment rajouter des items.</h2> 
+<p>calendar_event field tag c'est pour cs / tech /close ....on pourrait le remplacer par categ_ids state c'est pour draft/open/busy/in/wait/out...</p> 
+<ul> 
+ <li><p>[&nbsp;] Comment faire pour avoir des propositions quand je tape les premieres lettres du nom d'un patient dans la vue crm_meeting tree?</p></li> 
+ <li><p>[ ] Dans la kanban view des calendar.event je voudrais voir le champ : &quot;fullname&quot; &quot;meeting subject&quot; et &quot;age&quot;. Pas besoin d'afficher la date de naissance dans la kanban calendar view mais reste utile dans la vue tree et form.</p></li> 
+ <li><p>[ ] Dans la kanban de calendar.event je voudrais voir aussi le champ &quot;meeting subject&quot; uniquement si cela ne rend pas la vue illisible car trop d'informations.</p></li> 
+ <li><p>[ ] Dans la kanban l'id&eacute;al serait: fullname(age):name du meeting</p></li> 
+ <li><p>[ ] sales - customer meeting - est ce que je peux avoir l'ouverture de la vue calendar kanban avec un filter sur uniquement les rendez vous disponible (pour la secretaire) et sur tous les rendez vous pour les medecins (les medecins par contre doivent voir les crenaux libres, occup&eacute;s pas les cancel) pour pouvoir decider ou non de forcer)</p></li> 
+ <li><p>[ ] les crenaux cancel doivent apparaitre qd on fait une tree view par partner. tree view partner on doit voir tous les crenaux quelques soit leur statut.</p></li> 
+ <li> <p>[x] Sales : le champ date de naissance reste requis meme si collegue.</p> <pre><code>- ca marche maintenant  mais je ne sais pas pourquoi cela ne marchait pas.
+</code></pre> </li> 
+ <li><p>[ ] Sales si je cree une company (is a company) - save -the following fields are invalide date of birth. Il faut decocher &quot;customer&quot;. Bon c'est pas terrible. Comment mettre une methode qui passe &quot;customer&quot; &agrave; False . Mais ce n'est pas l&agrave; que l'on rentre les multicompany.</p></li> 
+ <li><p>[ ] Comment cela se passe maintenant pour les reports? On peut voir cela avec le wizard : oph_etat_factory.</p></li> 
+ <li><p>[x] Dans la vue res.partner - create j'ai tout de suite la pop up choose a gender. - SOLVE</p></li> 
+ <li><p>[x] Inject ne marche pas : SOLVED</p></li> 
+ <li><p>[x] Pas de vue tree des rendez vous. Comment l'obtenir: SOLVED</p></li> 
+ <li><p>[x] La methode on_change gender ne marche pas: SOLVED</p></li> 
+ <li><p>[x] Bug dans la vue calendar form pas moyen de mettre de tono, kerato, slit lamp exam...... bug dans la vue calendar form quand je veux ajouter des ..._ids. (tono_ids, protocole_ids...) c'est un probleme dans in_compute. SOLVE</p></li> 
+ <li><p>[ ] Dans la vue res.partner - create -save pourquoi j'ai deux fois nom et prenom. J'ai Nom Prenom et Fullname</p></li> 
+ <li><p>[x] Comment on fait pour que certains champs s'affichent ou pas si Edit ou pas Edit. pour qu'un champ ne s'affiche pas dans une form view mais uniquement en mode edit <strong>class=&quot;oe_edit_only&quot;</strong> DONE</p></li> 
+ <li><p>[x] <strong>sale - partner - meeting</strong> j'ai un filtre qui colle : attendee 6 et donc il faut l'enlever pour voir les cr&eacute;naux. Solved</p></li> 
+</ul> 
+<h1> <a id="dans-oph_agenda_factory" class="anchor" href="#dans-oph_agenda_factory" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>dans oph_agenda_factory</h1> 
+<p>On peut aussi rendre invisible un champ en fonction d'une valeur d'un autre champ:</p> 
+<p><code>&lt;field name=&quot;discount&quot; attrs=&quot;{'invisible':[('price_unit','=',0)]}&quot; groups=&quot;sale.group_discount_per_so_line&quot;/&gt;</code></p>
 </body>
 </html>

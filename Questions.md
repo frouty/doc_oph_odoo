@@ -10,11 +10,7 @@ ou encore dans un champ selection comment rajouter des items.
 calendar_event field tag c'est pour cs / tech /close ....on pourrait le remplacer par categ_ids
 state c'est pour draft/open/busy/in/wait/out...
 
-dans oph_agenda_factory .
-------
 
-On peut aussi rendre invisible un champ en fonction d'une valeur d'un autre champ:
-<field name="discount" attrs="{'invisible':[('price_unit','=',0)]}" groups="sale.group_discount_per_so_line"/>
 
 
 - [ ] Comment faire pour avoir des propositions quand je tape les premieres lettres du nom d'un patient dans la vue crm_meeting tree?
@@ -49,25 +45,29 @@ passe "customer" à False . Mais ce n'est pas là que l'on rentre les multicompa
 - [x] Dans la vue res.partner - create j'ai tout de suite la pop up choose a gender.
 		- SOLVE
 
-- [x] Inject ne marche pas
-		- SOLVED
+- [x] Inject ne marche pas : SOLVED
 
-- [x] Pas de vue tree des rendez vous. Comment l'obtenir:
-		- SOLVED
+- [x] Pas de vue tree des rendez vous. Comment l'obtenir: SOLVED
 
-- [x] La methode on_change gender ne marche pas:
-		- SOLVED
+- [x] La methode on_change gender ne marche pas:  SOLVED
 
-Bug dans la vue calendar form pas moyen de mettre de tono, kerato, slit lamp exam......
+- [x] Bug dans la vue calendar form pas moyen de mettre de tono, kerato, slit lamp exam......
 bug dans la vue calendar form quand je veux ajouter des ..._ids. (tono_ids, protocole_ids...) c'est un probleme dans in_compute.
 SOLVE
 
-Dans la vue res.partner - create -save pourquoi j'ai deux fois nom et prenom.
+- [ ] Dans la vue res.partner - create -save pourquoi j'ai deux fois nom et prenom.
 J'ai Nom Prenom et Fullname
-Comment on fait pour que certains champs s'affichent ou pas si Edit ou pas Edit.
-pour qu'un champ ne s'affiche pas dans une form view mais uniquement en mode edit class="oe_edit_only"
+
+- [x] Comment on fait pour que certains champs s'affichent ou pas si Edit ou pas Edit.
+pour qu'un champ ne s'affiche pas dans une form view mais uniquement en mode edit **class="oe_edit_only"**
 DONE
-----
-sale - partner - meeting j'ai un filtre qui colle : attendee 6 et donc il faut l'enlever pour voir les crénaux.
-SOLVE
------
+
+
+- [x] **sale - partner - meeting** j'ai un filtre qui colle : attendee 6 et donc il faut l'enlever pour voir les crénaux. Solved
+
+
+# dans oph_agenda_factory
+
+On peut aussi rendre invisible un champ en fonction d'une valeur d'un autre champ:
+
+`<field name="discount" attrs="{'invisible':[('price_unit','=',0)]}" groups="sale.group_discount_per_so_line"/>`
