@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>/home/lfs/ODOO/doc_oph_odoo/.README.md.html</title>
+<title>/home/lof/ODOO/doc_oph_odoo8/.README.md.html</title>
 
 
 <style type="text/css">
@@ -639,9 +639,42 @@ function setDocumentScrollTop(ypos)
 
 </head>
 <body class="markdown-body">
-<p>le module base_calendar n'existe pas dans la 8.0</p> 
+<h1> <a id="install-the-odoo-on-your-local-dev-machine" class="anchor" href="#install-the-odoo-on-your-local-dev-machine" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install the odoo on your local dev machine</h1> 
+<p><code>git clone git@github.com:frouty/odoo.git --branch 8.0 odoo80</code></p> 
+<p>so I get an odoo80 dir with the branch 8.0 of odoo</p> 
+<h1> <a id="how-to-update-from-main-odoo-repository" class="anchor" href="#how-to-update-from-main-odoo-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to update from main odoo repository</h1> 
+<p>specify a new remote upstream repository that will be synced with the fork by adding the main odoo repository as a remote and name it upstream. To get the url of your main repository go to you fork repository on github web, look for &quot;forked from odoo/odoo&quot; click on the link.On the new page: &quot;clone or download&quot; copy/paste that url.</p> 
+<p><code>git remote add upstream git@github.com:odoo/odoo.git</code> </p> 
+<p>Check</p> 
+<p><code>git remote -v</code></p> 
+<p>you should see your origin and upstream remotes</p> 
+<p>Now sync your fork:</p> 
+<ul> 
+ <li>fetch the branches from the upstream repository.</li> 
+ <li>checkout to the branch your interested</li> 
+ <li>merge the changes from upstream/[branch you're interested]</li> 
+ <li>now update the fork on github</li> 
+</ul> 
+<pre><code>git fetch upstream
+git checkout [branch you're interested]
+git merge upstream/[branch you're interested]
+git push origin
+</code></pre> 
+<h2> <a id="configuration-de-eclipse" class="anchor" href="#configuration-de-eclipse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configuration de eclipse</h2> 
+<ul> 
+ <li>Run configurations</li> 
+ <li>Name : choose a name you like</li> 
+ <li>Project : choose the project you want</li> 
+ <li>Main Module : browse to project. Choose <strong>odoo.py</strong> </li> 
+ <li>Arguments : --addons-path addons</li> 
+ <li>Apply</li> 
+</ul> 
+<h1> <a id="comment-lancer-plusieurs-instances-dodoo" class="anchor" href="#comment-lancer-plusieurs-instances-dodoo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Comment lancer plusieurs instances d'odoo</h1> 
+<p>python odoo.py --xmlrpc-port=8070 jamais test&eacute;/</p> 
+<h1> <a id="debugging" class="anchor" href="#debugging" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Debugging</h1> 
+<p><code>import pdb;pdb.set_trace()</code></p> 
 <h1> <a id="je-cherche-la-valeur-de-ref" class="anchor" href="#je-cherche-la-valeur-de-ref" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>je cherche la valeur de ref</h1> 
-<p><code> &lt;field name=&quot;inherit_id&quot; ref=&quot;base.view_partner_form&quot;/\&gt; </code></p> 
+<p><code> &lt;field name=&quot;inherit_id&quot; **ref**=&quot;base.view_partner_form&quot;/\&gt; </code></p> 
 <p>mode debug --&gt; Edit form view --&gt; External ID == ref</p> 
 <pre><code>            &lt;data&gt;
             &lt;xpath expr=&quot;//notebook/page[@string='Journals']&quot; position=&quot;replace&quot;&gt;
@@ -705,7 +738,7 @@ logger.info(<span class="pl-s"><span class="pl-pds">'</span>updating records<spa
 </ul> 
 <h2> <a id="loggersetlevel" class="anchor" href="#loggersetlevel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>logger.setLevel()</h2> 
 <p>Sp&eacute;cifie le plus bas niveau de messages de log qui sera trait&eacute;. DEBUG est le plus bas niveau et critical le plus haut. EG si le level est INFO, les INFO, WARNING, ERROR, CRITICAL seront trait&eacute;es et DEBUG ignor&eacute;..</p> 
-<h1> <a id="selection" class="anchor" href="#selection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>selection</h1> 
+<h1> <a id="champ-selection-et-default" class="anchor" href="#champ-selection-et-default" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Champ selection et default</h1> 
 <p>Qd on a un champ selection avec comme selection la liste de tuple: </p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-c1">STATE_SELECTION</span> <span class="pl-k">=</span> [
@@ -802,7 +835,7 @@ logger.info(<span class="pl-s"><span class="pl-pds">'</span>updating records<spa
     <span class="pl-e">xsl</span>=<span class="pl-s"><span class="pl-pds">'</span></span>
 <span class="pl-s">    /&gt;</span></pre>
 </div> 
-<h2> <a id="des-liens" class="anchor" href="#des-liens" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>des liens</h2> 
+<h2> <a id="des-liens-sur-les-reports" class="anchor" href="#des-liens-sur-les-reports" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>des liens sur les reports</h2> 
 <ul> 
  <li> <a href="https://www.odoo.com/documentation/8.0/reference/qweb.html">https://www.odoo.com/documentation/8.0/reference/qweb.html</a><br /> </li> 
  <li><p><a href="https://www.odoo.com/documentation/8.0/reference/reports.html">https://www.odoo.com/documentation/8.0/reference/reports.html</a> </p></li> 
@@ -856,7 +889,7 @@ tout ce qu'on veut
  <pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>..<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>..<span class="pl-pds">&quot;</span></span> <span class="pl-e">icon</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>fa-star<span class="pl-pds">&quot;</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>..<span class="pl-pds">&quot;</span></span> <span class="pl-e">context</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>..<span class="pl-pds">&quot;</span></span>&gt;
  &lt;<span class="pl-ent">field</span> <span class="pl-e">string</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>Calls<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>phonecall_count<span class="pl-pds">&quot;</span></span> <span class="pl-e">widget</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>statinfo<span class="pl-pds">&quot;</span></span>/&gt;</pre>
 </div> 
-<p>Comment on fait ce compte:</p> 
+<p>Comment on fait ce comptage:</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-k">def</span> <span class="pl-en">_phonecall_count</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">cr</span>, <span class="pl-smi">uid</span>, <span class="pl-smi">ids</span>, <span class="pl-smi">field_name</span>, <span class="pl-smi">arg</span>, <span class="pl-smi">context</span><span class="pl-k">=</span><span class="pl-c1">None</span>):
         res <span class="pl-k">=</span> {}
@@ -883,6 +916,12 @@ tout ce qu'on veut
 <h1> <a id="views" class="anchor" href="#views" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Views</h1> 
 <ul> 
  <li><a href="https://www.odoo.com/documentation/8.0/reference/views.html">https://www.odoo.com/documentation/8.0/reference/views.html</a></li> 
-</ul>
+</ul> 
+<h1> <a id="update-a-module" class="anchor" href="#update-a-module" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>update a module.</h1> 
+<p>What you should do is</p> 
+<p>Update the module that you want to upgrade in the addons folder Restart the Odoo-server service (unfortunately this is still necessary as python need to create the compiled version of the py files). If you have new modules, click the Setting &gt;&gt; Modules &gt;&gt; Update Module List menu and follow through Then from Setting &gt;&gt; Modules &gt;&gt; Installed Modules, select the modules you just updated, and click on Upgrade button.</p> 
+<p>Note that 2 is required if you change any of the py files. If you don't change py files, you can skip it. Yes, some error may occurs if you radically change the structure of model in the update module. Hence, it is better not to remove any existing fields or change their type.</p> 
+<p>Note on 4: if you don't change any data files (XML or CSV) included in the module and you don't change any model structure (no fields or defaults or sql_constraint or constraint [etc....] added/removed/modified) and only change method implementation, you may get away without doing 4.</p> 
+<p>Additional Note: if you define a data record in the old version of the module and you don't require it anymore int he new version of the module, add a into the XML file to properly remove the data.</p>
 </body>
 </html>

@@ -1,10 +1,53 @@
-le module base_calendar n'existe pas dans la 8.0
+# Install the odoo on your local dev machine
+
+`git clone git@github.com:frouty/odoo.git --branch 8.0 odoo80`
+
+so I get an odoo80 dir with the branch 8.0 of odoo
+
+#How to update from main odoo repository
+specify a new remote upstream repository that will be synced with the fork by adding the main odoo repository as a remote and name it upstream.
+To get the url of your main repository go to you fork repository on github web, look for "forked from odoo/odoo" click on the link.On the new page: "clone or download" copy/paste that url.
+
+`git remote add upstream   git@github.com:odoo/odoo.git` 
+
+Check
+
+`git remote -v`
+ 
+you should see your origin and upstream remotes
+
+Now sync your fork:
+* fetch the branches from the upstream repository.
+* checkout to the branch your interested
+* merge the changes from upstream/[branch you're interested]
+* now update the fork on github
+```
+git fetch upstream
+git checkout [branch you're interested]
+git merge upstream/[branch you're interested]
+git push origin
+```
+## Configuration de eclipse
+* Run configurations
+* Name : choose a name you like
+* Project : choose the project you want
+* Main Module : browse to project. Choose **odoo.py**
+* Arguments : --addons-path addons
+* Apply
+
+# Comment lancer plusieurs instances d'odoo
+python odoo.py --xmlrpc-port=8070
+jamais testé/
+
+# Debugging 
+ `import pdb;pdb.set_trace()`
+ 
 
 je cherche la valeur de ref
 =============
 
 `
-<field name="inherit_id" ref="base.view_partner_form"/\> 
+<field name="inherit_id" **ref**="base.view_partner_form"/\> 
 `
 
 mode debug --> Edit form view --> External ID == ref
@@ -102,7 +145,7 @@ logger.setLevel()
 Spécifie le plus bas niveau de messages de log qui sera traité. DEBUG est le plus bas niveau et critical le plus haut. EG si le level est INFO, les INFO, WARNING, ERROR, CRITICAL seront traitées et DEBUG ignoré..
 
 
-selection
+Champ selection et default
 ======
 Qd on a un champ selection avec comme selection la liste de tuple: 
 ~~~python
@@ -225,7 +268,7 @@ Il y a un fichier addons/account_report.xml avec
 	xsl='
 	/>
 ~~~
-des liens
+des liens sur les reports
 ---
 - https://www.odoo.com/documentation/8.0/reference/qweb.html  
 - https://www.odoo.com/documentation/8.0/reference/reports.html  
@@ -286,7 +329,7 @@ phonecall_ids in res.partner
 <button class=".." name=".." icon="fa-star" type=".." context="..">
  <field string="Calls" name="phonecall_count" widget="statinfo"/>
 ~~~
-Comment on fait ce compte:
+Comment on fait ce comptage:
 ~~~python 
 def _phonecall_count(self, cr, uid, ids, field_name, arg, context=None):
         res = {}
@@ -321,3 +364,18 @@ retourne (si ids=[1,2,3,4])
 Views
 ===
 - https://www.odoo.com/documentation/8.0/reference/views.html
+
+# update a module.
+
+ What you should do is
+
+Update the module that you want to upgrade in the addons folder
+Restart the Odoo-server service (unfortunately this is still necessary as python need to create the compiled version of the py files).
+If you have new modules, click the Setting >> Modules >> Update Module List menu and follow through
+    Then from Setting >> Modules >> Installed Modules, select the modules you just updated, and click on Upgrade button.
+
+Note that 2 is required if you change any of the py files.  If you don't change py files, you can skip it.  Yes, some error may occurs if you radically change the structure of model in the update module.  Hence, it is better not to remove any existing fields or change their type.
+
+Note on 4: if you don't change any data files (XML or CSV) included in the module and you don't change any model structure (no fields or defaults or sql_constraint or constraint [etc....] added/removed/modified) and only change method implementation, you may get away without doing 4.
+
+Additional Note: if you define a data record in the old version of the module and you don't require it anymore int he new version of the module, add a <delete model="model_id" id="xml_id_of_record_to_delete"/> into the XML file to properly remove the data.
