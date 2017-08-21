@@ -42,9 +42,7 @@ jamais testé/
 # Debugging 
  `import pdb;pdb.set_trace()`
  
-
-je cherche la valeur de ref
-=============
+# je cherche la valeur de ref
 
 `
 <field name="inherit_id" **ref**="base.view_partner_form"/\> 
@@ -64,9 +62,7 @@ mode debug --> Edit form view --> External ID == ref
             </data>
 </field>
 ```
-Comment supprimer le "create and edit"
-========         
-
+# Comment supprimer le "create and edit"
 Dans un champ : many2one
 le widget ressemble à celui d'un champ selection
 
@@ -79,21 +75,19 @@ on peut supprimer le "create and edit" avec :
 </xpath>
 ```
 
-Comment vérifier un champ et afficher une pop up?
-===============
+# Comment vérifier un champ et afficher une pop up?
+
 voir la méthode : 
 
-```python
 def check_partners_email
 ```    
 
-Le format des dates dans Odoo
-=======================
+# Le format des dates dans Odoo
 On trouve le format des dates dans : openerp/tools/misc.py
 On a les constantes :
 
 ```python
-DEFAULT_SERVER_DATE_FORMAT = "%Y-%m-%d"
+DEFAULT_SERVER_DATE_FORMAT = "%Y-%m-%d"  
 DEFAULT_SERVER_TIME_FORMAT = "%H:%M:%S"
 DEFAULT_SERVER_DATETIME_FORMAT = "%s %s" % (DEFAULT_SERVER_DATE_FORMAT,DEFAULT_SERVER_TIME_FORMAT)
 ```
@@ -103,18 +97,16 @@ Comment on appelle ces constantes:
 from openerp.tools import DEFAULT_SERVER_DATE_FORMAT, DEFAULT_SERVER_DATETIME_FORMAT
 
 
-calendar.event
-======
+# calendar.event
 start fields.function(_compute, .......required = True....)  
 stop fields.function(_compute, ...... required = True)  
 
 partner_id Partner many2one  
 partner_ids Attendees many2many  
 
-rrule : recurrent rule
+rrule : recurrent rule  
 
-le logging
-=======
+# le logging
 Je vais essayer à la place de mettre des prints
 
 ```python
