@@ -235,6 +235,7 @@ for record in browse_obj:
 
 	
 ### pour récupérer un model
+
 `self.pool[nom_ du_model]`
 
 
