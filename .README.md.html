@@ -642,9 +642,8 @@ function setDocumentScrollTop(ypos)
 <h1> <a id="install-the-odoo-on-your-local-dev-machine" class="anchor" href="#install-the-odoo-on-your-local-dev-machine" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install the odoo on your local dev machine</h1> 
 <p><code>git clone git@github.com:frouty/odoo.git --branch 8.0 odoo80</code></p> 
 <p>so I get an odoo80 dir with the branch 8.0 of odoo</p> 
-<h1> <a id="how-to-update-from-main-odoo-repository" class="anchor" href="#how-to-update-from-main-odoo-repository" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to update from main odoo repository</h1> 
-<p>specify a new remote upstream repository that will be synced with the fork by adding the main odoo repository as a remote and name it upstream. To get the url of your main repository go to you fork repository on github web, look for &quot;forked from odoo/odoo&quot; click on the link.On the new page: &quot;clone or download&quot; copy/paste that url.</p> 
-<p><code>git remote add upstream git@github.com:odoo/odoo.git</code> </p> 
+<p>#How to update from main odoo repository specify a new remote upstream repository that will be synced with the fork by adding the main odoo repository as a remote and name it upstream. To get the url of your main repository go to you fork repository on github web, look for &quot;forked from odoo/odoo&quot; click on the link.On the new page: &quot;clone or download&quot; copy/paste that url.</p> 
+<p><code>git remote add upstream git@github.com:odoo/odoo.git</code></p> 
 <p>Check</p> 
 <p><code>git remote -v</code></p> 
 <p>you should see your origin and upstream remotes</p> 
@@ -674,7 +673,7 @@ git push origin
 <h1> <a id="debugging" class="anchor" href="#debugging" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Debugging</h1> 
 <p><code>import pdb;pdb.set_trace()</code></p> 
 <h1> <a id="je-cherche-la-valeur-de-ref" class="anchor" href="#je-cherche-la-valeur-de-ref" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>je cherche la valeur de ref</h1> 
-<p><code> &lt;field name=&quot;inherit_id&quot; **ref**=&quot;base.view_partner_form&quot;/\&gt; </code></p> 
+<p><code>&lt;field name=&quot;inherit_id&quot; **ref**=&quot;base.view_partner_form&quot;/\&gt;</code></p> 
 <p>mode debug --&gt; Edit form view --&gt; External ID == ref</p> 
 <pre><code>            &lt;data&gt;
             &lt;xpath expr=&quot;//notebook/page[@string='Journals']&quot; position=&quot;replace&quot;&gt;
@@ -696,22 +695,23 @@ git push origin
 &lt;/<span class="pl-ent">xpath</span>&gt;</pre>
 </div> 
 <h1> <a id="comment-v&eacute;rifier-un-champ-et-afficher-une-pop-up" class="anchor" href="#comment-v%C3%A9rifier-un-champ-et-afficher-une-pop-up" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Comment v&eacute;rifier un champ et afficher une pop up?</h1> 
-<p>voir la m&eacute;thode : </p> 
-<div class="highlight highlight-source-python">
- <pre><span class="pl-k">def</span> check_partners_email</pre>
-</div> 
-<h1> <a id="le-format-des-dates-dans-odoo" class="anchor" href="#le-format-des-dates-dans-odoo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Le format des dates dans Odoo</h1> 
-<p>On trouve le format des dates dans : openerp/tools/misc.py On a les constantes :</p> 
-<div class="highlight highlight-source-python">
- <pre><span class="pl-c1">DEFAULT_SERVER_DATE_FORMAT</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%Y-%m-<span class="pl-c1">%d</span><span class="pl-pds">&quot;</span></span>
-<span class="pl-c1">DEFAULT_SERVER_TIME_FORMAT</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>%H:%M:%S<span class="pl-pds">&quot;</span></span>
-<span class="pl-c1">DEFAULT_SERVER_DATETIME_FORMAT</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-c1">%s</span> <span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> (<span class="pl-c1">DEFAULT_SERVER_DATE_FORMAT</span>,<span class="pl-c1">DEFAULT_SERVER_TIME_FORMAT</span>)</pre>
-</div> 
-<p>Comment on appelle ces constantes: </p> 
+<p>voir la m&eacute;thode :</p> 
+<p>def check_partners_email</p> 
+<pre><code>
+# Le format des dates dans Odoo
+On trouve le format des dates dans : openerp/tools/misc.py
+On a les constantes :
+
+```python
+DEFAULT_SERVER_DATE_FORMAT = &quot;%Y-%m-%d&quot;  
+DEFAULT_SERVER_TIME_FORMAT = &quot;%H:%M:%S&quot;
+DEFAULT_SERVER_DATETIME_FORMAT = &quot;%s %s&quot; % (DEFAULT_SERVER_DATE_FORMAT,DEFAULT_SERVER_TIME_FORMAT)
+</code></pre> 
+<p>Comment on appelle ces constantes:</p> 
 <p>from openerp.tools import DEFAULT_SERVER_DATE_FORMAT, DEFAULT_SERVER_DATETIME_FORMAT</p> 
 <h1> <a id="calendarevent" class="anchor" href="#calendarevent" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>calendar.event</h1> 
-<p>start fields.function(_compute, .......required = True....)<br /> stop fields.function(_compute, ...... required = True) </p> 
-<p>partner_id Partner many2one<br /> partner_ids Attendees many2many </p> 
+<p>start fields.function(_compute, .......required = True....)<br /> stop fields.function(_compute, ...... required = True)</p> 
+<p>partner_id Partner many2one<br /> partner_ids Attendees many2many</p> 
 <p>rrule : recurrent rule</p> 
 <h1> <a id="le-logging" class="anchor" href="#le-logging" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>le logging</h1> 
 <p>Je vais essayer &agrave; la place de mettre des prints</p> 
@@ -728,18 +728,18 @@ logger.setLevel(logging.<span class="pl-c1">DEBUG</span>)</pre>
 logger.debug(<span class="pl-s"><span class="pl-pds">'</span>Records: <span class="pl-c1">%s</span><span class="pl-pds">'</span></span>, records)
 logger.info(<span class="pl-s"><span class="pl-pds">'</span>updating records<span class="pl-pds">'</span></span>)</pre>
 </div> 
-<p>Il y a plusieurs niveaux de logging: </p> 
+<p>Il y a plusieurs niveaux de logging:</p> 
 <ul> 
- <li>info<br /> </li> 
- <li>debug<br /> </li> 
- <li>warning<br /> </li> 
- <li>error<br /> </li> 
- <li>critical<br /> </li> 
+ <li>info</li> 
+ <li>debug</li> 
+ <li>warning</li> 
+ <li>error</li> 
+ <li>critical</li> 
 </ul> 
 <h2> <a id="loggersetlevel" class="anchor" href="#loggersetlevel" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>logger.setLevel()</h2> 
 <p>Sp&eacute;cifie le plus bas niveau de messages de log qui sera trait&eacute;. DEBUG est le plus bas niveau et critical le plus haut. EG si le level est INFO, les INFO, WARNING, ERROR, CRITICAL seront trait&eacute;es et DEBUG ignor&eacute;..</p> 
 <h1> <a id="champ-selection-et-default" class="anchor" href="#champ-selection-et-default" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Champ selection et default</h1> 
-<p>Qd on a un champ selection avec comme selection la liste de tuple: </p> 
+<p>Qd on a un champ selection avec comme selection la liste de tuple:</p> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-c1">STATE_SELECTION</span> <span class="pl-k">=</span> [
         (<span class="pl-s"><span class="pl-pds">'</span>needsAction<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Needs Action<span class="pl-pds">'</span></span>),
@@ -747,7 +747,7 @@ logger.info(<span class="pl-s"><span class="pl-pds">'</span>updating records<spa
         (<span class="pl-s"><span class="pl-pds">'</span>declined<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Declined<span class="pl-pds">'</span></span>),
         (<span class="pl-s"><span class="pl-pds">'</span>accepted<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>Accepted<span class="pl-pds">'</span></span>),
     ]
-
+    
 <span class="pl-s"><span class="pl-pds">'</span>state<span class="pl-pds">'</span></span>: fields.selection(<span class="pl-c1">STATE_SELECTION</span>, <span class="pl-s"><span class="pl-pds">'</span>Status<span class="pl-pds">'</span></span>, <span class="pl-v">readonly</span><span class="pl-k">=</span><span class="pl-c1">True</span>, <span class="pl-v">help</span><span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">&quot;</span>Status of the attendee's participation<span class="pl-pds">&quot;</span></span>),    </pre>
 </div> 
 <p>On peut utiliser <em>default</em> comme cela:</p> 
@@ -760,22 +760,24 @@ logger.info(<span class="pl-s"><span class="pl-pds">'</span>updating records<spa
 <h1> <a id="method-overriding---super" class="anchor" href="#method-overriding---super" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Method overriding - Super</h1> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-k">class</span> <span class="pl-en">Parent</span>(<span class="pl-c1">object</span>):
-    <span class="pl-k">def</span> <span class="pl-c1">__init__</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):
-        <span class="pl-c1">self</span>.value <span class="pl-k">=</span> <span class="pl-c1">5</span>
-    <span class="pl-k">def</span> <span class="pl-en">get_value</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):
-        <span class="pl-k">return</span> <span class="pl-c1">self</span>.value
-
+	<span class="pl-k">def</span> <span class="pl-c1">__init__</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):
+		<span class="pl-c1">self</span>.value <span class="pl-k">=</span> <span class="pl-c1">5</span>
+	<span class="pl-k">def</span> <span class="pl-en">get_value</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):
+		<span class="pl-k">return</span> <span class="pl-c1">self</span>.value
+		
 <span class="pl-k">class</span> <span class="pl-en">Child</span>(<span class="pl-c1">object</span>):
-    <span class="pl-k">def</span> <span class="pl-en">get_value</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):
-        <span class="pl-k">return</span> <span class="pl-c1">self</span>.value <span class="pl-k">+</span><span class="pl-c1">1</span></pre>
+	<span class="pl-k">def</span> <span class="pl-en">get_value</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>):
+		<span class="pl-k">return</span> <span class="pl-c1">self</span>.value <span class="pl-k">+</span><span class="pl-c1">1</span></pre>
 </div> 
 <p>On r&eacute;&eacute;crit tout simplement la m&eacute;thode avec le meme nom.</p> 
 <p>Qd on surcharge une m&eacute;thode il faut se demander:</p> 
 <ul> 
- <li>si l'on veut filtrer les arguments : pre-traitement<br /> </li> 
- <li>si l'on veut filtrer les r&eacute;sultats : post-traitement.<br /> </li> 
- <li><p>ou les deux </p></li> 
- <li><p>prefiltering</p></li> 
+ <li>si l'on veut filtrer les arguments : pre-traitement</li> 
+ <li>si l'on veut filtrer les r&eacute;sultats : post-traitement.</li> 
+ <li>ou les deux</li> 
+</ul> 
+<ul> 
+ <li>prefiltering</li> 
 </ul> 
 <div class="highlight highlight-source-python">
  <pre><span class="pl-k">import</span> datetime
@@ -808,15 +810,12 @@ logger.info(<span class="pl-s"><span class="pl-pds">'</span>updating records<spa
         <span class="pl-k">return</span> nonempty_lines </pre>
 </div> 
 <p>La syntaxe c'est: <em>super(NomChildClass, self).nomdelafonctionparent(args)</em></p> 
-<h3> <a id="model_objreadcruididsliste-des-records-&agrave;-lire-liste-des-champs-&agrave;-lirecontextcontext" class="anchor" href="#model_objreadcruididsliste-des-records-%C3%A0-lire-liste-des-champs-%C3%A0-lirecontextcontext" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>&nbsp;model_obj.read(cr,uid,ids(liste des records &agrave; lire), [liste des champs &agrave; lire],context=context)</h3> 
-<h1></h1> 
+<p>###&nbsp;model_obj.read(cr,uid,ids(liste des records &agrave; lire), [liste des champs &agrave; lire],context=context)</p> 
 <p>return une liste de dictionnaire de la forme:</p> 
 <p>[{'start_datetime': False, 'start_date': '2016-05-30', 'id': 1}, {'start_datetime': '2016-05-29 21:00:00', 'start_date': False, 'id': 13}]</p> 
-<h3> <a id="model_objbrowsecruidliste-des-id-des-recordsidscontextcontext" class="anchor" href="#model_objbrowsecruidliste-des-id-des-recordsidscontextcontext" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>&nbsp;model_obj.browse(cr,uid,[liste des id des records]ids,context=context)</h3> 
-<h1></h1> 
-<p>return in iterable for record in browse_obj: record.fieldname1.id record.fieldname2 .... </p> 
-<h3> <a id="pour-r&eacute;cuper-un-model" class="anchor" href="#pour-r%C3%A9cuper-un-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>&nbsp;pour r&eacute;cuper un model</h3> 
-<p><code>self.pool['nom_ du_model</code>]</p> 
+<p>###&nbsp;model_obj.browse(cr,uid,[liste des id des records]ids,context=context)</p> 
+<p>return in iterable for record in browse_obj: record.fieldname1.id record.fieldname2 ....</p> 
+<p>###&nbsp;pour r&eacute;cup&eacute;rer un model <code>self.pool['nom_ du_model</code>]</p> 
 <h1> <a id="report" class="anchor" href="#report" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Report</h1> 
 <p>pour cr&eacute;er un report sur un model particulier il faut cr&eacute;er :</p> 
 <ul> 
@@ -828,18 +827,18 @@ logger.info(<span class="pl-s"><span class="pl-pds">'</span>updating records<spa
 <p>Il y a un fichier addons/account_report.xml avec</p> 
 <div class="highlight highlight-text-xml">
  <pre> &lt;<span class="pl-ent">report</span> 
-    <span class="pl-e">id</span>= ...
-    <span class="pl-e">model</span>=...
-    <span class="pl-e">string</span>=...
-    <span class="pl-e">xml</span>=<span class="pl-s"><span class="pl-pds">'</span>account/report/....<span class="pl-pds">'</span></span>
-    <span class="pl-e">xsl</span>=<span class="pl-s"><span class="pl-pds">'</span></span>
-<span class="pl-s">    /&gt;</span></pre>
+	id= ...
+	model=...
+	string=...
+	xml=<span class="pl-s"><span class="pl-pds">'</span>account/report/....<span class="pl-pds">'</span></span>
+	xsl=<span class="pl-s"><span class="pl-pds">'</span></span>
+<span class="pl-s">	/&gt;</span></pre>
 </div> 
 <h2> <a id="des-liens-sur-les-reports" class="anchor" href="#des-liens-sur-les-reports" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>des liens sur les reports</h2> 
 <ul> 
- <li> <a href="https://www.odoo.com/documentation/8.0/reference/qweb.html">https://www.odoo.com/documentation/8.0/reference/qweb.html</a><br /> </li> 
- <li><p><a href="https://www.odoo.com/documentation/8.0/reference/reports.html">https://www.odoo.com/documentation/8.0/reference/reports.html</a> </p></li> 
- <li><p><a href="http://www.solibre.info/odoo_doc/_build/html/howtos/backend.html">http://www.solibre.info/odoo_doc/_build/html/howtos/backend.html</a></p></li> 
+ <li> <p><a href="https://www.odoo.com/documentation/8.0/reference/qweb.html">https://www.odoo.com/documentation/8.0/reference/qweb.html</a></p> </li> 
+ <li> <p><a href="https://www.odoo.com/documentation/8.0/reference/reports.html">https://www.odoo.com/documentation/8.0/reference/reports.html</a></p> </li> 
+ <li> <p><a href="http://www.solibre.info/odoo_doc/_build/html/howtos/backend.html">http://www.solibre.info/odoo_doc/_build/html/howtos/backend.html</a></p> </li> 
 </ul> 
 <h1> <a id="buttons" class="anchor" href="#buttons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Buttons</h1> 
 <ul> 
@@ -847,26 +846,26 @@ logger.info(<span class="pl-s"><span class="pl-pds">'</span>updating records<spa
 </ul> 
 <div class="highlight highlight-text-xml">
  <pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">string</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>Opportunities<span class="pl-pds">&quot;</span></span>..
-        <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>  
-        <span class="pl-e">context</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>..
-        <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>oe_inline oe_stat_button<span class="pl-pds">&quot;</span></span>..
-        <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>action<span class="pl-pds">&quot;</span></span>/&gt;</pre>
+		name=<span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>  
+		context=<span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>..
+		class=<span class="pl-s"><span class="pl-pds">&quot;</span>oe_inline oe_stat_button<span class="pl-pds">&quot;</span></span>..
+		type=<span class="pl-s"><span class="pl-pds">&quot;</span>action<span class="pl-pds">&quot;</span></span>/&gt;</pre>
 </div> 
 <p>Avec cela on a un petit carr&eacute; avec la &quot;string&quot;..</p> 
-<p>Pour rajouter une petite icone. </p> 
+<p>Pour rajouter une petite icone.</p> 
 <div class="highlight highlight-text-xml">
  <pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">string</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>Opportunities<span class="pl-pds">&quot;</span></span>..
-        <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>  
-        <span class="pl-e">context</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>..
-        <span class="pl-e">icon</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>fa-star<span class="pl-pds">&quot;</span></span>..
-        <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>oe_inline oe_stat_button<span class="pl-pds">&quot;</span></span>..
-        <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>action<span class="pl-pds">&quot;</span></span>/&gt;</pre>
+		name=<span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>  
+		context=<span class="pl-s"><span class="pl-pds">&quot;</span>...<span class="pl-pds">&quot;</span></span>..
+		icon=<span class="pl-s"><span class="pl-pds">&quot;</span>fa-star<span class="pl-pds">&quot;</span></span>..
+		class=<span class="pl-s"><span class="pl-pds">&quot;</span>oe_inline oe_stat_button<span class="pl-pds">&quot;</span></span>..
+		type=<span class="pl-s"><span class="pl-pds">&quot;</span>action<span class="pl-pds">&quot;</span></span>/&gt;</pre>
 </div> 
 <p>pour voir les petites icons: ..</p> 
 <ul> 
  <li> <a href="http://fontawesome.io/cheatsheet/">http://fontawesome.io/cheatsheet/</a>..</li> 
 </ul> 
-<h2> <a id="syntaxe" class="anchor" href="#syntaxe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>syntaxe</h2> 
+<h1> <a id="syntaxe" class="anchor" href="#syntaxe" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>syntaxe</h1> 
 <div class="highlight highlight-text-xml">
  <pre>&lt;<span class="pl-ent">button</span>&gt;
 tout ce qu'on veut
@@ -878,8 +877,8 @@ tout ce qu'on veut
 &lt;<span class="pl-ent">p</span>&gt;bonjour&lt;/<span class="pl-ent">p</span>&gt;
 &lt;/<span class="pl-ent">button</span>&gt;</pre>
 </div> 
-<p>On aura un cadre avec marqu&eacute; bonjour. </p> 
-<p>On peut mettre du html et du dynamique: </p> 
+<p>On aura un cadre avec marqu&eacute; bonjour.</p> 
+<p>On peut mettre du html et du dynamique:</p> 
 <div class="highlight highlight-text-xml">
  <pre>&lt;<span class="pl-ent">button</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>..<span class="pl-pds">&quot;</span></span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>..<span class="pl-pds">&quot;</span></span> <span class="pl-e">icon</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>fa-star<span class="pl-pds">&quot;</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>..<span class="pl-pds">&quot;</span></span>&gt;
  &lt;<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">field</span> <span class="pl-e">name</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>opportunity_count<span class="pl-pds">&quot;</span></span>/&gt;Opportunities&lt;/<span class="pl-ent">span</span>&gt;</pre>
@@ -897,7 +896,7 @@ tout ce qu'on veut
             res[partner.id] <span class="pl-k">=</span> <span class="pl-c1">len</span>(partner.phonecall_ids)
         <span class="pl-k">return</span> res</pre>
 </div> 
-<p>On est dans l'objet res.partner... field_name retourne : string 'phonecall_count' qui est le nom du champ function : </p> 
+<p>On est dans l'objet res.partner... field_name retourne : string 'phonecall_count' qui est le nom du champ function :</p> 
 <div class="highlight highlight-source-python">
  <pre> <span class="pl-s"><span class="pl-pds">'</span>phonecall_count<span class="pl-pds">'</span></span>: fields.function( _phonecall_count, <span class="pl-v">string</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>Phonecalls<span class="pl-pds">&quot;</span></span>, <span class="pl-v">type</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span>integer<span class="pl-pds">&quot;</span></span> ),</pre>
 </div> 
@@ -906,7 +905,7 @@ tout ce qu'on veut
 <div class="highlight highlight-source-python">
  <pre>res <span class="pl-k">=</span> <span class="pl-c1">dict</span>( <span class="pl-c1">map</span>( <span class="pl-k">lambda</span> <span class="pl-smi">x</span>: ( x, {<span class="pl-s"><span class="pl-pds">'</span>opportunity_count<span class="pl-pds">'</span></span>: <span class="pl-c1">0</span>, <span class="pl-s"><span class="pl-pds">'</span>meeting_count<span class="pl-pds">'</span></span>: <span class="pl-c1">0</span>} ), ids ) )</pre>
 </div> 
-<p>retourne (si ids=[1,2,3,4]) </p> 
+<p>retourne (si ids=[1,2,3,4])</p> 
 <div class="highlight highlight-source-python">
  <pre>{<span class="pl-c1">1</span>: {<span class="pl-s"><span class="pl-pds">'</span>meeting_count<span class="pl-pds">'</span></span>: <span class="pl-c1">0</span>, <span class="pl-s"><span class="pl-pds">'</span>opportunity_count<span class="pl-pds">'</span></span>: <span class="pl-c1">0</span>},
  <span class="pl-c1">2</span>: {<span class="pl-s"><span class="pl-pds">'</span>meeting_count<span class="pl-pds">'</span></span>: <span class="pl-c1">0</span>, <span class="pl-s"><span class="pl-pds">'</span>opportunity_count<span class="pl-pds">'</span></span>: <span class="pl-c1">0</span>},

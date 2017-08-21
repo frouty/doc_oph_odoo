@@ -219,14 +219,13 @@ La syntaxe c'est: *super(NomChildClass, self).nomdelafonctionparent(args)*
 
 
 ### model_obj.read(cr,uid,ids(liste des records à lire), [liste des champs à lire],context=context)
-=====
+
 return une liste de dictionnaire de la forme:
 
 [{'start_datetime': False, 'start_date': '2016-05-30', 'id': 1}, {'start_datetime': '2016-05-29 21:00:00', 'start_date': False, 'id': 13}]
 
 
 ### model_obj.browse(cr,uid,[liste des id des records]ids,context=context)
-===========
 
 return in iterable 
 for record in browse_obj:
@@ -235,12 +234,12 @@ for record in browse_obj:
 	.... 
 
 	
-### pour récuper un model
+### pour récupérer un model
 `self.pool['nom_ du_model`]
 
 
-Report
-====
+# Report
+
 pour créer un report sur un model particulier il faut créer :
 
 - Ce report
@@ -267,8 +266,7 @@ des liens sur les reports
 
 - http://www.solibre.info/odoo_doc/_build/html/howtos/backend.html
 
-Buttons
-===
+# Buttons
 - http://www.slideshare.net/openobject/odoo-smart-buttons
 
 ~~~xml
@@ -292,8 +290,7 @@ Pour rajouter une petite icone.
 pour voir les petites icons: ..
 - http://fontawesome.io/cheatsheet/..
 
-syntaxe
----
+# syntaxe
 ~~~xml
 <button>
 tout ce qu'on veut
@@ -353,8 +350,7 @@ retourne (si ids=[1,2,3,4])
 ~~~
 
 
-Views
-===
+# Views
 - https://www.odoo.com/documentation/8.0/reference/views.html
 
 # update a module.
