@@ -56,184 +56,6 @@ Sélection une ligne entiére : C-c l
 Il faut que le curseur soit dans la ligne qui nous intéresse.
 Afficher les modifications : M-highlight-changes-mode
 
-
-
-%%%%##########################################################################
-\section{SVN configuration}
-
-%%%%##########################################################################
-
-\cfoot{\thepage\ of \pageref{LastPage}}
-
-Remote host: \textcolor{blue}{zotac}
-
-Le \textcolor{red}{repository} est sur zotac. On le crée sur zotac, une fois pour toute.
-
-\begin{verbatim}
-# svnadmin create --fs-type fsfs /var/svn-repos
-#ls /var/svn-repos
-conf  db  format  hooks  locks  README.txt
-#svnlook tree /var/svn-repos
-/
-mkdir /var/svn-repos/dav
-mkdir -p /tmpdir/oph-erp-project/{trunk,branches,tags}
-# cd /tmpdir/
-root@zotac:/tmpdir# tree
-\end{verbatim}
-
-$\rightarrow oph-erp-project\\
-    \hookrightarrow branches\\
-    \hookrightarrow tags\\
-    \hookrightarrow trunk\\$
-
-
-Import du layout dans le  \textcolor{red}{repository}
-
-\begin{verbatim}
-svn import . file:///var/svn-repos/ -m 'Initial repository layout import'
-Adding         oph-erp-project
-Adding         oph-erp-project/tags
-Adding         oph-erp-project/trunk
-Adding         oph-erp-project/branches
-
-Committed revision 1.
-
-svnlook tree /var/svn-repos/
-/
- oph-erp-project/
-  trunk/
-  branches/
-  tags/
-\end{verbatim}
-
-\begin{verbatim}
-groupadd subversion
-adduser un_user subversion
-\end{verbatim}
-
-
-\begin{verbatim}
-ls /var/svn-repos/
-conf  dav  db  format  hooks  locks  README.txt
-\end{verbatim}
-
-Import de /opt/openerp/server
-
-svn import /opt/openerp/server file:///var/svn-repos/oph-erp-project
-
-
-
-
-svn commit -m 'message de commit'
-ca marche! quels sont les droits sur le zotac repository
-
-sur le client 
-mkdir workcopy
-cd workcopy
-svn co http://zotac/svn/oph-erp-project/trunk
-ls 
-trunk
-
-
-svn commit -m 'first commit'
-Password for 'Default' GNOME keyring: 
-svn: Commit failed (details follow):
-svn: Can't open file '/var/svn-repos/db/txn-current-lock': Permission denied
-
-\begin{verbatim}
-chown -R www-data:subversion /var/svn-repos/*
-chmod -R 770 /var/svn-repos/*
-\end{verbatim}
-
-\begin{verbatim}
-trunk  svn commit -m 'first commit'
-svn: Commit failed (details follow):
-svn: Can't make directory '/var/svn-repos/dav/activities.d': Permission denied
-\end{verbatim}
-
-\begin{verbatim}
-svn import /opt/openerp/server/ 
-        file:///var/svn-repos/oph-erp-project/trunk 
-        -m 'Initial import of server'
-\end{verbatim}
-
-\subsection{Checkout}
-\label{sec:checkout}
-
-Comment récuperer le projet dans le repository et le mettre dans une copie de travail? 
-
-\begin{verbatim}
-cd /home/lfs/openerp-oph/workcopy
-svn checkout [-r N] http://zotac/svn/oph-erp-project/trunk
-\end{verbatim}
-
-Ce n'est pas workcopy qui est la workcopy mais workcopy/trunk\\
-
-\subsection{Commit}
-\label{sec:commit}
-\begin{verbatim}
-cd ~/opener-oph/workcopy/trunk
-svn commit -m 'initial commit'
-Sending        bin/addons/oph_consult/oph_consult.py
-Transmitting file data .
-Committed revision 3.
-\end{verbatim}
-
-
-\subsection{Export}
-\label{sec:export}
-
-J'ai fait des modifications dans le code je voudrais voir ce que cela donne dans openerp. 
-\begin{itemize}
-\item Faire un commit
-\item Faire un export cf ci-dessous. L'export se fait à partir du server
-\end{itemize}
-%On exporte le directory oph qui correspond à notre module:
-
-\begin{verbatim}
-mkdir /opt/openerp/server/bin/addons/oph
-svn export --force 
-        file:///var/svn-repos/oph-erp-project/trunk/bin/addons/oph/ \
-œ        /opt/openerp/server/bin/addons/oph/
-
-A    /opt/openerp/server/bin/addons/oph
-A    /opt/openerp/server/bin/addons/oph/oph_consult.py
-A    /opt/openerp/server/bin/addons/oph/images
-A    /opt/openerp/server/bin/addons/oph/images/accounting.png
-A    /opt/openerp/server/bin/addons/oph/images/accounting-hover.png
-A    /opt/openerp/server/bin/addons/oph/__init__.py
-A    /opt/openerp/server/bin/addons/oph/__openerp__.py
-A    /opt/openerp/server/bin/addons/oph/consultation_view.xml
-Exported revision 3.
-\end{verbatim}
-
-\subsubsection{Export d'une révision particulière}
-\label{sec:export_rev}
-
-Si je veux exporter une révision particulière?
-
-\begin{verbatim}
-
-svn export --force \codeHighlight{-r 2} \
-
-        file:///var/svn-repos/oph-erp-project/trunk/bin/addons/oph_consult/ \
-
-        /opt/openerp/server/bin/addons/oph_consult/
-
-A    /opt/openerp/server/bin/addons/oph_consult
-A    /opt/openerp/server/bin/addons/oph_consult/images
-A    /opt/openerp/server/bin/addons/oph_consult/images/accounting.png
-A    /opt/openerp/server/bin/addons/oph_consult/images/accounting-hover.png
-A    /opt/openerp/server/bin/addons/oph_consult/__init__.py
-A    /opt/openerp/server/bin/addons/oph_consult/__openerp__.py
-A    /opt/openerp/server/bin/addons/oph_consult/consultation_view.xml
-A    /opt/openerp/server/bin/addons/oph_consult/oph_consult.py
-Exported revision 2.
-\end{verbatim}
-
-\subsection{Status}
-\label{sec:status}
-
 \section{installation des dépendances python}
 \label{sec:deppython}
 
@@ -246,29 +68,12 @@ python-jinja2 python-ldap python-libxslt1 python-lxml python-mako python-mock py
 python-psycopg2 python-psutil python-pybabel python-pychart python-pydot python-pyparsing \
 python-reportlab python-simplejson python-tz python-unittest2 python-vatnumber python-vobject \
 python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-uno
+
 \section{Eclipse}
 \label{sec:eclipse}
 
 \subsection{Comment créer un projet openerp}
 \label{sec:create_project}
-
-\begin{verbatim}
-cd ~
-mkdir -p oph_openerp/{extra-addons, src}
-cd oph_openerp
-bzr branch lp:~openerp/openobject-addons/7.0/ addons
-bzr branch lp:~openerp/openobject-server/7.0/ server
-bzr branch lp:~openerp/openerp-web/7.0/ web
-cd extra-addons
-bzr branch lp:~mathieu-julius/aeroo/openerp7.0.x/ aeroo
-mkdir oph
-cd oph
-bzr branch lp:~francois-oph/oph/7.0 oph
-
-\end{verbatim}
-
-J'ai récupéré les sources à partir de launchpad.
-Il faut maintenant créer le projet dans Eclipse. 
 
 \subsection{Création d'un role pour openerp}
 \label{sec:role}
@@ -320,91 +125,46 @@ python ./setup.py install
 \label{sec:finsession}
 
 \begin{verbatim}
-cd ~/oph_openerp/extra-addons/oph/oph
-bzr add 
-bzr commit
-bzr push
-\end{verbatim}
-
-\subsection{Mise à jour d'une branche déjà présente localement}
-\label{sec:miseajour}
-
-\begin{verbatim}
-cd oph_openerp/openobject-addons
-bzr pull
-
-cd oph_openerp/openobject-server
-bzr pull
-
-cd oph_opnerp/openerp-web
-bzr pull
-\end{verbatim}
-
-\subsection{Comment récupérer une version d'un fichier}
-\label{sec:version}
-
-\subsection{Comment revenir en arriere sur un fichier}
-\label{sec:comeback}
-
-\begin{verbatim}
-bzr revert custom/oph_view.xml.
+cd laouestmonprojet
+git add .
+git commit -m 'un message d'info'
+git push origin master
 \end{verbatim}
 
 
-Va récuperer le fichier de début de la version en cours.
 
 \subsection{Comment faire un diff entre sa dernière révision et la dernière révision d'une autre branche?}
 \label{sec:difffrombranh2branche}
 
 \begin{verbatim}
-bzr diff -r branch:lp:~mathieu-julius/oph/7.0-2013-07-01
+git diftool -t meld branch1 branch2
 \end{verbatim}
 
-Et pour avoir une vue simplifiée:
-\begin{verbatim}
-bzr st branch:lp:~mathieu-julius/oph/7.0-2013-07-01
-\end{verbatim}
-st c'est pour status
-
-\subsubsection{Et pour avoir un diff en couleur}
-\label{sec:diffcolor}
-
-Installer le paquet: aptitude install bzrtools, puis
-\begin{verbatim}
-bzr cdiff -r branch:lp:~mathieu-julius/oph/7.0-2013-07-01
-\end{verbatim}
-
-Mieux:
-\begin{verbatim}
-bzr qdiff
-\end{verbatim}
-
-\subsection{Comment accepter un merge avec une autre branche?}
-\label{sec:mergebranch}
-
-Tout est expliqué dans l'interface web sur le site de launchpad. 
 
 \subsection{Comment connaitre ses branches}
 \label{sec:my_branches}
 
 \begin{verbatim}
-    https://code.launchpad.net/people/+me
+	git branch -v 
+	git branch --merged
+	git branch --no-merged
 \end{verbatim}
-A mettre littéralement dans le url. C'est magique ça marche.
 
 \subsection{Comment effacer une branche?}
 \label{sec:branch_delete}
+On efface en général les branches qui sont merged
+
 \begin{verbatim}
-    https://code.launchpad.net/people/+me
+git branch --merged
+git branch -d nomdelabranch
 \end{verbatim}
-clic sur la branche. Et icone 'delete'
 
 \subsection{Comment créer une nouvelle branche}
 \label{sec:create_branch}
 
-bzr pull lp:~francois-oph/oph/name\_branch
+git checkout nom-de-la-branch-si-elle-existe
+git checkout -b nom.de.la.branch.si.elle.existe.pas
 
-J'ai choisi dev comme branch\_name
 
 \subsection{Comment utiliser Latex dans eclipse}
 \label{sec:eclipse_latex}
@@ -438,6 +198,7 @@ createdb restored\_dbname
 
 pg\_restore -O -x -d restored\_dbname < goeen.dump
 Il y a des erreurs qui s'affichent. mais on les ignore.sur l'extension plpgsql
+
 \begin{itemize}
 \item -O --no-owner
 \item -x Prevent restoration of access privileges (grant/revoke commands).
@@ -552,6 +313,7 @@ password: openerp
 Il y a plusieurs roles.
 Comment voir quels sont les roles:
 \begin{verbatim}
+su
 su postgres
 psql
 SELECT rolname FROM pg_roles;
@@ -566,6 +328,7 @@ ALTER rolename PASSWORD 'a string';
 
 ou 
 \begin{verbatim}
+su
 su postgres
 psql
 \password postgres
@@ -624,6 +387,7 @@ le : avant le port est important.
 C'est parfois parce que la database qui est utilisée ne va pas donc
 on peut filtrer le nom des database avec dans les arguments:
 --de-filter [expression]
+
 \subsection{comment supprimer une database}
 
 \section{Editer du code en remote avec emacs}
