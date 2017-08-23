@@ -78,9 +78,10 @@ on peut supprimer le "create and edit" avec :
 # Comment vérifier un champ et afficher une pop up?
 
 voir la méthode : 
-
+```python
 def check_partners_email
 ```    
+le module base_calendar n'existe pas dans la 8.0  
 
 # Le format des dates dans Odoo
 On trouve le format des dates dans : openerp/tools/misc.py
@@ -132,13 +133,11 @@ Il y a plusieurs niveaux de logging:
 - critical  
 
 
-logger.setLevel()
--------
+## logger.setLevel()
 Spécifie le plus bas niveau de messages de log qui sera traité. DEBUG est le plus bas niveau et critical le plus haut. EG si le level est INFO, les INFO, WARNING, ERROR, CRITICAL seront traitées et DEBUG ignoré..
 
 
-Champ selection et default
-======
+# Champ selection et default
 Qd on a un champ selection avec comme selection la liste de tuple: 
 ~~~python
 STATE_SELECTION = [
@@ -158,8 +157,7 @@ On peut utiliser *default* comme cela:
 ~~~
   on passe donc la key
   
-Method overriding - Super
-=====
+# Method overriding - Super
 
 ~~~python
 class Parent(object):
@@ -196,7 +194,7 @@ class TimestampLogger(Logger):
         super(TimestampLogger, self).log(message)
 ~~~
 
-*post-processing
+* post-processing
 
 ~~~python
 import os
@@ -215,7 +213,8 @@ class FileCatNoEmpty(FileCat):
         return nonempty_lines 
 ~~~
 
-La syntaxe c'est: *super(NomChildClass, self).nomdelafonctionparent(args)*
+La syntaxe c'est:
+`super(NomChildClass, self).nomdelafonctionparent(args)`
 
 
 ### model_obj.read(cr,uid,ids(liste des records à lire), [liste des champs à lire],context=context)
@@ -260,8 +259,8 @@ Il y a un fichier addons/account_report.xml avec
 	xsl='
 	/>
 ~~~
-des liens sur les reports
----
+# Liens sur les reports
+
 - https://www.odoo.com/documentation/8.0/reference/qweb.html  
 - https://www.odoo.com/documentation/8.0/reference/reports.html  
 
