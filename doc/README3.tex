@@ -3344,3 +3344,12 @@ by Wyden Silvan — last modified 11.06.2010 12:46
             'type': 'ir.actions.act_window',
             'target': 'current',
 
+\section{Changement de réseau}
+Si on change de réseau avec changement d'adresse IP il faut:
+\begin{itemize}
+\item changer l'adresse iP du serveur dans /etc/network/ifconfig.
+\item changer les adresses IP dans le fichier /etc/nginx/site-availabel/openerp
+\item service nginx start et service nginx stop
+\item mettre la regle de nat dans le routeur : network/firewall. 
+\item ne pas oublier l'adresse IP du raspberry dans le raspberry mais aussi dans le fichier rt5100 (IP_client)
+\end{itemize}
