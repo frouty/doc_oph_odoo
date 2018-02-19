@@ -118,7 +118,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 ```
 
-après cela s'utilise comme cela :
+aprés cela s'utilise comme cela :
 ~~~python
 logger.info('blablabla')
 logger.debug('Records: %s', records)
@@ -134,7 +134,7 @@ Il y a plusieurs niveaux de logging:
 
 
 ## logger.setLevel()
-Spécifie le plus bas niveau de messages de log qui sera traité. DEBUG est le plus bas niveau et critical le plus haut. EG si le level est INFO, les INFO, WARNING, ERROR, CRITICAL seront traitées et DEBUG ignoré..
+Spécifie le plus bas niveau de messages de log qui sera traité. DEBUG est le plus bas niveau et critical le plus haut. EG si le level est INFO, les INFO, WARNING, ERROR, CRITICAL seront traitées et DEBUG ignorées..
 
 
 # Champ selection et default
@@ -217,14 +217,14 @@ La syntaxe c'est:
 `super(NomChildClass, self).nomdelafonctionparent(args)`
 
 
-### model_obj.read(cr,uid,ids(liste des records à lire), [liste des champs à lire],context=context)
+###��model_obj.read(cr,uid,ids(liste des records à lire), [liste des champs à lire],context=context)
 
 return une liste de dictionnaire de la forme:
 
 [{'start_datetime': False, 'start_date': '2016-05-30', 'id': 1}, {'start_datetime': '2016-05-29 21:00:00', 'start_date': False, 'id': 13}]
 
 
-### model_obj.browse(cr,uid,[liste des id des records]ids,context=context)
+###��model_obj.browse(cr,uid,[liste des id des records]ids,context=context)
 
 return in iterable 
 for record in browse_obj:
@@ -240,12 +240,12 @@ for record in browse_obj:
 
 # Report
 
-pour créer un report sur un model particulier il faut créer :
+pour créer un report sur un model particulier il faut créer:
 
 - Ce report
 - report template
 
-Si on veut accéder à plusieurs models il faut créer un custom reports class qui nous acces à plusieurs modeles dans le template.
+Si on veut accéder à plusieurs models il faut créer un custom reports class qui nous acces �� plusieurs modeles dans le template.
 
 Il y a un fichier  addons/views/report_invoice.xml qui contient les templates.
 

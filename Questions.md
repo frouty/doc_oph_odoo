@@ -9,7 +9,7 @@ ou encore dans un champ selection comment rajouter des items.
 calendar_event field tag c'est pour cs / tech /close ....on pourrait le remplacer par categ_ids
 state c'est pour draft/open/busy/in/wait/out...
 
-- [ ] Comment faire pour avoir des propositions quand je tape les premieres lettres du nom d'un patient dans la vue crm_meeting tree?
+- [x] Comment faire pour avoir des propositions quand je tape les premieres lettres du nom d'un patient dans la vue crm_meeting tree?
 
 - [ ] Dans la kanban view des calendar.event je voudrais voir le champ : "fullname" "meeting subject" et "age".
 Pas besoin d'afficher la date de naissance dans la kanban calendar view mais reste utile dans la 
@@ -65,4 +65,4 @@ On peut aussi rendre invisible un champ en fonction d'une valeur d'un autre cham
 `<field name="discount" attrs="{'invisible':[('price_unit','=',0)]}" groups="sale.group_discount_per_so_line"/>`
 
 # paiement des états par lot.
-- [ ]
+- [ ]
