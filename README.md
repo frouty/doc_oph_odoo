@@ -1,14 +1,47 @@
+# Arborescence de développement
+Elle est identique à celle de production pour pouvoir développer des scripts sh qui automatisent les taches.  
+En plus on a une arborescence de dev  
+
+## Arborescence de dev
+
+- /opt/ODOO/
+    - odoo7
+        - odoo7 (git repo officiel de odoo)
+        - oph_odoo7 (git repo uniquement le dev de l'ophtalmologie)
+        - filestorage7
+    - odoo8
+        - odoo8 (git repo officiel de odoo)
+        - oph_odoo8 (git repo du dev de l'ophtalmologie)
+        - filestorage8
+    - filestorage TODO est-ce que le même filestorage peut etre utiliser par les différentes verions d'odoo?
+
+## Arborescence de production 
+- /opt/odoo
+    - odoo7
+        - odoo7 (git repo)
+        - oph_odoo7 (git repo de l'ophtalmologie)
+        - filestorage7
+    - odoo8
+        - odoo8 (git repo)
+        - oph_odoo8 (git repo de l'ophtalmologie)
+        - filestorage8
+    - filestorage TODO est-ce que le même filestorage peut etre utiliser par les différentes verions d'odoo?
+    
+
 # Install the odoo on your local dev machine
 
-`git clone git@github.com:frouty/odoo.git --branch 8.0 odoo80`
+- 1 make a fork of odoo to git@github.com:frouty/odoo.git in github.com
+
+- 1 clone a version of odoo in your local machine
+    - `git clone git@github.com:frouty/odoo.git --branch 8.0 odoo80`
 
 so I get an odoo80 dir with the branch 8.0 of odoo
 
 #How to update from main odoo repository
-specify a new remote upstream repository that will be synced with the fork by adding the main odoo repository as a remote and name it upstream.
+Add a path to the original forked repository  and name it upstream.  
 To get the url of your main repository go to you fork repository on github web, look for "forked from odoo/odoo" click on the link.On the new page: "clone or download" copy/paste that url.
-
-`git remote add upstream   git@github.com:odoo/odoo.git` 
+- 1 cd path/to/odoo8
+- 2 `git remote add upstream   git@github.com:odoo/odoo.git` 
 
 Check
 
@@ -18,11 +51,18 @@ you should see your origin and upstream remotes
 
 Now sync your fork:
 * fetch the branches from the upstream repository.
+    - `git fetch upstream  <branch name> ie odoo8.0`
+    * prend un temps fou.
+    * pas sur que l'on peut fether juste une branch    
 * checkout to the branch your interested
+    - `git checkout -b branch.locale.qui.nous.interess upstream/branch_name`
+     
+
 * merge the changes from upstream/[branch you're interested]
 * now update the fork on github
+
 ```
-git fetch upstream
+git fetch upstream 
 git checkout [branch you're interested]
 git merge upstream/[branch you're interested]
 git push origin
