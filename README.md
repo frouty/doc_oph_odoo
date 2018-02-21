@@ -79,6 +79,11 @@ git push origin
 python odoo.py --xmlrpc-port=8070
 jamais testé/
 
+
+# 
+
+
+
 # Debugging 
  `import pdb;pdb.set_trace()`
  
