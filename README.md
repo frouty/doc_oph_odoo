@@ -37,7 +37,7 @@ En plus on a une arborescence de dev
 
 so I get an odoo80 dir with the branch 8.0 of odoo
 
-#How to update from main odoo repository
+#How to update the local odoo filesystem  from main odoo repository
 Add a path to the original forked repository  and name it upstream.  
 To get the url of your main repository go to you fork repository on github web, look for "forked from odoo/odoo" click on the link.On the new page: "clone or download" copy/paste that url.
 - 1 cd path/to/odoo8
@@ -75,14 +75,38 @@ git push origin
 * Arguments : --addons-path addons
 * Apply
 
+
 # Comment lancer plusieurs instances d'odoo
 python odoo.py --xmlrpc-port=8070
 jamais testé/
 
 
-# 
+# Apres la mise à jour vers debian 9 
+j'ai un probleme de dependance.  
+report_aeroo a besoin de python-uno 2.7 qui n'est plus supporte
 
+https://www.odoo.com/forum/help-1/question/still-not-able-to-get-module-uno-python-2-7-69405
 
+## j'essaie 
+sudo apt-get install libreoffice python-genshi python-cairo python-lxml python-setuptools
+sudo apt-get install libreoffice-script-provider-python
+easy_install uno
+me dit que 
+% easy_install uno
+Searching for uno
+Best match: uno 0.3.3
+Processing uno-0.3.3-py2.7.egg
+uno 0.3.3 is already the active version in easy-install.pth
+
+Using /usr/local/lib/python2.7/dist-packages/uno-0.3.3-py2.7.egg
+Processing dependencies for uno
+Finished processing dependencies for uno
+
+et effectivement cela ne regle pas le problem. 
+
+Je pense qu'il faut downgrader libreoffice.
+
+## j'abandonne l'idée de faire marcher la V7 sur debian 9.
 
 # Debugging 
  `import pdb;pdb.set_trace()`
@@ -262,14 +286,14 @@ La syntaxe c'est:
 `super(NomChildClass, self).nomdelafonctionparent(args)`
 
 
-###��model_obj.read(cr,uid,ids(liste des records à lire), [liste des champs à lire],context=context)
+### model_obj.read(cr,uid,ids(liste des records à lire), [liste des champs à lire],context=context)
 
 return une liste de dictionnaire de la forme:
 
 [{'start_datetime': False, 'start_date': '2016-05-30', 'id': 1}, {'start_datetime': '2016-05-29 21:00:00', 'start_date': False, 'id': 13}]
 
 
-###��model_obj.browse(cr,uid,[liste des id des records]ids,context=context)
+### model_obj.browse(cr,uid,[liste des id des records]ids,context=context)
 
 return in iterable 
 for record in browse_obj:
