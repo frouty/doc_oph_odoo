@@ -1320,8 +1320,6 @@ Ne pas confondre relativedelta avec timedelta qui lui est obtenu avec datetime1 
 Comme passer d'un objet relativedelta à une string hh--mm--ss? TODO \\
 
 
-
-
 \subsection{Comment mettre la date en valeur par défaut?}
 \label{sec:datedefault}
 
@@ -1349,11 +1347,6 @@ et
 "date": lambda *a: datetime.now().strftime(’%Y-%m-%d %T’)
 datetime.now().strftime("%w") affiche un numero :ex 3 pour mercredi.
 \end{verbatim}
-
-
-
-
-
 
 \section{Fabrique de l'agenda}
 \label{sec:agendafactory}
@@ -1551,9 +1544,63 @@ return {’value’: {
 time data ’2012-10-11 19 :31 :22’ does not match format
 
 
+\subsection{impression de la bonne date du jour sur les ordonnance par example}
+le contexte: la date n'est pas la bonne sur les ordonnances de lunettes le matin
+et devient correcte l'apres midi.
+On a dans les odt:
+\begin{itemize}
+\item <date_report and formatLang(date_report,date=True) or ''> qui ne va pas
+\item <o.date> qui ne va pas 
+\item <formatLang(o.datewotime,date=True)> qui ne va pas 
+\item <o.date and formatLang(o.date,date=True) or ''> qui ne va pas.
+\end{itemize}
 
+date_report est défini dans parser.py. mais je ne comprends pas j'ai
+l'impression que l'on ne passe jamais dans la méthode 
 
+Je vois que le champ date dans la vue crm.meeting est toujours bon aussi bien
+pour la date que pour l'heure. 
+Mais par contre <o.date> dans un odt ne marche pas. Et je ne vois que c'est une
+erreur de tz.
 
+Je vois que l'odt pour le memo de rdv  à la méthode only_time() qui marche.
+
+\subsection{arrow}
+import arrow
+arrow.now().format('MM:DD/YYYY HH:mm') donne la date en local.
+
+Si je veux savoir qu'elle est  la date en UTC par example: 
+import pytz
+arrow.now().to(pytz.UTC)
+
+Si je fais arrow.now().replace(pytz.UTC) je ne change pas la date mais seulement
+le TZ. Je ne vois pas quand cela peu servir.
+
+\subsection{methode meeting_date}
+def get_meeting_date(self, context=None):
+        if context is None:
+            context = {}
+        context = self.context
+        temp = self.pool.get(context.get('active_model')).browse(self.cr, self.uid, context.get('active_ids'))
+        for rec in temp:
+            context['meeting_date'] = rec.date
+            
+ avec cela on a : rec.date qui donne une date mais ce n'est pas la bonne et je
+ ne connais pas son tz elle est unaware.
+ par exemple pour un rdv le 02.03.2018 a 8h cela donne rec.date='2018-03-01
+ 21:00:00'
+ 
+ et
+  arw = arrow.get(rec.date, 'YYYY-MM-DD HH:mm:ss')
+  arw.to('local') donne le arrow à la bonne heure locale.
+ mais ce n'est plus vrai sur le serveur car le serveur sont local est à UTC: 
+ import time 
+ time.tzname --> UTC
+ contrairement dans un python shell qui donne +11
+ donc 
+ arw.to('Pacific/Noume') c'est bon mais je n'ai pas trouvé comme on fait pour
+ trouver 'Pacific/Noumea'  et donc le changer dynamiquement.
+ 
 \section{Comment faire pour ne pas avoir à passer par une view form quand on veut créer/modifier un nouvel enregistrement?}
 \label{sec:editable}
 
