@@ -762,6 +762,28 @@ class B_child(osv.osv):
                                                         '$B Field Name')
 \end{verbatim}
 
+
+\section{functional fields}
+'field_name':fields.functional(_function_name, arg=None, fnct_inv=None,
+fnct_inv_arg=None, type='a field type', fcn_search=None, obj=None,
+method=False, store=False, multi=False)
+\begin{itemize}
+  \item fnct is the function or method that will compute the field value. It
+  must have been declared before declaring the functional field.
+  \item type is the field type name returned by the function. It can be any
+  field type name except function.
+  \item method = True si method dans l'objet et False si method globale.
+\end{itemize}
+def _function_name(self, cr, uid, ids, field_name, args, contex=None):
+Je vois que quand je suis dans la fonction : _function_name
+on a:
+ field_name=local_day
+args=None
+ids = [4965L] je ne vois pas ce que c'est 
+context ={'lang': 'fr_FR', 'tz': 'Pacific/Noumea', 'uid': 3, 'active_model':
+'crm.meeting', 'calendar_default_user_id': 3, 'default_meeting_id': 16848, 'search_disable_custom_filters': True, 'search_default_meeting_id': 16848, 'active_ids': [16848], 'active_id': 16848}
+et les active_id , active_ids cela doit etre l'id du report. 
+
 \section{Nom des champs}
 \label{sec:nomchamp}
 
@@ -925,6 +947,43 @@ On peut avoir a surcharger cette méthode qui donne l'affichage du record
 Méthode qui indique  comment est fait la recherche d'un record.
 
 
+\section{context}
+\begin{itemize}
+  \item 'lang' -> 'fr_FR'
+  \item 'tz' -> 'Pacific/Noumea'
+  \item 'uid' -> 3
+  \item 'active_model -> 'oph.reporting'
+  \item 'active_id' -> 295
+  \item 'active_ids' -> [295]
+  \item others 
+\end{itemize}
+
+\section{Comment obtenir un cursor sur une table}
+mypool = self.pool.get('le nom de la table == nom du model')
+ou
+mypool = self.pool.get(context.get('active_model'))
+\section{Comment obtenir des enregistrement de notre model}
+mybrowse=mypool.browse(self,cr,self.uid,context.get('active_ids'))
+si context.get('active_ids') est une liste avec un seul élement un seul numéro
+d'enregistrement on obtient:
+[browse_record(oph.reporting, 295)]
+si context.get('active_ids') est une liste a plusieurs enregistrement on obtient
+myids=[295.296]
+mybrowses=mypool.browse(self.cr,self.uid,myids)
+mybrowses
+[browse_record(oph.reporting, 295), browse_record(oph.reporting, 296)]
+
+\section{Comment le type d'un field deja existant}
+Ce n'est pas vraiment possible. C'est un probleme pgsql.
+Il n'est généralement pas possible de changer le type d'une colonne dans
+postgresql meme si la colonne est vide. Sauf dans quelques cas.
+\begin{itemize}
+  \item integer to char
+  \item donc field.Date, field.integer. field.many2one etc to a field.Char c'est
+  OK. Et on peut donner le même nom. 
+  \item field.char to field.Date pas possible, 
+\end{itemize}
+Si c'est pas possible il faut nommer le nouveau champ avec un autre nom.
 \section{Syntaxe du xml pour les forms view}
 \label{sec:form_view}
 
@@ -2691,11 +2750,6 @@ setting-Technical-Parameters-System Parameters
 key :‘webkit\_path’
 path : /usr/share/openerp/wkhtmltopdf On met l'executable path
 
-
-
-\end{document}
-
-
 \end{document}
 \subsection{Création d'un rapport webkit}
 \label{sec:webkit_report_create}
@@ -3390,6 +3444,7 @@ by Wyden Silvan — last modified 11.06.2010 12:46
             #'context': "{'default_partner_id': %s, 'default_pricelist_id':%s}" % (meeting.partner_id.id, meeting.partner_id.property_product_pricelist.id),
             'type': 'ir.actions.act_window',
             'target': 'current',
+            }
 
 \section{Changement de réseau}
 Si on change de réseau avec changement d'adresse IP il faut:
