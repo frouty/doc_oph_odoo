@@ -16,3 +16,6 @@ https://webkul.com/blog/beginner-guide-odoo-clicommand-line-interface/
 # un exemple de script d'installation de odoo.
 
 https://raw.githubusercontent.com/lukebranch/odoo-install-scripts/master/odoo-saas4/ubuntu-14-04/odoo_install.sh
+
+# Comment ajouter un field dans un modele déjà existant.
+J'ai eu des problemes pour le faire j'ai reussi en ouvrant web odoo sur une branch qui marche. Puis git checkout nouvellebranche avec nouveau field, service odoo-server restart puis update module dans le odoo web.

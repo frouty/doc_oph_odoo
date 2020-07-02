@@ -177,7 +177,7 @@ partner_ids Attendees many2many
 rrule : recurrent rule  
 
 # le logging
-Je vais essayer à la place de mettre des prints
+Je vais essayer le logging au lieu de mettre des prints
 
 ```python
 import logging
@@ -436,3 +436,17 @@ Note that 2 is required if you change any of the py files.  If you don't change 
 Note on 4: if you don't change any data files (XML or CSV) included in the module and you don't change any model structure (no fields or defaults or sql_constraint or constraint [etc....] added/removed/modified) and only change method implementation, you may get away without doing 4.
 
 Additional Note: if you define a data record in the old version of the module and you don't require it anymore int he new version of the module, add a <delete model="model_id" id="xml_id_of_record_to_delete"/> into the XML file to properly remove the data.
+
+# libreoffice - fields. 
+Sous libreoffice 6.1.5.2 la mise en place des fields dans les templates semble etre différente.
+## j'essaie
+l'icone avec des lignes et un carré bleu en bas à droite / More fields / 
+On retrouve plusieurs tab : document / Cross references / Functions / DocInformations / Variables / Database.
+
+Functions / Input field / Refence le code qui va bien  / Insert / 
+
+# les attachments 
+/opt/odoo/odoo7-server/openerp/filestore pointe vers /var/odooattachment
+on y trouve un repertoire par base de donnée. 
+Qd on crée une nouvelle base de donnée le repertoires des attachments n'est pas créer.
+Il faut utiliser l'arborescence de la base de donnée source et en faire une copie avec le meme nom que la nouvelle base de données. 

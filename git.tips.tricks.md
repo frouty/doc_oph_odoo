@@ -6,6 +6,10 @@ Va te proposer d'ouvrir meld pour chaque fichier à comparer. Faire quit meld po
 # Gestion des branches
 ## Connaitre le dernier commit de toutes les branches
 `git branch -v`
-## Voir les branches déjà mergées
+## Voir les branches déjà mergées
 `git branch --merged`  
 Et on peut les supprimer avec: `git branch -d nomdelabranche`  
+
+# Comment récuperer une nouvelle branch remote inconnue localement.
+git fetch --all
+git checkout 

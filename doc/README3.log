@@ -1,0 +1,2788 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.4)  6 NOV 2019 23:53
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**README3.tex
+(./README3.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/11/13 3.27 The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+
+! Package babel Error: Unknown option `frenchb'. Either you misspelled it
+(babel)                or the language definition file frenchb.ldf was not foun
+d.
+
+See the babel package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.469 \ProcessOptions*
+                      
+Valid options are: shorthands=, KeepShorthandsActive,
+activeacute, activegrave, noconfigs, safe=, main=, math=
+headfoot=, strings=, config=, hyphenmap=, or a language name.
+
+Package babel Info: You haven't specified a language. I'll use 'nil'
+(babel)             as the main language. Reported on input line 499.
+(/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
+Language: nil 2018/11/13 3.27 Nil language
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count89
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen104
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks17
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks18
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2019/01/15
+
+Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+\FV@CodeLineNo=\count102
+\FV@InFile=\read1
+\FV@TabBox=\box29
+\c@FancyVerbLine=\count103
+\FV@StepNumber=\count104
+\FV@OutFile=\write3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count105
+\Gm@cntv=\count106
+\c@Gm@tempcnt=\count107
+\Gm@bindingoffset=\dimen113
+\Gm@wd@mp=\dimen114
+\Gm@odd@mp=\dimen115
+\Gm@even@mp=\dimen116
+\Gm@layoutwidth=\dimen117
+\Gm@layoutheight=\dimen118
+\Gm@layouthoffset=\dimen119
+\Gm@layoutvoffset=\dimen120
+\Gm@dimlist=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count108
+)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count109
+\output=\toks23
+\linenoprevgraf=\count110
+\linenumbersep=\dimen121
+\linenumberwidth=\dimen122
+\c@linenumber=\count111
+\c@pagewiselinenumber=\count112
+\c@LN@truepage=\count113
+\c@internallinenumber=\count114
+\c@internallinenumbers=\count115
+\quotelinenumbersep=\dimen123
+\bframerule=\dimen124
+\bframesep=\dimen125
+\bframebox=\box30
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count116
+\c@FV@TrueTabCounter=\count117
+\FV@TabBox@Group=\box31
+\FV@TmpLength=\skip46
+\c@FV@HighlightLinesStart=\count118
+\c@FV@HighlightLinesStop=\count119
+\FV@LoopCount=\count120
+\FV@NCharsBox=\box32
+\FV@BreakIndent=\dimen126
+\FV@BreakIndentNChars=\count121
+\FV@BreakSymbolSepLeft=\dimen127
+\FV@BreakSymbolSepLeftNChars=\count122
+\FV@BreakSymbolSepRight=\dimen128
+\FV@BreakSymbolSepRightNChars=\count123
+\FV@BreakSymbolIndentLeft=\dimen129
+\FV@BreakSymbolIndentLeftNChars=\count124
+\FV@BreakSymbolIndentRight=\dimen130
+\FV@BreakSymbolIndentRightNChars=\count125
+\c@FancyVerbLineBreakLast=\count126
+\FV@LineBox=\box33
+\FV@LineIndentBox=\box34
+\FV@LineWidth=\dimen131
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count127
+\calc@Bcount=\count128
+\calc@Adimen=\dimen132
+\calc@Bdimen=\dimen133
+\calc@Askip=\skip47
+\calc@Bskip=\skip48
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count129
+\calc@Cskip=\skip49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+)
+
+Package ifplatform Warning: 
+    shell escape is disabled, so I can only detect \ifwindows.
+
+) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count130
+\decimalpart=\count131
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip50
+\fb@frw=\dimen134
+\fb@frh=\dimen135
+\FrameRule=\dimen136
+\FrameSep=\dimen137
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count132
+\float@exts=\toks24
+\float@box=\box35
+\@float@everytoks=\toks25
+\@floatcapt=\box36
+)
+\minted@appexistsfile=\read2
+\minted@bgbox=\box37
+\minted@code=\write4
+\c@minted@FancyVerbLineTemp=\count133
+\c@minted@pygmentizecounter=\count134
+\@float@every@listing=\toks26
+\c@listing=\count135
+)
+runsystem(mkdir -p _minted-README3)...disabled (restricted).
+
+
+
+! Package minted Error: You must invoke LaTeX with the -shell-escape flag.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \usepackage
+                {fancyhdr}
+Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for
+ more information.
+
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip51
+\f@nch@O@elh=\skip52
+\f@nch@O@erh=\skip53
+\f@nch@O@olh=\skip54
+\f@nch@O@orh=\skip55
+\f@nch@O@elf=\skip56
+\f@nch@O@erf=\skip57
+\f@nch@O@olf=\skip58
+\f@nch@O@orf=\skip59
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen138
+\Gin@req@width=\dimen139
+)
+runsystem(which pygmentize && touch README3.aex)...disabled (restricted).
+
+
+
+! Package minted Error: You must have `pygmentize' installed to use this packag
+e.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 \begin{document}
+                     
+Refer to the installation instructions in the minted documentation for more inf
+ormation.
+
+(./README3.aux
+
+LaTeX Warning: Label `sec:role' multiply defined.
+
+
+LaTeX Warning: Label `sec:time' multiply defined.
+
+
+LaTeX Warning: Label `sec:unlink_by_state' multiply defined.
+
+)
+\openout1 = `README3.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 38.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 38.
+
+(/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count136
+\scratchdimen=\dimen140
+\scratchbox=\box38
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen141
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks28
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape 
+* h-part:(L,W,R)=(126.75832pt, 591.5302pt, 126.75833pt)
+* v-part:(T,H,B)=(71.70166pt, 418.25368pt, 107.55254pt)
+* \paperwidth=845.04684pt
+* \paperheight=597.50787pt
+* \textwidth=591.5302pt
+* \textheight=418.25368pt
+* \oddsidemargin=54.48833pt
+* \evensidemargin=54.48833pt
+* \topmargin=-37.56833pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 38.
+(./README3.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 5.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 5.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 5.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 5.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 14.49998pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] [2] [3] [4] [5]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.128 ...umberline {37.5}methode meeting_date}{50}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@dottedtocline ...\nobreak \hskip -\leftskip {#4}
+                                                  \nobreak \leaders \hbox {$...
+l.128 ...umberline {37.5}methode meeting_date}{50}
+                                                  %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.128 ...umberline {37.5}methode meeting_date}{50}
+                                                  %
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[6] [7] [8])
+\tf@toc=\write5
+\openout5 = `README3.toc'.
+
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.39 \tableofcontents
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[9] [10]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 105.
+
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 122
+.
+
+(/usr/share/texmf/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [11]
+Overfull \hbox (22.56248pt too wide) in paragraph at lines 162--163
+[]\T1/lmr/m/n/12 Attention à []<Location /svn>[] qui fait que l'on accede au re
+pository avec http://zotac/svn et pas http://zotac/var/svn-
+ []
+
+[12]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 200.
+
+ (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [13]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -S default -f latex -P commandprefix=PYG > _minted-README3
+/default-pyg-prefix.pygstyle)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 \end{minted}^^M
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+runsystem(pygmentize -S default -f latex -P commandprefix=PYGdefault > _minted-
+README3/default.pygstyle)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 \end{minted}^^M
+                     
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/C6F66D5685DDED92E6ABE5ACF60CF93036F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/B5C26AC42F43A3E76431E8DE4F16811436F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.252 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -o _mi
+nted-README3/B40EFD35C3F50B50C8131329BC27A3BE85007296BB297B34E1EB37D1476E726C.p
+ygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.279 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l bash -f latex -P commandprefix=PYG -F tokenmerge -o _mi
+nted-README3/BEE8EAE84FA36D7C497314F6AF0A96AF85007296BB297B34E1EB37D1476E726C.p
+ygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.295 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[14] [15] [16] [17]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/1A50DEEE2EA5CFE944848380C056E04B36F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.476 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[18] [19]
+Overfull \hbox (121.24323pt too wide) in paragraph at lines 518--519
+[]\T1/lmr/m/n/12 Permet de surcharger d'autres paramêtres pour des états spécif
+iques. Accepte un dictionnaire. e.g. \T1/lmr/m/it/12 states=`posted':[(`readonl
+y',True)] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (14.49998pt): 
+Make it at least 15.35403pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
+
+ []
+
+[21] [22] [23]
+Overfull \hbox (63.02013pt too wide) in paragraph at lines 678--678
+[]                \TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 $B_ids\TS1/lmtt/m/n/12 ' \T
+1/lmtt/m/n/12 = fields.one2many(\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 $B._name, \TS
+1/lmtt/m/n/12 '\T1/lmtt/m/n/12 $B_id\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 ==\TS1/lm
+tt/m/n/12 '\T1/lmtt/m/n/12 $B.name.fields.many2one, \TS1/lmtt/m/n/12 '\T1/lmtt/
+m/n/12 $B.name.label\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 ),[] 
+ []
+
+
+Overfull \hbox (87.72014pt too wide) in paragraph at lines 678--678
+[]      \TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 $B.name.fields.many2one\TS1/lmtt/m/n/
+12 '\T1/lmtt/m/n/12 ) == \TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 $B_id\TS1/lmtt/m/n/1
+2 ' \T1/lmtt/m/n/12 = fields.many2one(\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 $A._nam
+e\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 , \TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 $A.field
+.name.label\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 , select=True),[] 
+ []
+
+[24]
+Overfull \hbox (7.4451pt too wide) in paragraph at lines 700--700
+[]\T1/lmtt/m/n/12 <menuitem name="Person" parent="dev_menu" id="dev_menu_person
+" action="action_dev_person_form" />[] 
+ []
+
+
+Overfull \hbox (44.49512pt too wide) in paragraph at lines 700--700
+[]\T1/lmtt/m/n/12 <menuitem name="Property" parent="dev_menu" id="dev_menu_prop
+erty" action="action_dev_property_form" />[] 
+ []
+
+[25]
+Overfull \hbox (38.32011pt too wide) in paragraph at lines 760--760
+[]                                                        \TS1/lmtt/m/n/12 '\T1
+/lmtt/m/n/12 $Aname_$Bname_rel\TS1/lmtt/m/n/12 ' \T1/lmtt/m/n/12 (c\TS1/lmtt/m/
+n/12 '\T1/lmtt/m/n/12 est le relation object)[] 
+ []
+
+[26]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.764 'field_
+             name':fields.functional(_function_name, arg=None, fnct_inv=None,
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.767 \begin{itemize}
+                     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.767 \begin{itemize}
+                     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (79.22969pt too wide) in paragraph at lines 764--767
+\T1/lmr/m/n/12 'field$[]\OML/lmm/m/it/12 ame[] \OT1/lmr/m/n/12 : \OML/lmm/m/it/
+12 fields:functional\OT1/lmr/m/n/12 ([]\OML/lmm/m/it/12 unction[]ame; arg \OT1/
+lmr/m/n/12 = \OML/lmm/m/it/12 None; fnct[]nv \OT1/lmr/m/n/12 = \OML/lmm/m/it/12
+ None; fnct[]nv[]rg \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 None; type \OT1/lmr/m/n/
+12 =[] \OML/lmm/m/it/12 afieldtype[]; fcn[]earch \OT1/lmr/m/n/12 =
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.768   \item f
+               nct is the function or method that will compute the field val...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 768
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.770   \item t
+               ype is the field type name returned by the function. It can b...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 770
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.772   \item m
+               ethod = True si method dans l'objet et False si method globale.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 772
+[][]
+ []
+
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.773 \end{itemize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.773 \end{itemize}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.774 def _
+           function_name(self, cr, uid, ids, field_name, args, contex=None):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.783 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.783 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (6.46771pt too wide) in paragraph at lines 774--783
+\T1/lmr/m/n/12 def $[]\OML/lmm/m/it/12 unction[]ame\OT1/lmr/m/n/12 (\OML/lmm/m/
+it/12 self; cr; uid; ids; field[]ame; args; contex \OT1/lmr/m/n/12 = \OML/lmm/m
+/it/12 None\OT1/lmr/m/n/12 ) : \OML/lmm/m/it/12 Jevoisquequandjesuisdanslafonct
+ion \OT1/lmr/m/n/12 :[]
+ []
+
+
+Overfull \hbox (1422.67657pt too wide) in paragraph at lines 774--783
+\OML/lmm/m/it/12 unction[]ameona \OT1/lmr/m/n/12 : \OML/lmm/m/it/12 field[]ame 
+\OT1/lmr/m/n/12 = \OML/lmm/m/it/12 local[]ayargs \OT1/lmr/m/n/12 = \OML/lmm/m/i
+t/12 Noneids \OT1/lmr/m/n/12 = [4965\OML/lmm/m/it/12 L\OT1/lmr/m/n/12 ]\OML/lmm
+/m/it/12 jenevoispascequec[]estcontext \OT1/lmr/m/n/12 = []\OML/lmm/m/it/12 etl
+esactive[]d; active[]dsceladoitetrel[]iddureport:[]$ 
+ []
+
+! Too many }'s.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.783 
+      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+Overfull \hbox (152.89561pt too wide) in paragraph at lines 792--808
+[] 
+ []
+
+[27]
+Overfull \hbox (95.7922pt too wide) in paragraph at lines 814--815
+\T1/lmr/m/n/12 Il semble qu'il y ait des convention de nommage sur les noms de 
+fichiers dans la définition de wizard : <NomModule>_<NomFichier>.py
+ []
+
+[28] [29] [30] [31]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/D7E1DCC9849FDAB23EC45E55F0E833D636F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.934 \end{minted}
+                  
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[32]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.949   \item 'lang' -> 'fr_
+                            FR'
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.950   \item
+              'tz' -> 'Pacific/Noumea'
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.950   \item '
+               tz' -> 'Pacific/Noumea'
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.950   \item '
+               tz' -> 'Pacific/Noumea'
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Double superscript.
+<recently read> ^
+                 
+l.950   \item '
+               tz' -> 'Pacific/Noumea'
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.951   \item
+              'uid' -> 3
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.951   \item '
+               uid' -> 3
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.951   \item '
+               uid' -> 3
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.951   \item '
+               uid' -> 3
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.952   \item 'active_
+                      model -> 'oph.reporting'
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.953   \item
+              'active_id' -> 295
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.953   \item '
+               active_id' -> 295
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.953   \item '
+               active_id' -> 295
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Double superscript.
+<recently read> ^
+                 
+l.953   \item '
+               active_id' -> 295
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.954   \item
+              'active_ids' -> [295]
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.954   \item '
+               active_ids' -> [295]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.954   \item '
+               active_ids' -> [295]
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.954   \item '
+               active_ids' -> [295]
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.954   \item 'active_
+                      ids' -> [295]
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.955   \item
+              others
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.955   \item o
+               thers
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.955   \item o
+               thers
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.956 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.956 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.956 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.956 \end{itemize}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.961 mypool = self.pool.get(context.get('active_
+                                                 model'))
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.962 \section
+              {Comment obtenir des enregistrement de notre model}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.962 \section
+              {Comment obtenir des enregistrement de notre model}
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Too many }'s.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.962 \section
+              {Comment obtenir des enregistrement de notre model}
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.963 ...wse(self,cr,self.uid,context.get('active_
+                                                  ids'))
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 964.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 964.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.972 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.972 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (248.34807pt too wide) in paragraph at lines 963--972
+\T1/lmr/m/n/12 mybrowse=mypool.browse(self,cr,self.uid,context.get('active$[]\O
+ML/lmm/m/it/12 ds[]\OT1/lmr/m/n/12 ))\OML/lmm/m/it/12 sicontext:get\OT1/lmr/m/n
+/12 ([]\OML/lmm/m/it/12 active[]ds[]\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 estunelis
+teavecunseul\OT1/lmr/m/n/12 é\OML/lmm/m/it/12 lementunseulnum\OT1/lmr/m/n/12 é\
+OML/lmm/m/it/12 rod[]enregistrementonobtient \OT1/lmr/m/n/12 :
+ []
+
+
+Overfull \hbox (1.2919pt too wide) in paragraph at lines 963--972
+\OT1/lmr/m/n/12 [\OML/lmm/m/it/12 browse[]ecord\OT1/lmr/m/n/12 (\OML/lmm/m/it/1
+2 oph:reporting; \OT1/lmr/m/n/12 295)]\OML/lmm/m/it/12 sicontext:get\OT1/lmr/m/
+n/12 ([]\OML/lmm/m/it/12 active[]ds[]\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 estuneli
+steaplusieursenregistrementonobtientmyids \OT1/lmr/m/n/12 =
+ []
+
+
+Overfull \hbox (144.34303pt too wide) in paragraph at lines 963--972
+\OT1/lmr/m/n/12 [295\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 296]\OML/lmm/m/it/12 mybr
+owses \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 mypool:browse\OT1/lmr/m/n/12 (\OML/lmm
+/m/it/12 self:cr; self:uid; myids\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 mybrowses\OT
+1/lmr/m/n/12 [\OML/lmm/m/it/12 browse[]ecord\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 o
+ph:reporting; \OT1/lmr/m/n/12 295)\OML/lmm/m/it/12 ; browse[]ecord\OT1/lmr/m/n/
+12 (\OML/lmm/m/it/12 oph:reporting; \OT1/lmr/m/n/12 296)][]$ 
+ []
+
+! Too many }'s.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.972 
+      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[33]
+Overfull \hbox (1.48082pt too wide) in paragraph at lines 998--1003
+\T1/lmr/m/n/12 and Name'' attrs='''invisible':['value','=','balance']''/> Quand
+ est ce qu'on utilise label for A quoi cela sert exactement
+ []
+
+[34]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/7AC5E6C9BEB289F2FC4DE843EA1F5275518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1057 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[35]
+Overfull \hbox (24.46979pt too wide) in paragraph at lines 1076--1076
+ []        \TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 consultation_ids\TS1/lmtt/m/n/12 '
+ \T1/lmtt/m/n/12 : fields.one2many(\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 oph.consul
+tation\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 , \TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 par
+tner_id\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 , \TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 Co
+nsulations\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 ),[] 
+ []
+
+[36]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1085.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1100
+
+ []
+
+[37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 1179--1183
+
+ []
+
+[39]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/07CE033B90D46EE84498CFCA78CCF88D36F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1204 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/53E51AB87DA740F79701C46EF0FF51C836F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1216 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/8D285E8296AF0A6E33DA16499E88BB0536F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1223 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/FDC6770BBDE3A89F6381B46D1B9B15AA36F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1232 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/3D758119AAEBE172A26676D7E2072F6136F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1249 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[40]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/EF8BD6757427613065B404292C29969436F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1265 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 1298--1299
+
+ []
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/C0ECFA44BA6CEFAAF18C3471889356ED36F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1317 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/A76518C39837FA64E19AC13501C94F9D36F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1334 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[42]
+Overfull \hbox (12.11278pt too wide) in paragraph at lines 1355--1355
+ []\T1/lmtt/m/n/12 relativedelta(years=+47, days=+25, hours=+21, minutes=+29, s
+econds=+33, microseconds=+140004)[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1365--1366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1374--1375
+
+ []
+
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1377
+
+ []
+
+[44] [45]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/479F7609DF38B06046B3253AE2F5526436F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1508 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[46]
+Overfull \hbox (117.08783pt too wide) in paragraph at lines 1531--1531
+ []\T1/lmtt/m/n/12 wd=dict(zip(('0','1','2','3','4','5','6'),('dimanche','lundi
+','mardi','mercredi','jeudi','vendredi','samedi'))[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (15.35403pt): 
+Make it at least 27.11652pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[47] [48]
+Overfull \hbox (117.09483pt too wide) in paragraph at lines 1593--1593
+ []\T1/lmtt/m/n/12 fullname = (x_lastname.upper() if x_lastname else '') + (", 
+" + x_firstname.capitalize()if x_firstname else "")[] 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1608 \item <date_
+                   report and formatLang(date_report,date=True) or ''> qui n...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1609 \item
+             <o.date> qui ne va pas
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1609 \item <
+              o.date> qui ne va pas
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1609 \item <
+              o.date> qui ne va pas
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1610 \item
+             <formatLang(o.datewotime,date=True)> qui ne va pas
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1610 \item <
+              formatLang(o.datewotime,date=True)> qui ne va pas
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1610 \item <
+              formatLang(o.datewotime,date=True)> qui ne va pas
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1610 \item <
+              formatLang(o.datewotime,date=True)> qui ne va pas
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1614 date_
+            report est dÃ©fini dans parser.py. mais je ne comprends pas j'ai
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 1614.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 1615.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1616 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1616 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Too many }'s.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1616 
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1622 ...our le memo de rdv  Ã  la mÃ©thode only_
+                                                  time() qui marche.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1623 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1623 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Too many }'s.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1623 
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[49]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1635 \subsection{methode meeting_date}
+                                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 1635.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 1635.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 1635.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1635 \subsection{methode meeting_date}
+                                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1636 def get_
+               meeting_date(self, context=None):
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1643 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1643 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (477.69164pt too wide) in paragraph at lines 1636--1643
+\T1/lmr/m/n/12 def get$[]\OML/lmm/m/it/12 eeting[]ate\OT1/lmr/m/n/12 (\OML/lmm/
+m/it/12 self; context \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 None\OT1/lmr/m/n/12 ) 
+: \OML/lmm/m/it/12 ifcontextisNone \OT1/lmr/m/n/12 : \OML/lmm/m/it/12 context \
+OT1/lmr/m/n/12 = []\OML/lmm/m/it/12 context \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 
+self:contexttemp \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 self:pool:get\OT1/lmr/m/n/1
+2 (\OML/lmm/m/it/12 context:get\OT1/lmr/m/n/12 ([]\OML/lmm/m/it/12 active[]odel
+[]\OT1/lmr/m/n/12 ))\OML/lmm/m/it/12 :browse\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 s
+elf:cr; self:uid; context:get\OT1/lmr/m/n/12 ([]\OML/lmm/m/it/12 active[]ds[]\O
+T1/lmr/m/n/12 ))\OML/lmm/m/it/12 forrecintemp \OT1/lmr/m/n/12 :
+ []
+
+! Too many }'s.
+\@par ... \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.1643 
+       
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[50] [51]
+Overfull \hbox (117.09483pt too wide) in paragraph at lines 1703--1703
+ []\T1/lmtt/m/n/12 def onchange_dates(self, cr, uid, ids, start_date, duration=
+False, end_date=False, allday=False, context=None)[] 
+ []
+
+
+Overfull \hbox (31.73036pt too wide) in paragraph at lines 1711--1712
+[]\T1/lmr/m/n/12 <field name='date' string='Start Date' required='1' on_change=
+'onchange_dates(date,duration,False,allday)'
+ []
+
+
+Overfull \hbox (89.70631pt too wide) in paragraph at lines 1712--1713
+[]\T1/lmr/m/n/12 <field name='date_deadline' string='End Date' required='1' on_
+change="onchange_dates(date,False,date_deadline)'/> 
+ []
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/CA2A4928EB9BEB9E100A4783B416B9EA36F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1721 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/3B1C8309F02933538C71C6670DBF319E518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1730 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/F902CE7409D6F5306C382345BFC3D7EF518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1736 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/DCA96DE9786E5B3B4AF39678862B938536F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1745 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/73D473B544B6B36B19E71E1731AABA7B36F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1760 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/8329BF43F6ED49BCDA7B9466A99223AF36F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1774 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/3B9F3E691662E4FAF555F8201302031736F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1794 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/3D01BA297E4F457CBCA305E8501D8AD136F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1811 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[52]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/B435A73A882EEC8599BE6ACA8DB118C2518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1823 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[53] [54]
+Overfull \hbox (129.44484pt too wide) in paragraph at lines 1899--1899
+ []\T1/lmtt/m/n/12 In [23]: SQL = """INSERT INTO oph_iol_type (name, create_dat
+e,write_date) VALUES (%(name)s,%(date)s,%(date)s)"""[] 
+ []
+
+
+Overfull \hbox (5.94478pt too wide) in paragraph at lines 1899--1899
+ []\T1/lmtt/m/n/12 In [28]: cur.execute(SQL, {\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12
+ name\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 :\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 DO PR
+OOT IMPLANT\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 , \TS1/lmtt/m/n/12 '\T1/lmtt/m/n/1
+2 date\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 :datetime.datetime(2012,11,11)})[] 
+ []
+
+[55] [56] [57] [58]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/B64FAE8C90765CEFBC4B6085C4A79A1536F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2034 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/9916D37CF2723609F93B1CFDB6EDDD4636F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2060 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/2109B1919718797E4FC956754E2B56B736F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2065 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[59]
+Overfull \hbox (16.19756pt too wide) in paragraph at lines 2098--2099
+[]\T1/lmr/m/n/12 Il faut créer un dossier security avec dans ce dossier: un fic
+hier ir.model.access.csv et un <nom du module>_security.xml.
+ []
+
+[60]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/39E8A0EEB11E1E8E8BC727F188BE32EE518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2120 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Overfull \hbox (4.60088pt too wide) in paragraph at lines 2132--2133
+[]\T1/lmr/m/n/12 pas de probleme particulier. ir.rule est l'objet
+ []
+
+
+Overfull \hbox (5.66637pt too wide) in paragraph at lines 2135--2136
+[]\T1/lmr/m/n/12 </field>] je ne comprend
+ []
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/92DD051D2468DACBD46675126A72AD1D518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2146 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[61]
+Overfull \hbox (61.71927pt too wide) in paragraph at lines 2158--2159
+[]\T1/lmr/m/n/12 <nom du module eg:oph>.<id du group tel qu'il est définit dans
+ le fichier <nom_du_module>_security.xml 
+ []
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/FF2FF94719AC15C141A13F1D78ABF4EB518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2186 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[62] [63] [64] [65] [66]
+Overfull \hbox (78.53949pt too wide) in paragraph at lines 2335--2337
+[]\T1/lmr/m/n/12 Cela permet de stocker les documents dans le systeme de fichie
+r sous :  /oph_openerp/openobject-server/openerp/filestore/oph1311/ 
+ []
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/803571DDEF7F58DB6279E8A65EA3081B518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2350 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[67] [68] [69] [70]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/D7E1DCC9849FDAB23EC45E55F0E833D636F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2512 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/68B329DA9893E34099C7D8AD5CB9C94036F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2519 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[71]
+Overfull \hbox (123.26984pt too wide) in paragraph at lines 2532--2532
+ []\T1/lmtt/m/n/12 meeting = self.browse(cr, uid, ids[0], context = context)  #
+ comment if you don\TS1/lmtt/m/n/12 '\T1/lmtt/m/n/12 t want to open a quotation
+ view[] 
+ []
+
+
+Overfull \hbox (135.61984pt too wide) in paragraph at lines 2532--2532
+ []        \T1/lmtt/m/n/12 print "meeting.partner_id.property_product_pricelist
+: %s" % meeting.partner_id.property_product_pricelist[] 
+ []
+
+
+Overfull \hbox (172.66986pt too wide) in paragraph at lines 2532--2532
+ []        \T1/lmtt/m/n/12 print "meeting.partner_id.property_product_pricelist
+.id: %s" % meeting.partner_id.property_product_pricelist.id[] 
+ []
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/32DBFA4C7CC47B14962356987FA90E1036F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2571 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[72]
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -o _
+minted-README3/564B949320CDA3DB9180B4D2EBC70E3536F3DB5135454590E1929FF69539E745
+.pygtex README3.pyg)...disabled (restricted).
+
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2615 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+
+Overfull \hbox (63.88991pt too wide) in paragraph at lines 2621--2625
+[]\T1/lmr/m/n/12 <record id="list0" model="product.pricelist"> <field name="nam
+e">Public Pricelist</field> <field name="type">sale</field>
+ []
+
+
+Overfull \hbox (51.10014pt too wide) in paragraph at lines 2628--2632
+[]\T1/lmr/m/n/12 <record id="ver0" model="product.pricelist.version"> <field na
+me="pricelist_id" ref="list0"/> <field name="name">Default
+ []
+
+[73] [74]
+Overfull \hbox (67.69481pt too wide) in paragraph at lines 2705--2705
+ []\T1/lmtt/m/n/12 portal_bloc_agenda_line,portal_bloc_agenda_line,model_oph_bl
+oc_agenda_line,portal.group_portal,1,0,0,0[] 
+ []
+
+\openout3 = `README3.pyg'.
+
+runsystem(pygmentize -l xml -f latex -P commandprefix=PYG -F tokenmerge -o _min
+ted-README3/1D79D9B99D77C14D067505D9A04AEF54518AC9947064FE2757F2BF2F51BAAEB3.py
+gtex README3.pyg)...disabled (restricted).
+
+
+! Package minted Error: Missing Pygments output; \inputminted was
+probably given a file that does not exist--otherwise, you may need 
+the outputdir package option, or may be using an incompatible build tool,
+or may be using frozencache with a missing file.
+
+See the minted package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2723 \end{minted}
+                   
+This could be caused by using -output-directory or -aux-directory 
+without setting minted's outputdir, or by using a build tool that 
+changes paths in ways minted cannot detect, 
+or using frozencache with a missing file.
+
+[75]
+Overfull \hbox (34.27917pt too wide) in paragraph at lines 2749--2753
+[]\T1/lmr/m/n/12 dans le client setting-Technical-Parameters-System Parameters 
+key :`webkit_path' path : /usr/share/openerp/wkhtmltopdf
+ []
+
+
+AED: lastpage setting LastPage
+[76] (./README3.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+runsystem(rm README3.pyg)...disabled (restricted).
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7862 strings out of 494518
+ 132532 string characters out of 6176313
+ 247325 words of memory out of 5000000
+ 11284 multiletter control sequences out of 15000+600000
+ 56617 words of font info for 65 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 39i,12n,43p,843b,438s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
+c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
+-ts1.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.
+pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmro12.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/
+lm/lmtt12.pfb>
+Output written on README3.pdf (76 pages, 300504 bytes).
+PDF statistics:
+ 306 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

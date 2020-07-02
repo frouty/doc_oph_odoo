@@ -72,22 +72,6 @@ python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-uno
 \section{Eclipse}
 \label{sec:eclipse}
 
-\subsection{Comment créer un projet openerp}
-\label{sec:create_project}
-
-\subsection{Création d'un role pour openerp}
-\label{sec:role}
-
-Pour que openerp puisse communiquer avec la base de donnée il faut créer un role du nom de l'utilisateur qui lance openerp.
-
-\begin{verbatim}
-su
-su - postgres
-createuser --createdb --username postgres --no-createrole --no-superuser --pwprompt lfs
-Enter password for new role: ********
-Enter it again: ********
-\end{verbatim}
-
 \subsection{Création du projet dans eclipse}
 \label{sec:createproject}
 File - New- Project - Pydev +- PyDev Project - Next
@@ -97,6 +81,7 @@ Project browse et selection du projet (eg oph\_openerp)
 Clic here to configure an interpreter not listed
 
 Si message d'erreur demandant d'importer le projet. rm .project et .pydevproject
+
 \subsection{Run configuration}
 \label{sec:runconfig}
 Run - Run Configuration - Python Run
@@ -105,12 +90,16 @@ Main Module: \${workspace\_loc:oph\_openerp/server/openerp-server}
 Onglet argument
 --addons-path openobject-addons, openerp-web/addons,extra-addons/aeroo, extra-addons/oph
 
-
 \subsection{Lorsque qu'il manque pleins de choses dans le menu "Run"}
 \label{sec:run_without}
 
 En haut à droite l'icon en forme de fénètre avec une petite croix jaune et un crosillon dedans 'Open perspective' -> Other -> pydev
-\subsection{Installation de aeroolib}
+
+\subsection{Comment utiliser Latex dans eclipse}
+\label{sec:eclipse_latex}
+installer les packages de : http://texlipse.sourceforge.net/
+
+\section{Installation de aeroolib}
 \label{sec:aeroolibinstall}
 
 \begin{verbatim}
@@ -121,6 +110,7 @@ su
 python ./setup.py install
 \end{verbatim}
 
+\section{git}
 \subsection{A faire en fin de session}
 \label{sec:finsession}
 
@@ -131,15 +121,12 @@ git commit -m 'un message d'info'
 git push origin master
 \end{verbatim}
 
-
-
 \subsection{Comment faire un diff entre sa dernière révision et la dernière révision d'une autre branche?}
 \label{sec:difffrombranh2branche}
 
 \begin{verbatim}
 git diftool -t meld branch1 branch2
 \end{verbatim}
-
 
 \subsection{Comment connaitre ses branches}
 \label{sec:my_branches}
@@ -161,14 +148,12 @@ git branch -d nomdelabranch
 
 \subsection{Comment créer une nouvelle branche}
 \label{sec:create_branch}
-
+\begin{verbatim}
 git checkout nom-de-la-branch-si-elle-existe
 git checkout -b nom.de.la.branch.si.elle.existe.pas
+\end{verbatim}
 
 
-\subsection{Comment utiliser Latex dans eclipse}
-\label{sec:eclipse_latex}
-installer les packages de : http://texlipse.sourceforge.net/
 
 \section{Configuration du server}
 \label{sec:conf_server}
@@ -182,6 +167,18 @@ Attention à \textcolor{red}{<Location /svn>} qui fait que l'on accede au reposi
 
 \section{postgresql}
 \label{sec:postgres}
+
+\subsection{Création d'un role pour openerp}
+\label{sec:role}
+Pour que openerp puisse communiquer avec la base de donnée il faut créer un role du nom de l'utilisateur qui lance openerp.
+
+\begin{verbatim}
+su
+su - postgres
+createuser --createdb --username postgres --no-createrole --no-superuser --pwprompt lfs
+Enter password for new role: ********
+Enter it again: ********
+\end{verbatim}
 
 \subsection{comment connaitre les processus connecté à une base de donnée:}
 \label{sec:proc}
@@ -433,8 +430,8 @@ $pygmentize  -O full,style=emacs  -o test.html oph-consult.py
 \end{verbatim}
 Ça marche aussi très bien avec du xml.
 
-\section{Commentaire dans un XML}
-\label{sec:comment_xml}
+\section{XML}
+\label{sec:xml}
 
 \subsection{commentaire}
 \label{sec:comment}
@@ -455,7 +452,7 @@ $pygmentize  -O full,style=emacs  -o test.html oph-consult.py
 -->
 \end{verbatim}
 
-\section{Chercher une string dans les fichier d'un directory}
+\section{Chercher une string dans les fichiers d'un directory}
 \label{sec:search_string}
 
 \begin{verbatim}
@@ -2018,6 +2015,10 @@ Il faut aussi le prévoir dans le report aeroo: F11- double clic sur le style fi
 
 Pas encore testé pour les footers.
 
+\section{Comment mettre un champ dans un fichier ODT?}
+libreoffice version 6.1.5.2. 
+Insert / Field / More Fields / Functions / input field 
+Est ce que cela marche avec cette nouvelle version de libreoffice à vérifier
 
 \section{Comment créer une série de nombre flottant?}
 \label{sec:serie}

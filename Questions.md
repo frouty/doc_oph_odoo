@@ -66,3 +66,7 @@ On peut aussi rendre invisible un champ en fonction d'une valeur d'un autre cham
 
 # paiement des états par lot.
 - [ ]
+
+# Quand je crée un rendez vous je voudrais avoir un bouton ou une pop up pour pouvoir imprimer automatiquement le memo de rendez vous.
+- [ ]
+

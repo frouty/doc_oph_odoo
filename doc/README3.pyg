@@ -1,0 +1,11 @@
+<!-- PORTAL -->
+        <record model="ir.actions.act_window" id="action_agenda_portal_view">
+            <field name="name">Agenda Portal</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">oph.bloc.agenda</field>
+            <field name="view_mode">tree,calendar,form</field>
+            <field name="help">There are no public portal.</field>
+        </record>
+
+        <menuitem name="X Agenda Portal" id="portal_agenda_menu" parent="portal.portal_company"
+            action="action_agenda_portal_view" sequence="30"/>
