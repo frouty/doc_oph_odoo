@@ -37,7 +37,7 @@ En plus on a une arborescence de dev
 
 so I get an odoo80 dir with the branch 8.0 of odoo
 
-#How to update the local odoo filesystem  from main odoo repository
+# How to update the local odoo filesystem  from main odoo repository
 Add a path to the original forked repository  and name it upstream.  
 To get the url of your main repository go to you fork repository on github web, look for "forked from odoo/odoo" click on the link.On the new page: "clone or download" copy/paste that url.
 - 1 cd path/to/odoo8
@@ -449,4 +449,5 @@ Functions / Input field / Refence le code qui va bien  / Insert /
 /opt/odoo/odoo7-server/openerp/filestore pointe vers /var/odooattachment
 on y trouve un repertoire par base de donnée. 
 Qd on crée une nouvelle base de donnée le repertoires des attachments n'est pas créer.
-Il faut utiliser l'arborescence de la base de donnée source et en faire une copie avec le meme nom que la nouvelle base de données. 
+Il faut utiliser l'arborescence de la base de donnée source et en faire une copie avec le meme nom que la nouvelle base de données.
+C'est pas sur j'ai fait une nouvelle base de donnée en production et je retrouve les attachments meme les anciens. 
