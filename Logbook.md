@@ -22,3 +22,10 @@ voir à la porter en prod.
 # 25 02 2020 
 le pc de la maison est en debian 10. J'écris le code sur saphir à la maison. Mais je teste le code sur linuxbox au cabinet. 
 Il y a des erreurs " ascii " sur linuxbox. Mais je ne retrouve pas ces erreurs avec la machine de production openerp70/
+
+# 13/04/2021
+J'ai fait des améliorations. rien de majeur surtout des modifications d'odt. 
+Et l'odt EVASAN2 ne veut plus se générer sur la machine openerp70. Il fonctionne tres bien sur la machine linuxbox. 
+Je crée une nouvelle database. Et là cela remarche à nouveau. 
+J'essaie autre chose : Configuration / Module installé / Ophtalmology / mise à jour. : CA MARCHE.
+

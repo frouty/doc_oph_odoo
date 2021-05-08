@@ -487,6 +487,9 @@ Le code va s'arréter là en mode console (pdb).
 \item[p] p args pour avoir l'argument args. 
 \end{description}
 
+./opt/odoo/odoo7-server/openerp-server -c /etc/odoo/odoo7-server.conf
+J'ai eu un probleme d'adresse deja utilisée. Dans odoo7-server.conf j'ai changé le wml_rpc port
+il faut faire un kill -9 PID que l'on trouve avec ps aux | grep openerp et aussi ps aux | grep odoo.
 \subsection{Comment afficher le nom de la méthode }
 \label{sec:stack}
 
@@ -644,7 +647,7 @@ Une personne peut avoir plusieurs properties.
 class dev_person(osv.osv):
         _name = 'dev.person'
         _description = 'Person'
-        -columns = {
+        _columns = {
                 'name' : fields.char('Person Name', char(64), requires=True),
                 'property_ids' : fields.one2many('dev.property', 'property_id, `'Properties'),
 
@@ -2333,7 +2336,7 @@ Setting - Technical - Parameters - System Parameters - Create
 \end{description}
 
 Cela permet de stocker les documents dans le systeme de fichier sous :
- ~/oph\_openerp/openobject-server/openerp/filestore/oph1311/
+
 
 oph1311 correspond au nom de la base de donnée. 
 
