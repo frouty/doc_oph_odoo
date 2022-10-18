@@ -32,7 +32,8 @@ J'essaie autre chose : Configuration / Module installé / Ophtalmology / mise à
 # 19/11/2021 
 j'ai fait du ménage dans les branches
 j'ai installé une machine de dev @home. Il faut que le vpn marche pour se connecter au rt5100 raspberry.
-pour cela systemctl status  openvpn@myvpn.service 
-systemctl start openvpn@myvpn.service. myvpn est un lien dans /etc/openvpn vers le bon fichier de conf. 
+pour cela systemctl status   
+systemctl start openvpn@myvpn.service. myvpn est un lien dans /etc/openvpn vers le bon fichier de conf. # obsolete
+maintenant c'est systemctl start openvpn-client@ODOO7_SPARE_DEV.service
 le fichier de log : /var/log/openvpn.log
 
