@@ -6,24 +6,22 @@
 Welcome to oph odoo doc's documentation!
 ========================================
 
-Version 14 installation
-=======================
-Comment on fait pour mettre différents niveaux de titre en rst.
-*en italique*
-**en gras**
-
-Un peu de code 
-::
-	import os
-	print "hello world"
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 	
-   document_attachment_storage.rst
-   debugging.rst
-	
+   passwd
+   document_attachment_storage
+   debugging
+   tips-tricks-git
+   IMPORTANT
+   letsencrypt
+   relational_fields
+   one2many
+   invitation_email
+   security
+   emailing_odoo
+
 
 Indices and tables
 ==================
