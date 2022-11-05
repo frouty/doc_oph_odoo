@@ -4,14 +4,18 @@
    contain the root `toctree` directive.
 
 Welcome to oph odoo doc's documentation!
-========================================
+########################################
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 	
+   odoo_version_python
+   installation_server_odoo
    passwd
    document_attachment_storage
+   list_database
+   restore_database
    debugging
    tips-tricks-git
    IMPORTANT
@@ -24,7 +28,7 @@ Welcome to oph odoo doc's documentation!
 
 
 Indices and tables
-==================
+##################
 
 * :ref:`genindex`
 * :ref:`modindex`

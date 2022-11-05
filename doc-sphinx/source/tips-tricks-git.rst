@@ -1,11 +1,12 @@
 Git tips and tricks.
-###################
+####################
 Connaitre la différence entre un meme fichier de deux branches  différentes
 ***************************************************************************
 
 ::
+
    git difftool -t meld master:oph/oph/rt5100.py fixrt5100:oph/oph/rt5100.py
-   
+
 Connaitre la différence entre deux branches
 *******************************************
 ::

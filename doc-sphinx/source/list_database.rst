@@ -16,7 +16,9 @@ Sur le server
 
 ::
 
-   su postgres $ psql psql (9.4.10) Type "help" for help.
+   su postgres 
+   $ psql 
+   psql (9.4.10) Type "help" for help.
 
    postgres=# \l
 
@@ -30,10 +32,12 @@ Comment lister les tables d'une database
 ########################################
 
 se connecter ::
+
    psql -d nom_de_database
    ou
    psql 
-   \c nom_de_database
-   \dt
+   postgres=#\c nom_de_database
+   postgres=#\dt
    ou
-   \dt+
+   postgres=#\dt+ # pour lister les tables.
+ 
