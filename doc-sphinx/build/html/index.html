@@ -14,7 +14,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Les password dans odoo" href="passwd.html" />
+    <link rel="next" title="Version de python et odoo" href="odoo_version_python.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -33,6 +33,20 @@
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODDO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation_server_odoo.html#running-odoo-in-virtual-environnement">Running ODOO in virtual environnement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html">Developpement de oph_odoo16</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="oph_odoo16.html#mise-en-place-du-systeme-de-fichier">Mise en place du systeme de fichier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="oph_odoo16.html#update-du-fichier-odoo-conf">Update du fichier odoo.conf</a></li>
+<li class="toctree-l2"><a class="reference internal" href="oph_odoo16.html#python-debugging">Python debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="oph_odoo16.html#passer-en-mode-developper-dans-le-webgui">Passer en mode developper dans le webgui</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">Comment avoir la liste des champs ordonnés pour une table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a><ul>
@@ -40,7 +54,12 @@
 <li class="toctree-l2"><a class="reference internal" href="document_attachment_storage.html#comment-faire-pour-que-le-report-aeroo-cree-soit-enregistre-en-attachment">Comment faire pour que le report aeroo créé soit enregistré en attachment?</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html">Comment filtrer les database dans l’interface database manager?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-databases">Comment lister les databases?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-tables-d-une-database">Comment lister les tables d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html">Comment restaurer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html#comment-supprimer-une-database">Comment supprimer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Python Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tips-tricks-git.html">Git tips and tricks.</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="tips-tricks-git.html#connaitre-la-difference-entre-un-meme-fichier-de-deux-branches-differentes">Connaitre la différence entre un meme fichier de deux branches  différentes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tips-tricks-git.html#connaitre-la-difference-entre-deux-branches">Connaitre la différence entre deux branches</a></li>
@@ -67,6 +86,12 @@
 <li class="toctree-l2"><a class="reference internal" href="emailing_odoo.html#resume-de-la-resolution-de-gros-problemes">Résumé de la résolution de Gros problemes</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="xpath.html">Xpath</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xpath.html#comment-trouver-la-vue-que-l-on-veut-editer">Comment trouver la vue que l’on veut editer?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xpath.html#comment-trouver-le-xpath">Comment trouver le xpath</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="shell.html">shell</a></li>
 </ul>
 </div>
 </div>
@@ -97,10 +122,20 @@
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html">Developpement de oph_odoo16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">Comment avoir la liste des champs ordonnés pour une table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html">Comment filtrer les database dans l’interface database manager?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-databases">Comment lister les databases?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-tables-d-une-database">Comment lister les tables d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html">Comment restaurer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html#comment-supprimer-une-database">Comment supprimer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Python Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tips-tricks-git.html">Git tips and tricks.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IMPORTANT.html">ATTENTION</a></li>
 <li class="toctree-l1"><a class="reference internal" href="letsencrypt.html">Letsencrypt</a></li>
@@ -109,13 +144,15 @@
 <li class="toctree-l1"><a class="reference internal" href="invitation_email.html">Invitation email</a></li>
 <li class="toctree-l1"><a class="reference internal" href="security.html">Droit d’accés</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emailing_odoo.html">Emailing in odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xpath.html">Xpath</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shell.html">shell</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="passwd.html" title="next chapter">Les password dans odoo</a></li>
+      <li>Next: <a href="odoo_version_python.html" title="next chapter">Version de python et odoo</a></li>
   </ul></li>
 </ul>
 </div>

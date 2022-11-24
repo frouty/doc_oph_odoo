@@ -12,6 +12,7 @@ Welcome to oph odoo doc's documentation!
 	
    odoo_version_python
    installation_server_odoo
+   oph_odoo16
    passwd
    document_attachment_storage
    list_database
@@ -25,6 +26,8 @@ Welcome to oph odoo doc's documentation!
    invitation_email
    security
    emailing_odoo
+   xpath
+   shell
 
 
 Indices and tables

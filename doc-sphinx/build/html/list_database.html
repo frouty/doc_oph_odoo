@@ -14,6 +14,8 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Comment restaurer une database" href="restore_database.html" />
+    <link rel="prev" title="Document attachment" href="document_attachment_storage.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -38,7 +40,9 @@ pas de filtrage db_name = nomdedatabase
 <div class="section" id="comment-lister-les-databases">
 <h1>Comment lister les databases?<a class="headerlink" href="#comment-lister-les-databases" title="Permalink to this headline">¶</a></h1>
 <p>Sur le server</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>su postgres $ psql psql (9.4.10) Type &quot;help&quot; for help.
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>su postgres
+$ psql
+psql (9.4.10) Type &quot;help&quot; for help.
 
 postgres=# \l
 </pre></div>
@@ -50,16 +54,16 @@ postgres=# \l
 </div>
 <div class="section" id="comment-lister-les-tables-d-une-database">
 <h1>Comment lister les tables d’une database<a class="headerlink" href="#comment-lister-les-tables-d-une-database" title="Permalink to this headline">¶</a></h1>
-<dl class="simple">
-<dt>se connecter ::</dt><dd><p>psql -d nom_de_database
-ou
-psql
-c nom_de_database
-dt
-ou
-dt+</p>
-</dd>
-</dl>
+<p>se connecter</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">psql</span> <span class="o">-</span><span class="n">d</span> <span class="n">nom_de_database</span>
+<span class="n">ou</span>
+<span class="n">psql</span>
+<span class="n">postgres</span><span class="o">=</span><span class="c1">#\c nom_de_database</span>
+<span class="n">postgres</span><span class="o">=</span><span class="c1">#\dt</span>
+<span class="n">ou</span>
+<span class="n">postgres</span><span class="o">=</span><span class="c1">#\dt+ # pour lister les tables.</span>
+</pre></div>
+</div>
 </div>
 
 
@@ -79,15 +83,34 @@ dt+</p>
 
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Comment filtrer les database dans l’interface database manager?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#comment-lister-les-databases">Comment lister les databases?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#comment-lister-les-tables-d-une-database">Comment lister les tables d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html">Comment restaurer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html#comment-supprimer-une-database">Comment supprimer une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tips-tricks-git.html">Git tips and tricks.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IMPORTANT.html">ATTENTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="letsencrypt.html">Letsencrypt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relational_fields.html">relational fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="one2many.html">one2many</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invitation_email.html">Invitation email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Droit d’accés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emailing_odoo.html">Emailing in odoo</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="document_attachment_storage.html" title="previous chapter">Document attachment</a></li>
+      <li>Next: <a href="restore_database.html" title="next chapter">Comment restaurer une database</a></li>
   </ul></li>
 </ul>
 </div>

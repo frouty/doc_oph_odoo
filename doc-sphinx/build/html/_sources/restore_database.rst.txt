@@ -2,9 +2,10 @@ Comment restaurer une database
 ##############################
 L'interface odoo de restauration des database ne marche plus
 sur la machine de dev. Pas de message pour essayer de
-regler le probleme Du coup en ligne de commande
+régler le problème.
+Du coup en ligne de commande
 
-récuperer le dump backup dans l'interface odoo déplacer le
+Récuperer le dump backup dans l'interface odoo déplacer le
 fichier dump sauvegardé dans la machine de dev
 
 :: 
@@ -20,8 +21,9 @@ Comment supprimer une database
 ##############################
 
 :: 
+
    su
    su postgres
    psql
-   \l liste les databases
-   DROP DATABASE nom_de_database;
+   postgres=#\l liste les databases
+   postgres=#DROP DATABASE nom_de_database;
