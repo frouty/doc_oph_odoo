@@ -68,5 +68,23 @@ On peut aussi rendre invisible un champ en fonction d'une valeur d'un autre cham
 - [ ]
 
 # Quand je crée un rendez vous je voudrais avoir un bouton ou une pop up pour pouvoir imprimer automatiquement le memo de rendez vous.
-- [ ]
+- [ ] 
 
+# Generation de la feuille de soins:
+- [ ] trop de clic, choix du bac, 
+# choix du bac  tray
+
+lp -o upper ssss.pdf c'est pour le feuille à feuille cela ne va pas.
+lp -o lower ticket.pdf pareil en feuille à feuille
+lpr  -o lower .... ne marche pas non plus.
+
+# Comment commencer à voir les possibilités de Qweb. Est ce qu'il y a un module simple pour commencer à voir comment cela est codé.?
+ 
+# Les images 
+gestions des images de l'oct
+
+gestion des documents de l'alscan on les recuper un part un. 
+
+# Speech to texte.
+
+# rendez vous on line pris par le patient
