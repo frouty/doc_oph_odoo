@@ -66,13 +66,15 @@ On peut aussi rendre invisible un champ en fonction d'une valeur d'un autre cham
 
 # paiement des états par lot.
 - [ ]
-
+# paiement des cheques par lot
+- [ ]
 # Quand je crée un rendez vous je voudrais avoir un bouton ou une pop up pour pouvoir imprimer automatiquement le memo de rendez vous.
 - [ ] 
 
 # Generation de la feuille de soins:
 - [ ] trop de clic, choix du bac, 
-# choix du bac  tray
+
+# choix du bac  tray en CLI c'est possible. 
 
 lp -o upper ssss.pdf c'est pour le feuille à feuille cela ne va pas.
 lp -o lower ticket.pdf pareil en feuille à feuille
@@ -80,11 +82,29 @@ lpr  -o lower .... ne marche pas non plus.
 
 # Comment commencer à voir les possibilités de Qweb. Est ce qu'il y a un module simple pour commencer à voir comment cela est codé.?
  
-# Les images 
+# Les images en piece jointe
 gestions des images de l'oct
 
-gestion des documents de l'alscan on les recuper un part un. 
+gestion des documents de l'alscan 
+
+on les recupe un part un. 
 
 # Speech to texte.
 
 # rendez vous on line pris par le patient
+
+# template pre rempli. 
+Avec ce que j'ai mi en place je ne peux pas mettre plusieurs items. 
+
+par exemple pour les conclusions. 
+
+Je ne vais quand meme pas mettre en place un systeme one2many. 
+
+# dans champ   texte "odoo" je ne peux pas avoir un formatage en liste.
+
+# Montrer comment je fait l'autotext  avec la liste des template dans Slit Lamp Exam
+
+# est ce que avec qweb je vais pouvoir avoir des modele dynamique c'est à dire basé sur d'autre info patient 
+pour les feuille de soins si je pouvais ne pas voir à choisir le modele. 
+
+# Empecher l'imprission d'une feuille de soins sans date.
