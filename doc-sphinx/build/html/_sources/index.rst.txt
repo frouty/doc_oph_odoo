@@ -7,11 +7,12 @@ Welcome to oph odoo doc's documentation!
 ########################################
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 	
    odoo_version_python
-   installation_server_odoo
+   installation_server_odoo16
+   odoo16_manage_database
    oph_odoo16
    passwd
    document_attachment_storage

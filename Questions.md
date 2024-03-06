@@ -70,3 +70,9 @@ On peut aussi rendre invisible un champ en fonction d'une valeur d'un autre cham
 # Quand je crée un rendez vous je voudrais avoir un bouton ou une pop up pour pouvoir imprimer automatiquement le memo de rendez vous.
 - [ ]
 
+# ODOO16 
+manage database / backup 
+je vois que l'on peut sauvegarder le filestore. Cela m'interesse mais je pense que cela va faire un fichier enorme. 
+Est ce que c'est gérable chez moi?
+
+

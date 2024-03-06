@@ -1,21 +1,27 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>relational fields &#8212; oph odoo doc 0.0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="one2many" href="one2many.html" />
+    <link rel="prev" title="Letsencrypt" href="letsencrypt.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -25,17 +31,19 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="relational-fields">
-<h1>relational fields<a class="headerlink" href="#relational-fields" title="Permalink to this headline">¶</a></h1>
+  <section id="relational-fields">
+<h1>relational fields<a class="headerlink" href="#relational-fields" title="Permalink to this heading">¶</a></h1>
 <p><a class="reference external" href="https://www.cybrosys.com/blog/relational-fields-in-odoo">https://www.cybrosys.com/blog/relational-fields-in-odoo</a></p>
-<div class="section" id="one2one">
-<h2>one2one<a class="headerlink" href="#one2one" title="Permalink to this headline">¶</a></h2>
+<section id="one2one">
+<h2>one2one<a class="headerlink" href="#one2one" title="Permalink to this heading">¶</a></h2>
 <p>use many2one</p>
-</div>
-<div class="section" id="many2one">
-<h2>many2one<a class="headerlink" href="#many2one" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="many2one">
+<h2>many2one<a class="headerlink" href="#many2one" title="Permalink to this heading">¶</a></h2>
 <dl>
 <dt>class ChildModel(models.Model):</dt><dd><p>_name = ‘child.model’</p>
 <p>child_field_1 = fields.Char(string=”Child Field 1”)
@@ -44,9 +52,9 @@ child_field_3 = fields.Boolean(string=”Child Field 3”)
 parent_field_id = fields.Many2one(‘parent.model’, string=”Parent ID”)</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="one2many">
-<h2>one2many<a class="headerlink" href="#one2many" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="one2many">
+<h2>one2many<a class="headerlink" href="#one2many" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">odoo</span> <span class="kn">import</span> <span class="n">models</span><span class="p">,</span> <span class="n">fields</span>
 
 
@@ -71,9 +79,9 @@ parent_field_id = fields.Many2one(‘parent.model’, string=”Parent ID”)</p
 </pre></div>
 </div>
 <p>Il faut créer le parent_field_id en many2one</p>
-</div>
-<div class="section" id="many2many">
-<h2>many2many<a class="headerlink" href="#many2many" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="many2many">
+<h2>many2many<a class="headerlink" href="#many2many" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><p>On est sur un model est on veut se relier à un autre model comodel</p>
 <p>field_ids = fields.many2many(‘comodel.name’, String=’Field Name’)</p>
@@ -88,11 +96,12 @@ parent_field_id = fields.Many2one(‘parent.model’, string=”Parent ID”)</p
 <p>Si on ne fournit pas relation column1 et column2 les noms sont automatiquement crée par le systeme.</p>
 </div></blockquote>
 </div></blockquote>
-</div>
-</div>
+</section>
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -108,15 +117,49 @@ parent_field_id = fields.Many2one(‘parent.model’, string=”Parent ID”)</p
 
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html#installation-de-ohmyzsh">installation de ohmyzsh</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html#installation-des-fonts">installation des fonts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html#installation-de-powerlevel10k">installation de powerlevel10K</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html#installation-des-plugins-ohmyzsh">Installation des plugins ohmyzsh</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html">Developpement de oph_odoo16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">Comment avoir la liste des champs ordonnés pour une table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html">Comment filtrer les database dans l’interface database manager?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-databases">Comment lister les databases?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-tables-d-une-database">Comment lister les tables d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html">Comment restaurer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html#comment-supprimer-une-database">Comment supprimer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Python Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tips-tricks-git.html">Git tips and tricks.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IMPORTANT.html">ATTENTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="letsencrypt.html">Letsencrypt</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">relational fields</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#one2one">one2one</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#many2one">many2one</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#one2many">one2many</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#many2many">many2many</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="one2many.html">one2many</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invitation_email.html">Invitation email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Droit d’accés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emailing_odoo.html">Emailing in odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xpath.html">Xpath</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shell.html">shell</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="letsencrypt.html" title="previous chapter">Letsencrypt</a></li>
+      <li>Next: <a href="one2many.html" title="next chapter">one2many</a></li>
   </ul></li>
 </ul>
 </div>
@@ -129,7 +172,15 @@ parent_field_id = fields.Many2one(‘parent.model’, string=”Parent ID”)</p
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
@@ -138,8 +189,8 @@ parent_field_id = fields.Many2one(‘parent.model’, string=”Parent ID”)</p
       &copy;2021, laurent FRANCOIS.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="_sources/relational_fields.rst.txt"

@@ -1,7 +1,10 @@
 ATTENTION
-=========
+#########
 La machine de dev doit pouvoir se connecter au RT5100 
 pour cela il faut que le vpn soit opérationnel.
+
+ssh sur le server de dev 
+su 
 
  $ systemctl start  openvpn-client@ODOO7_SPARE_DEV.service
 

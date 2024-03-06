@@ -10,8 +10,10 @@ Pour voir les admin password:
 
 * sudo -sHu postgres
 * psql -d unedatabasedeodoo
+* psql -l pour lister les databases et trouver celle de odoo si necessaire
 * SELECT login, password FROM res_users;
 
+Mais maintenant les password sont encryptés.
 
 Creation d'une database
 #######################

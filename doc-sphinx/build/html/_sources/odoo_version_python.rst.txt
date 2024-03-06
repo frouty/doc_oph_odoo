@@ -12,3 +12,17 @@ odoo 13 ::
 odoo 14 ::
 
    python 3.6 ou plus
+   
+odoo 16 ::
+
+   python 3.7 ou plus
+
+
+odoo 17 ::
+
+   python 3.10 
+   
+Pour le savoir ::
+
+   python3 --version
+   pip --version
