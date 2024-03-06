@@ -1,0 +1,14 @@
+Database manager
+================
+
+url : http://IP_server:8069/web/database/manager
+
+On y accede aussi par le lien sur la page du login.
+
+On obtient:
+
+.. image:: icono/database_manager1.png
+   :width: 400
+   :alt: Alternative text
+   
+* backup / Duplicate / Delete me demande le master password. 
