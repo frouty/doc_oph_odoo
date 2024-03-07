@@ -14,6 +14,7 @@ Welcome to oph odoo doc's documentation!
    installation_server_odoo
    oph_odoo16
    passwd
+   password-admin_odoo16
    document_attachment_storage
    list_database
    restore_database

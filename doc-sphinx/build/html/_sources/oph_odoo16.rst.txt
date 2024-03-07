@@ -19,25 +19,10 @@ Update du fichier odoo.conf
    addons_path = /opt/odoo/odoo16/odoo-server16/addons, /opt/odoo/odoo16/custom/addons
    # ne pas mettre /opt/odoo/odoo16/custom/addons/oph_odoo
    
-Python debugging
-****************
-
-install python library debugger ::
-
-   pip install ipdb
-   import ipdb; ipdb.set_trace()
-   
-Les commandes::
-
-   h <command>
-   pp expression # value of expression
-   n continue execution
-   c continue 
-   q quit
 
 Chaque fois que l'on modifie un fichier python il faut redémarrer le server. et on va rajouter un paramètre::
 
-   -u oph_odoo16 # nous voulos upgrade le module
+   -u oph_odoo16 # nous voulons upgrade le module oph_odoo16
    -d odoo16-01 # doit toujours etre utilisé avec u. 
    cd /opt/odoo/odoo16/odoo-server16
    ./odoo-bin --addons-path=custom/addons,odoo_server16/addons -u oph_odoo16
@@ -54,6 +39,17 @@ Il y a aussi une extension odoo debug. Mais je n'ai pas trop bien réussi à la 
 
 https://www.odoo.com/documentation/16.0/applications/general/developer_mode.html#developer-mode
 
+Comment démarrer le server
+**************************
+::
+
+   cd /opt/odoo/odoo16
+   python --version # on verifie si notre venv est actif.
+   source  /opt/odoo/odoo16/bin/activate 
+   python --version
+   ./odoo-server16/odoo-bin  -c odoo-server16/odoo.conf -u oph_odoo16 -d odoo16-01 --dev xml
+   
+   
 Comment avoir la liste des champs ordonnés pour une table
 #########################################################
 ::

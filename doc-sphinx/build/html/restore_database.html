@@ -1,25 +1,26 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Comment restaurer une database &#8212; oph odoo doc 0.0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Debugging" href="debugging.html" />
+    <link rel="next" title="Python Debugging" href="debugging.html" />
     <link rel="prev" title="Comment filtrer les database dans l’interface database manager?" href="list_database.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  
+  
 
   </head><body>
   
@@ -27,10 +28,12 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="comment-restaurer-une-database">
-<h1>Comment restaurer une database<a class="headerlink" href="#comment-restaurer-une-database" title="Permalink to this headline">¶</a></h1>
+  <section id="comment-restaurer-une-database">
+<h1>Comment restaurer une database<a class="headerlink" href="#comment-restaurer-une-database" title="Link to this heading">¶</a></h1>
 <p>L’interface odoo de restauration des database ne marche plus
 sur la machine de dev. Pas de message pour essayer de
 régler le problème.
@@ -45,9 +48,9 @@ fichier dump sauvegardé dans la machine de dev</p>
 <span class="n">vérifier</span> <span class="n">avec</span> <span class="n">psql</span> \<span class="n">l</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="comment-supprimer-une-database">
-<h1>Comment supprimer une database<a class="headerlink" href="#comment-supprimer-une-database" title="Permalink to this headline">¶</a></h1>
+</section>
+<section id="comment-supprimer-une-database">
+<h1>Comment supprimer une database<a class="headerlink" href="#comment-supprimer-une-database" title="Link to this heading">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">su</span>
 <span class="n">su</span> <span class="n">postgres</span>
 <span class="n">psql</span>
@@ -55,10 +58,11 @@ fichier dump sauvegardé dans la machine de dev</p>
 <span class="n">postgres</span><span class="o">=</span><span class="c1">#DROP DATABASE nom_de_database;</span>
 </pre></div>
 </div>
-</div>
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -76,7 +80,10 @@ fichier dump sauvegardé dans la machine de dev</p>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html">Developpement de oph_odoo16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">Comment avoir la liste des champs ordonnés pour une table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
@@ -85,7 +92,7 @@ fichier dump sauvegardé dans la machine de dev</p>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-tables-d-une-database">Comment lister les tables d’une database</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Comment restaurer une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#comment-supprimer-une-database">Comment supprimer une database</a></li>
-<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Python Debugging</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tips-tricks-git.html">Git tips and tricks.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IMPORTANT.html">ATTENTION</a></li>
 <li class="toctree-l1"><a class="reference internal" href="letsencrypt.html">Letsencrypt</a></li>
@@ -94,6 +101,8 @@ fichier dump sauvegardé dans la machine de dev</p>
 <li class="toctree-l1"><a class="reference internal" href="invitation_email.html">Invitation email</a></li>
 <li class="toctree-l1"><a class="reference internal" href="security.html">Droit d’accés</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emailing_odoo.html">Emailing in odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xpath.html">Xpath</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shell.html">shell</a></li>
 </ul>
 
 <div class="relations">
@@ -101,7 +110,7 @@ fichier dump sauvegardé dans la machine de dev</p>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="list_database.html" title="previous chapter">Comment filtrer les database dans l’interface database manager?</a></li>
-      <li>Next: <a href="debugging.html" title="next chapter">Debugging</a></li>
+      <li>Next: <a href="debugging.html" title="next chapter">Python Debugging</a></li>
   </ul></li>
 </ul>
 </div>
@@ -114,17 +123,25 @@ fichier dump sauvegardé dans la machine de dev</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, laurent FRANCOIS.
+      &#169;2021, laurent FRANCOIS.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
       
       |
       <a href="_sources/restore_database.rst.txt"

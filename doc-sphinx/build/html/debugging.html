@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Python Debugging &#8212; oph odoo doc 0.0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Git tips and tricks." href="tips-tricks-git.html" />
@@ -19,7 +18,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  
+  
 
   </head><body>
   
@@ -27,10 +28,12 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
+          
+
           <div class="body" role="main">
             
-  <div class="section" id="python-debugging">
-<h1>Python Debugging<a class="headerlink" href="#python-debugging" title="Permalink to this headline">¶</a></h1>
+  <section id="python-debugging">
+<h1>Python Debugging<a class="headerlink" href="#python-debugging" title="Link to this heading">¶</a></h1>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pdb</span><span class="p">;</span><span class="n">pdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
 </pre></div>
@@ -53,10 +56,27 @@ Et ensuite on lance le server en mode console</p>
 <span class="n">c</span> <span class="k">continue</span>
 </pre></div>
 </div>
+<section id="id1">
+<h2>Python debugging<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>install python library debugger</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ipdb</span>
+<span class="kn">import</span> <span class="nn">ipdb</span><span class="p">;</span> <span class="n">ipdb</span><span class="o">.</span><span class="n">set_trace</span><span class="p">()</span>
+</pre></div>
 </div>
+<p>Les commandes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">h</span> <span class="o">&lt;</span><span class="n">command</span><span class="o">&gt;</span>
+<span class="n">pp</span> <span class="n">expression</span> <span class="c1"># value of expression</span>
+<span class="n">n</span> <span class="k">continue</span> <span class="n">execution</span>
+<span class="n">c</span> <span class="k">continue</span>
+<span class="n">q</span> <span class="n">quit</span>
+</pre></div>
+</div>
+</section>
+</section>
 
 
           </div>
+          
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -76,6 +96,8 @@ Et ensuite on lance le server en mode console</p>
 <li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODDO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html">Developpement de oph_odoo16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">Comment avoir la liste des champs ordonnés pour une table</a></li>
+<li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
@@ -84,7 +106,10 @@ Et ensuite on lance le server en mode console</p>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-tables-d-une-database">Comment lister les tables d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="restore_database.html">Comment restaurer une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="restore_database.html#comment-supprimer-une-database">Comment supprimer une database</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Python Debugging</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python Debugging</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Python debugging</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="tips-tricks-git.html">Git tips and tricks.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IMPORTANT.html">ATTENTION</a></li>
 <li class="toctree-l1"><a class="reference internal" href="letsencrypt.html">Letsencrypt</a></li>
@@ -94,6 +119,7 @@ Et ensuite on lance le server en mode console</p>
 <li class="toctree-l1"><a class="reference internal" href="security.html">Droit d’accés</a></li>
 <li class="toctree-l1"><a class="reference internal" href="emailing_odoo.html">Emailing in odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xpath.html">Xpath</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shell.html">shell</a></li>
 </ul>
 
 <div class="relations">
@@ -114,17 +140,25 @@ Et ensuite on lance le server en mode console</p>
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
         </div>
       </div>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, laurent FRANCOIS.
+      &#169;2021, laurent FRANCOIS.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
       
       |
       <a href="_sources/debugging.rst.txt"
