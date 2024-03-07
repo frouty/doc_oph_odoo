@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emailing in odoo &#8212; oph odoo doc 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Droit d’accés" href="security.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="emailing-in-odoo">
+<h1>Emailing in odoo<a class="headerlink" href="#emailing-in-odoo" title="Permalink to this headline">¶</a></h1>
+<p>Regarder Ophtalmology/Request, Ophtalmology/IOL Order</p>
+<p>Regarder Settings/Email/Template pour les templates des emails.</p>
+<p>Faire les modifications en base de données puis faire les tests puis mettre tout cela dans /oph_odoo/oph/edi/request_action_data.xml
+C’est le fichier dans lequel on trouve les templates des mails.</p>
+<div class="section" id="resume-de-la-resolution-de-gros-problemes">
+<h2>Résumé de la résolution de Gros problemes<a class="headerlink" href="#resume-de-la-resolution-de-gros-problemes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google">
+<h3>Mise en place de la 2FA et creation d’un app password dans google<a class="headerlink" href="#mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google" title="Permalink to this headline">¶</a></h3>
+<p>Dans google account je mets en route le 2  step authentification
+Dans la barre de recherche je tape “app password”
+Je tombe sur la page App password
+Select app : custom je mets odoo clique generate.
+copy du password
+on va dans odoo general seting/outgoing email/password ce que l’on vient de copier et test de la connection : Connection test succeeded everything seems properly set up.</p>
+<p>Le mot de passe de app password est dans le gestionnaire de mots de passe.</p>
+<p>Dans configuration / general setting /configure outgoing mail servers
+paramétrer le server smtp avec :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>priority: la plus basse (donc haute priority)</p></li>
+<li><p>server smtp : smtp.gmail.com</p></li>
+<li><p>port smtp: 465</p></li>
+<li><p>deboggage decoche</p></li>
+<li><p>connection security SSL/TLS</p></li>
+<li><p>username: email</p></li>
+<li><p>password: dans le gestionnaire de password.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="hostinger-smtp">
+<h3>hostinger smtp<a class="headerlink" href="#hostinger-smtp" title="Permalink to this headline">¶</a></h3>
+<p>password le password du compte email</p>
+<p>le login <a class="reference external" href="mailto:xyz&#37;&#52;&#48;ophtalmologie&#46;org">xyz<span>&#64;</span>ophtalmologie<span>&#46;</span>org</a>.</p>
+<p>le port 465 ne marche pas en swaks,</p>
+<p>le port 587 qui marche en swaks ne marche pas en odoo. le port 587 semble marcher avec thunderbird.</p>
+</div>
+<div class="section" id="gros-problemes">
+<h3>Gros problemes<a class="headerlink" href="#gros-problemes" title="Permalink to this headline">¶</a></h3>
+<p>Je n’arrive plus à envoyer des mails.</p>
+<p>D’ou mise en place de la double authentification sur google mise en place d’un code avec app password.</p>
+<p>Je n’arrive à envoyer les mails depuis odoo que sous admin</p>
+<dl>
+<dt>avec l’objet iol_order, sous user  en enlevant tous les abonnés j’envoie uniquement à francois par Gmail 2FA.</dt><dd><p>Je vois que automatiquement odoo rajoute le user et le destinataire dans les abonnés.
+Le mail n’arrive pas.</p>
+<p>avec l’objet iol_order, sous user  en enlevant tous les abonnés j’envoie uniquement à francois
+par mailgun
+Je vois que automatiquement odoo rajoute le user et le destinataire dans les abonnés.
+Le mail n’arrive pas.
+Je change le port to 587
+le mail n’arrive pas
+securite de la connection je mets debogage dans odoo et je change SSL/TLS -&gt;  TLS(starttls)
+enregister test de connection ca prend du temps contrairement à d’habitude. timeout
+securite de la connection à aucun pareil ca prend un temps fou et timeout</p>
+<p>Dans thunderbird si je change le smtp vers mailgun en default je n’ai pas
+l’impression que mailgun fonctionne. Les mails arrivent aux destinataire mais rien
+dans le log de mailgun. je me deman si cela ne passe pas par gmail.</p>
+</dd>
+</dl>
+<p>cat ~/.swaksrc
+-s smtp.mailgun.com
+-tls
+-au <a class="reference external" href="mailto:postmaster&#37;&#52;&#48;sandboxbedfc73aa96947c5b430639577c3c3a9&#46;mailgun&#46;org">postmaster<span>&#64;</span>sandboxbedfc73aa96947c5b430639577c3c3a9<span>&#46;</span>mailgun<span>&#46;</span>org</a>
+-ap 895f7c1c5478b69ed5f1b3acb04f799c-523596d9-a57f14f2
+-f <a class="reference external" href="mailto:francois&#46;oph&#37;&#52;&#48;gmail&#46;com">francois<span>&#46;</span>oph<span>&#64;</span>gmail<span>&#46;</span>com</a>
+-p 587</p>
+<p>$swaks -t <a class="reference external" href="mailto:francois&#46;oph&#37;&#52;&#48;gmail&#46;com">francois<span>&#46;</span>oph<span>&#64;</span>gmail<span>&#46;</span>com</a> –body ‘de swak’ –h-Subject ‘DE SWAK 3eme’</p>
+<blockquote>
+<div><p>En CLI swaks ne marche pas timeout. J’ai mis le port à 587 et c’est bon . Les autres ports 25 et 465
+ne fonctionne pas.</p>
+<p>Attention –h-Subject avec un grand S et –h-subject
+sinon ca envoie comme sujet test avec la date. Cela peut etre utile.</p>
+<p>Donc j’ai configuré correctement mailgun.</p>
+<dl class="simple">
+<dt>mailgun setting/email/outgoing server port 587</dt><dd><p>SSL/TLS
+test connection –&gt; ssl unknown protocol.</p>
+</dd>
+</dl>
+<p>TLS/STARTTLS test connection c’est long Gateway time out.
+Je repasse sous lfs et là pareil le meme msg d’erreur./</p>
+<p>en cli avec swaks je vois que gunmail fonctionne.</p>
+<p>peut etre un probleme  de port. gunmail ecoute sur 25-587-465</p>
+<p>J’essaie 25 dans odoo Test connection c’est long -&gt; Time out
+<em>465</em>  -&gt; test succeeded</p>
+<p>j’enleve tous les followers
+j’envoie a un destinataire par gunmail. et rien ne se passe.</p>
+<p>le port 25 et 465 odoo me dit ok pour le test connection mais en CLI swaks ne marche
+le port 587 marche en swaks mais test connection me dit ne marche pas.</p>
+<p>changement de l’alias domain –&gt; smtp gunmail domain
+port 587 dans outgoing mail server
+iol_order email –&gt; rien en se passe
+port 465
+iol_order emain –&gt; rien ne se passe.
+port 25
+iol_order email –&gt; timeout
+j’essaie 2525 sans y croire. –&gt; timeout</p>
+<p>l’email avec odoo et gunmail ne marche pas sous admin</p>
+<p>Test connection test succeeded.</p>
+<p>timeout
+je repasse alias domain à localhost.
+timeout</p>
+<p>J’ai trouvé ceci</p>
+</div></blockquote>
+<p>Avatar
+Amr Essam
+25 juin 2013</p>
+<p>i faced the same problem and solved it by doing the following:
+Changing the alias domain in General Settings to be as my domain name smtp
+port be 2525 connection security be (TLS/STARTTLS) finally,
+the priority be less than localhost or other outgoing mail</p>
+<p>general settings/alias Domain :loalhost -&gt; domain name gunmail
+je monte la priorité de gunmail
+test connection
+port 25 ne marche pas timeout.
+port 465 test succeed
+port 587 connection test failed.</p>
+<p>J’ai l’impression que cela n’a rien changé je fais un reboot.</p>
+</div>
+<div class="section" id="reboot">
+<h3>reboot<a class="headerlink" href="#reboot" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="en-admin">
+<h4>En admin<a class="headerlink" href="#en-admin" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="test-de-connection">
+<h5>test de connection<a class="headerlink" href="#test-de-connection" title="Permalink to this headline">¶</a></h5>
+<p>gmail app password port 465 test succeed
+gunmail port 465 test succeed.
+gunmail port 587 test failed.
+gunmail port 25 test failed.</p>
+</div>
+<div class="section" id="iol-order">
+<h5>iol_order<a class="headerlink" href="#iol-order" title="Permalink to this headline">¶</a></h5>
+<p>gmail app password  en admin envoie a deux recipients. OK
+si je mets <a class="reference external" href="mailto:francois&#46;oph&#37;&#52;&#48;gmail&#46;com">francois<span>&#46;</span>oph<span>&#64;</span>gmail<span>&#46;</span>com</a> le mail n’y arrive pas.
+si je ne mets pas d’autre récipient le mail est bien envoyer à tous les follower mais pas au user.</p>
+</div>
+</div>
+<div class="section" id="en-user-standard">
+<h4>En user standard<a class="headerlink" href="#en-user-standard" title="Permalink to this headline">¶</a></h4>
+<p>Test connection gmail app password test succeed.
+iol order responsable: francois meme que le user. email ok
+voyons si francois peut envoyer un mail qd responsable n’est pasfrancois mais administrator. email ok
+le responsable de l’objet ne pose pas de probleme pour l’envoie de mail.</p>
+<p>je mets gmail app password en priority apres localhost. cela ne marche plus. Je le remets en 1. Et ok pour iol order
+j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="reference external" href="mailto:cabinet&#46;goeen&#37;&#52;&#48;gmail&#46;com">cabinet<span>&#46;</span>goeen<span>&#64;</span>gmail<span>&#46;</span>com</a> adresse qui n’existe pas</p>
+<blockquote>
+<div><p>je ne trouve pas ou j’ai mis cela.</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">oph odoo doc</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tips-tricks-git.html">Git tips and tricks.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IMPORTANT.html">ATTENTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="letsencrypt.html">Letsencrypt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relational_fields.html">relational fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="one2many.html">one2many</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invitation_email.html">Invitation email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Droit d’accés</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Emailing in odoo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#resume-de-la-resolution-de-gros-problemes">Résumé de la résolution de Gros problemes</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="security.html" title="previous chapter">Droit d’accés</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, laurent FRANCOIS.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/emailing_odoo.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

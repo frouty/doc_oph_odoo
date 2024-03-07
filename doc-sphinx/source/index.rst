@@ -4,29 +4,34 @@
    contain the root `toctree` directive.
 
 Welcome to oph odoo doc's documentation!
-========================================
-
-Version 14 installation
-=======================
-Comment on fait pour mettre différents niveaux de titre en rst.
-*en italique*
-**en gras**
-
-Un peu de code 
-::
-	import os
-	print "hello world"
+########################################
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 	
-   document_attachment_storage.rst
-   debugging.rst
-	
+   odoo_version_python
+   installation_server_odoo
+   oph_odoo16
+   passwd
+   document_attachment_storage
+   list_database
+   restore_database
+   debugging
+   tips-tricks-git
+   IMPORTANT
+   letsencrypt
+   relational_fields
+   one2many
+   invitation_email
+   security
+   emailing_odoo
+   xpath
+   shell
+
 
 Indices and tables
-==================
+##################
 
 * :ref:`genindex`
 * :ref:`modindex`

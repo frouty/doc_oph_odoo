@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git tips and tricks. &#8212; oph odoo doc 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ATTENTION" href="IMPORTANT.html" />
+    <link rel="prev" title="Debugging" href="debugging.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="git-tips-and-tricks">
+<h1>Git tips and tricks.<a class="headerlink" href="#git-tips-and-tricks" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="connaitre-la-difference-entre-un-meme-fichier-de-deux-branches-differentes">
+<h2>Connaitre la différence entre un meme fichier de deux branches  différentes<a class="headerlink" href="#connaitre-la-difference-entre-un-meme-fichier-de-deux-branches-differentes" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">difftool</span> <span class="o">-</span><span class="n">t</span> <span class="n">meld</span> <span class="n">master</span><span class="p">:</span><span class="n">oph</span><span class="o">/</span><span class="n">oph</span><span class="o">/</span><span class="n">rt5100</span><span class="o">.</span><span class="n">py</span> <span class="n">fixrt5100</span><span class="p">:</span><span class="n">oph</span><span class="o">/</span><span class="n">oph</span><span class="o">/</span><span class="n">rt5100</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="connaitre-la-difference-entre-deux-branches">
+<h2>Connaitre la différence entre deux branches<a class="headerlink" href="#connaitre-la-difference-entre-deux-branches" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git difftool -t meld master..fixrt5100`
+</pre></div>
+</div>
+<p>Commande qui va te proposer d’ouvrir meld pour chaque fichier à comparer. Faire quit meld pour passer au fichier suivant.</p>
+</div>
+<div class="section" id="gestion-des-branches">
+<h2>Gestion des branches<a class="headerlink" href="#gestion-des-branches" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="connaitre-le-dernier-commit-de-toutes-les-branches">
+<h3>Connaitre le dernier commit de toutes les branches<a class="headerlink" href="#connaitre-le-dernier-commit-de-toutes-les-branches" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">v</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="voir-les-branches-deja-mergees">
+<h3>Voir les branches déjà mergées<a class="headerlink" href="#voir-les-branches-deja-mergees" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">--</span><span class="n">merged</span>
+</pre></div>
+</div>
+<p>Et on peut les supprimer avec:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">d</span> <span class="n">nomdelabranche</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="comment-recuperer-une-nouvelle-branch-remote-inconnue-localement">
+<h3>Comment récuperer une nouvelle branch remote inconnue localement?<a class="headerlink" href="#comment-recuperer-une-nouvelle-branch-remote-inconnue-localement" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">fetch</span> <span class="o">--</span><span class="nb">all</span>
+<span class="n">git</span> <span class="n">checkout</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">oph odoo doc</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html">Comment filtrer les database dans l’interface database manager?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-databases">Comment lister les databases?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-tables-d-une-database">Comment lister les tables d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html">Comment restaurer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restore_database.html#comment-supprimer-une-database">Comment supprimer une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debugging.html">Debugging</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git tips and tricks.</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#connaitre-la-difference-entre-un-meme-fichier-de-deux-branches-differentes">Connaitre la différence entre un meme fichier de deux branches  différentes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connaitre-la-difference-entre-deux-branches">Connaitre la différence entre deux branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gestion-des-branches">Gestion des branches</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="IMPORTANT.html">ATTENTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="letsencrypt.html">Letsencrypt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relational_fields.html">relational fields</a></li>
+<li class="toctree-l1"><a class="reference internal" href="one2many.html">one2many</a></li>
+<li class="toctree-l1"><a class="reference internal" href="invitation_email.html">Invitation email</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Droit d’accés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="emailing_odoo.html">Emailing in odoo</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="debugging.html" title="previous chapter">Debugging</a></li>
+      <li>Next: <a href="IMPORTANT.html" title="next chapter">ATTENTION</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, laurent FRANCOIS.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/tips-tricks-git.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

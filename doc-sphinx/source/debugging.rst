@@ -1,3 +1,41 @@
-Debugging
-=========
-import pdb;pdb.set_trace()
+Python Debugging
+################
+ :: 
+ 
+   import pdb;pdb.set_trace()
+
+On le place où on veut dans le code python
+Et ensuite on lance le server en mode console ::
+
+   service odoo-server stop
+   /opt/odoo/odoo7-server/openerp-server -c /path/to/config/file
+   
+
+::
+
+   pip install ipdb
+   import ipdb; ipdb_set_tracte()
+   
+Les commandes::
+
+   h <command>
+   pp expression # value of expression
+   n continue execution
+   c continue 
+
+Python debugging
+****************
+
+install python library debugger ::
+
+   pip install ipdb
+   import ipdb; ipdb.set_trace()
+   
+Les commandes::
+
+   h <command>
+   pp expression # value of expression
+   n continue execution
+   c continue 
+   q quit
+
