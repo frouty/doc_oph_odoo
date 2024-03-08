@@ -5,11 +5,7 @@
  * This script contains the language-specific data used by searchtools.js,
  * namely the list of stopwords, stemmer, scorer and splitter.
  *
-<<<<<<< HEAD
  * :copyright: Copyright 2007-2022 by the Sphinx team, see AUTHORS.
-=======
- * :copyright: Copyright 2007-2023 by the Sphinx team, see AUTHORS.
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
  * :license: BSD, see LICENSE for details.
  *
  */

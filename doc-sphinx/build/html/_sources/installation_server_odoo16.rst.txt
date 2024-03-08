@@ -18,15 +18,12 @@ choisir un fichier
 
 wget ce fichier zip
 
-unzip le zip telechargé.
+unzip le zip telechargé::
 
-mkdir /usr/share/font/lenomduzipfile
-
-unzip lezipfile -d /usr/share/font/lenomduzipfile
-
-fc-cache -fv
-
-fc-list
+   mkdir /usr/share/font/lenomduzipfile
+   unzip lezipfile -d /usr/share/font/lenomduzipfile
+   fc-cache -fv
+   fc-list
 
 installation de powerlevel10K
 =============================
@@ -247,7 +244,7 @@ Installation des prerequis pour odoo16
    
    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
    sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
-   Je bloque car me demande de password du user odoo16
+   Je bloque car me demande le password du user odoo16
    Donc finalement je ne fait pas l'install du deb wkhtmltopdf comme cela. Mais tout simplement en user root. voir ci dessus.
 
 

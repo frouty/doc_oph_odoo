@@ -1,20 +1,12 @@
+
 <!DOCTYPE html>
 
-<<<<<<< HEAD
 <html lang="en">
-=======
-<html lang="en" data-content_root="./">
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
   <head>
     <meta charset="utf-8" />
-<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-=======
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 
     <title>Emailing in odoo &#8212; oph odoo doc 0.0.1 documentation</title>
-<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -23,13 +15,6 @@
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
-=======
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
-    <script src="_static/documentation_options.js?v=d45e8c67"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Xpath" href="xpath.html" />
@@ -37,14 +22,8 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-<<<<<<< HEAD
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-=======
-
-  
-  
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 
   </head><body>
   
@@ -57,25 +36,15 @@
           <div class="body" role="main">
             
   <section id="emailing-in-odoo">
-<<<<<<< HEAD
 <h1>Emailing in odoo<a class="headerlink" href="#emailing-in-odoo" title="Permalink to this heading">¶</a></h1>
-=======
-<h1>Emailing in odoo<a class="headerlink" href="#emailing-in-odoo" title="Link to this heading">¶</a></h1>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>Regarder Ophtalmology/Request, Ophtalmology/IOL Order</p>
 <p>Regarder Settings/Email/Template pour les templates des emails.</p>
 <p>Faire les modifications en base de données puis faire les tests puis mettre tout cela dans /oph_odoo/oph/edi/request_action_data.xml
 C’est le fichier dans lequel on trouve les templates des mails.</p>
 <section id="resume-de-la-resolution-de-gros-problemes">
-<<<<<<< HEAD
 <h2>Résumé de la résolution de Gros problemes<a class="headerlink" href="#resume-de-la-resolution-de-gros-problemes" title="Permalink to this heading">¶</a></h2>
 <section id="mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google">
 <h3>Mise en place de la 2FA et creation d’un app password dans google<a class="headerlink" href="#mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google" title="Permalink to this heading">¶</a></h3>
-=======
-<h2>Résumé de la résolution de Gros problemes<a class="headerlink" href="#resume-de-la-resolution-de-gros-problemes" title="Link to this heading">¶</a></h2>
-<section id="mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google">
-<h3>Mise en place de la 2FA et creation d’un app password dans google<a class="headerlink" href="#mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google" title="Link to this heading">¶</a></h3>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>Dans google account je mets en route le 2  step authentification
 Dans la barre de recherche je tape “app password”
 Je tombe sur la page App password
@@ -98,22 +67,14 @@ paramétrer le server smtp avec :</p>
 </div></blockquote>
 </section>
 <section id="hostinger-smtp">
-<<<<<<< HEAD
 <h3>hostinger smtp<a class="headerlink" href="#hostinger-smtp" title="Permalink to this heading">¶</a></h3>
-=======
-<h3>hostinger smtp<a class="headerlink" href="#hostinger-smtp" title="Link to this heading">¶</a></h3>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>password le password du compte email</p>
 <p>le login <a class="reference external" href="mailto:xyz&#37;&#52;&#48;ophtalmologie&#46;org">xyz<span>&#64;</span>ophtalmologie<span>&#46;</span>org</a>.</p>
 <p>le port 465 ne marche pas en swaks,</p>
 <p>le port 587 qui marche en swaks ne marche pas en odoo. le port 587 semble marcher avec thunderbird.</p>
 </section>
 <section id="gros-problemes">
-<<<<<<< HEAD
 <h3>Gros problemes<a class="headerlink" href="#gros-problemes" title="Permalink to this heading">¶</a></h3>
-=======
-<h3>Gros problemes<a class="headerlink" href="#gros-problemes" title="Link to this heading">¶</a></h3>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>Je n’arrive plus à envoyer des mails.</p>
 <p>D’ou mise en place de la double authentification sur google mise en place d’un code avec app password.</p>
 <p>Je n’arrive à envoyer les mails depuis odoo que sous admin</p>
@@ -134,32 +95,51 @@ l’impression que mailgun fonctionne. Les mails arrivent aux destinataire mais 
 dans le log de mailgun. je me deman si cela ne passe pas par gmail.</p>
 </dd>
 </dl>
-<p>cat ~/.swaksrc
--s smtp.mailgun.com
--tls
--au <a class="reference external" href="mailto:postmaster&#37;&#52;&#48;sandboxbedfc73aa96947c5b430639577c3c3a9&#46;mailgun&#46;org">postmaster<span>&#64;</span>sandboxbedfc73aa96947c5b430639577c3c3a9<span>&#46;</span>mailgun<span>&#46;</span>org</a>
--ap 895f7c1c5478b69ed5f1b3acb04f799c-523596d9-a57f14f2
--f <a class="reference external" href="mailto:francois&#46;oph&#37;&#52;&#48;gmail&#46;com">francois<span>&#46;</span>oph<span>&#64;</span>gmail<span>&#46;</span>com</a>
--p 587</p>
-<p>$swaks -t <a class="reference external" href="mailto:francois&#46;oph&#37;&#52;&#48;gmail&#46;com">francois<span>&#46;</span>oph<span>&#64;</span>gmail<span>&#46;</span>com</a> –body ‘de swak’ –h-Subject ‘DE SWAK 3eme’</p>
-<blockquote>
-<div><p>En CLI swaks ne marche pas timeout. J’ai mis le port à 587 et c’est bon . Les autres ports 25 et 465
-ne fonctionne pas.</p>
-<p>Attention –h-Subject avec un grand S et –h-subject
-sinon ca envoie comme sujet test avec la date. Cela peut etre utile.</p>
-<p>Donc j’ai configuré correctement mailgun.</p>
-<dl class="simple">
-<dt>mailgun setting/email/outgoing server port 587</dt><dd><p>SSL/TLS
-test connection –&gt; ssl unknown protocol.</p>
-</dd>
-</dl>
-<p>TLS/STARTTLS test connection c’est long Gateway time out.
-Je repasse sous lfs et là pareil le meme msg d’erreur./</p>
+<section id="swaks">
+<h4>swaks<a class="headerlink" href="#swaks" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  cat ~/.swaksrc
+  -s smtp.mailgun.com
+  -tls
+  -au postmaster@sandboxbedfc73aa96947c5b430639577c3c3a9.mailgun.org
+  -ap 895f7c1c5478b69ed5f1b3acb04f799c-523596d9-a57f14f2
+  -f francois.oph@gmail.com
+  -p 587
+
+  $swaks -t francois.oph@gmail.com --body &#39;de swak&#39; --h-Subject &#39;DE SWAK 3eme&#39;
+
+En CLI swaks ne marche pas timeout. J&#39;ai mis le port à 587 et c&#39;est bon . Les autres ports 25 et 465
+ne fonctionne pas.
+
+Attention --h-Subject avec un grand S et --h-subject
+sinon ca envoie comme sujet test avec la date. Cela peut etre utile.
+
+Donc j&#39;ai configuré correctement mailgun.
+
+
+
+En admin depuis odoo
+</pre></div>
+</div>
+<section id="mailgun">
+<h5>Mailgun<a class="headerlink" href="#mailgun" title="Permalink to this heading">¶</a></h5>
+<p>mailgun setting/email/outgoing server port 587
+SSL/TLS
+test connection –&gt; ssl unknown protocol.
+TLS/STARTTLS test connection c’est long Gateway time out.</p>
+<p>Je repasse sous lfs et là pareil le meme msg d’erreur./</p>
 <p>en cli avec swaks je vois que gunmail fonctionne.</p>
 <p>peut etre un probleme  de port. gunmail ecoute sur 25-587-465</p>
 <p>J’essaie 25 dans odoo Test connection c’est long -&gt; Time out
 <em>465</em>  -&gt; test succeeded</p>
-<p>j’enleve tous les followers
+</section>
+</section>
+</section>
+</section>
+</section>
+<section id="iol-order">
+<h1>iol order<a class="headerlink" href="#iol-order" title="Permalink to this heading">¶</a></h1>
+<blockquote>
+<div><p>j’enleve tous les followers
 j’envoie a un destinataire par gunmail. et rien ne se passe.</p>
 <p>le port 25 et 465 odoo me dit ok pour le test connection mais en CLI swaks ne marche
 le port 587 marche en swaks mais test connection me dit ne marche pas.</p>
@@ -172,12 +152,17 @@ port 25
 iol_order email –&gt; timeout
 j’essaie 2525 sans y croire. –&gt; timeout</p>
 <p>l’email avec odoo et gunmail ne marche pas sous admin</p>
-<p>Test connection test succeeded.</p>
-<p>timeout
-je repasse alias domain à localhost.
-timeout</p>
-<p>J’ai trouvé ceci</p>
 </div></blockquote>
+<p>Test connection test succeeded.</p>
+</section>
+<section id="id1">
+<h1>iol order<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<dl class="simple">
+<dt>timeout</dt><dd><p>je repasse alias domain à localhost.
+timeout</p>
+</dd>
+</dl>
+<p>J’ai trouvé ceci</p>
 <p>Avatar
 Amr Essam
 25 juin 2013</p>
@@ -192,59 +177,19 @@ port 25 ne marche pas timeout.
 port 465 test succeed
 port 587 connection test failed.</p>
 <p>J’ai l’impression que cela n’a rien changé je fais un reboot.</p>
-</section>
-<section id="reboot">
-<<<<<<< HEAD
-<h3>reboot<a class="headerlink" href="#reboot" title="Permalink to this heading">¶</a></h3>
-<section id="en-admin">
-<h4>En admin<a class="headerlink" href="#en-admin" title="Permalink to this heading">¶</a></h4>
-<section id="test-de-connection">
-<h5>test de connection<a class="headerlink" href="#test-de-connection" title="Permalink to this heading">¶</a></h5>
-=======
-<h3>reboot<a class="headerlink" href="#reboot" title="Link to this heading">¶</a></h3>
-<section id="en-admin">
-<h4>En admin<a class="headerlink" href="#en-admin" title="Link to this heading">¶</a></h4>
-<section id="test-de-connection">
-<h5>test de connection<a class="headerlink" href="#test-de-connection" title="Link to this heading">¶</a></h5>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>gmail app password port 465 test succeed
 gunmail port 465 test succeed.
 gunmail port 587 test failed.
 gunmail port 25 test failed.</p>
-</section>
-<section id="iol-order">
-<<<<<<< HEAD
-<h5>iol_order<a class="headerlink" href="#iol-order" title="Permalink to this heading">¶</a></h5>
-=======
-<h5>iol_order<a class="headerlink" href="#iol-order" title="Link to this heading">¶</a></h5>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>gmail app password  en admin envoie a deux recipients. OK
 si je mets <a class="reference external" href="mailto:francois&#46;oph&#37;&#52;&#48;gmail&#46;com">francois<span>&#46;</span>oph<span>&#64;</span>gmail<span>&#46;</span>com</a> le mail n’y arrive pas.
 si je ne mets pas d’autre récipient le mail est bien envoyer à tous les follower mais pas au user.</p>
-</section>
-</section>
-<section id="en-user-standard">
-<<<<<<< HEAD
-<h4>En user standard<a class="headerlink" href="#en-user-standard" title="Permalink to this heading">¶</a></h4>
-=======
-<h4>En user standard<a class="headerlink" href="#en-user-standard" title="Link to this heading">¶</a></h4>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>Test connection gmail app password test succeed.
 iol order responsable: francois meme que le user. email ok
 voyons si francois peut envoyer un mail qd responsable n’est pasfrancois mais administrator. email ok
 le responsable de l’objet ne pose pas de probleme pour l’envoie de mail.</p>
 <p>je mets gmail app password en priority apres localhost. cela ne marche plus. Je le remets en 1. Et ok pour iol order
-<<<<<<< HEAD
-j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="reference external" href="mailto:cabinet&#46;goeen&#37;&#52;&#48;gmail&#46;com">cabinet<span>&#46;</span>goeen<span>&#64;</span>gmail<span>&#46;</span>com</a> adresse qui n’existe pas</p>
-<blockquote>
-<div><p>je ne trouve pas ou j’ai mis cela.</p>
-</div></blockquote>
-=======
 j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="reference external" href="mailto:cabinet&#46;goeen&#37;&#52;&#48;gmail&#46;com">cabinet<span>&#46;</span>goeen<span>&#64;</span>gmail<span>&#46;</span>com</a> adresse qui n’existe pas .  je ne trouve pas ou j’ai mis cela.</p>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
-</section>
-</section>
-</section>
 </section>
 
 
@@ -267,19 +212,17 @@ j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="re
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODDO</a></li>
-<<<<<<< HEAD
-<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html#installation-de-ohmyzsh">installation de ohmyzsh</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html#installation-des-fonts">installation des fonts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html#installation-de-powerlevel10k">installation de powerlevel10K</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html#installation-des-plugins-ohmyzsh">Installation des plugins ohmyzsh</a></li>
-=======
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html">Installation et mise en route du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html#post-install-configuration-de-odoo">Post install configuration de odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html#todo">TODO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="odoo16_manage_database.html">Database manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html">Developpement de oph_odoo16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">Comment avoir la liste des champs ordonnés pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password-admin_odoo16.html">Les password dans odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password-admin_odoo16.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html">Comment filtrer les database dans l’interface database manager?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-databases">Comment lister les databases?</a></li>
@@ -295,9 +238,16 @@ j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="re
 <li class="toctree-l1"><a class="reference internal" href="invitation_email.html">Invitation email</a></li>
 <li class="toctree-l1"><a class="reference internal" href="security.html">Droit d’accés</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Emailing in odoo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#resume-de-la-resolution-de-gros-problemes">Résumé de la résolution de Gros problemes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resume-de-la-resolution-de-gros-problemes">Résumé de la résolution de Gros problemes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google">Mise en place de la 2FA et creation d’un app password dans google</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hostinger-smtp">hostinger smtp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gros-problemes">Gros problemes</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#iol-order">iol order</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">iol order</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xpath.html">Xpath</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shell.html">shell</a></li>
 </ul>
@@ -334,16 +284,11 @@ j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="re
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &#169;2021, laurent FRANCOIS.
+      &copy;2021, laurent FRANCOIS.
       
       |
-<<<<<<< HEAD
       Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
-=======
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
       
       |
       <a href="_sources/emailing_odoo.rst.txt"

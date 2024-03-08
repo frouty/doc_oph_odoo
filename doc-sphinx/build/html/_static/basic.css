@@ -4,11 +4,7 @@
  *
  * Sphinx stylesheet -- basic theme.
  *
-<<<<<<< HEAD
  * :copyright: Copyright 2007-2022 by the Sphinx team, see AUTHORS.
-=======
- * :copyright: Copyright 2007-2023 by the Sphinx team, see AUTHORS.
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
  * :license: BSD, see LICENSE for details.
  *
  */
@@ -226,11 +222,7 @@ table.modindextable td {
 /* -- general body styles --------------------------------------------------- */
 
 div.body {
-<<<<<<< HEAD
     min-width: 360px;
-=======
-    min-width: inherit;
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
     max-width: 800px;
 }
 
@@ -245,13 +237,6 @@ a.headerlink {
     visibility: hidden;
 }
 
-<<<<<<< HEAD
-=======
-a:visited {
-    color: #551A8B;
-}
-
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 h1:hover > a.headerlink,
 h2:hover > a.headerlink,
 h3:hover > a.headerlink,
@@ -339,10 +324,6 @@ aside.sidebar {
 p.sidebar-title {
     font-weight: bold;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 nav.contents,
 aside.topic,
 div.admonition, div.topic, blockquote {
@@ -350,10 +331,6 @@ div.admonition, div.topic, blockquote {
 }
 
 /* -- topics ---------------------------------------------------------------- */
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 nav.contents,
 aside.topic,
 div.topic {
@@ -629,10 +606,6 @@ ol.simple p,
 ul.simple p {
     margin-bottom: 0;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 aside.footnote > span,
 div.citation > span {
     float: left;
@@ -692,16 +665,6 @@ dd {
     margin-top: 3px;
     margin-bottom: 10px;
     margin-left: 30px;
-}
-
-.sig dd {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.sig dl {
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 dl > dd:last-child,
@@ -770,14 +733,6 @@ dl.glossary dt {
 abbr, acronym {
     border-bottom: dotted 1px;
     cursor: help;
-}
-
-.translated {
-    background-color: rgba(207, 255, 207, 0.2)
-}
-
-.untranslated {
-    background-color: rgba(255, 207, 207, 0.2)
 }
 
 /* -- code displays --------------------------------------------------------- */
