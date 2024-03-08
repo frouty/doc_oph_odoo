@@ -9,7 +9,7 @@ Mise en place du systeme de fichier
 ::
 
    mkdir -p /opt/odoo/odoo16/custom/addons && cd /opt/odoo/odoo16/custom/addons
-   git clone git@github.com:frouty/oph_odoo16.git
+   git clone git@github.com:frouty/oph_odoo16.git 
 
 Update du fichier odoo.conf
 ***************************

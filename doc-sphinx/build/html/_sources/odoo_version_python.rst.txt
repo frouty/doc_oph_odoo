@@ -1,6 +1,8 @@
 Version de python et odoo
 #########################
 
+.. _pythonodooversion:
+
 odoo 12 :: 
    
    python 3.5 et au dessus.

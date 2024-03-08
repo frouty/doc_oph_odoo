@@ -6,9 +6,11 @@ Running ODOO in virtual environnement
 
 différent version d'odoo differente version de python
 
+:ref:  `pythonodooversion`
+
 :: 
 
-   python3 --version                                                         ─╯
+   python3 --version
    Python 3.9.2
 
 Installation and setting odoo

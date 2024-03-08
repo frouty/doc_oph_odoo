@@ -10,11 +10,13 @@ Welcome to oph odoo doc's documentation!
    :maxdepth: 3
    :caption: Contents:
 	
+   installation_server_odoo
    odoo_version_python
    installation_server_odoo16
    odoo16_manage_database
    oph_odoo16
    password-admin_odoo16
+   passwd
    document_attachment_storage
    list_database
    restore_database

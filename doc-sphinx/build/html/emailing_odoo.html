@@ -1,20 +1,16 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Emailing in odoo &#8212; oph odoo doc 0.0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Xpath" href="xpath.html" />
@@ -22,8 +18,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
   
@@ -36,15 +33,15 @@
           <div class="body" role="main">
             
   <section id="emailing-in-odoo">
-<h1>Emailing in odoo<a class="headerlink" href="#emailing-in-odoo" title="Permalink to this heading">¶</a></h1>
+<h1>Emailing in odoo<a class="headerlink" href="#emailing-in-odoo" title="Link to this heading">¶</a></h1>
 <p>Regarder Ophtalmology/Request, Ophtalmology/IOL Order</p>
 <p>Regarder Settings/Email/Template pour les templates des emails.</p>
 <p>Faire les modifications en base de données puis faire les tests puis mettre tout cela dans /oph_odoo/oph/edi/request_action_data.xml
 C’est le fichier dans lequel on trouve les templates des mails.</p>
 <section id="resume-de-la-resolution-de-gros-problemes">
-<h2>Résumé de la résolution de Gros problemes<a class="headerlink" href="#resume-de-la-resolution-de-gros-problemes" title="Permalink to this heading">¶</a></h2>
+<h2>Résumé de la résolution de Gros problemes<a class="headerlink" href="#resume-de-la-resolution-de-gros-problemes" title="Link to this heading">¶</a></h2>
 <section id="mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google">
-<h3>Mise en place de la 2FA et creation d’un app password dans google<a class="headerlink" href="#mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google" title="Permalink to this heading">¶</a></h3>
+<h3>Mise en place de la 2FA et creation d’un app password dans google<a class="headerlink" href="#mise-en-place-de-la-2fa-et-creation-d-un-app-password-dans-google" title="Link to this heading">¶</a></h3>
 <p>Dans google account je mets en route le 2  step authentification
 Dans la barre de recherche je tape “app password”
 Je tombe sur la page App password
@@ -67,14 +64,14 @@ paramétrer le server smtp avec :</p>
 </div></blockquote>
 </section>
 <section id="hostinger-smtp">
-<h3>hostinger smtp<a class="headerlink" href="#hostinger-smtp" title="Permalink to this heading">¶</a></h3>
+<h3>hostinger smtp<a class="headerlink" href="#hostinger-smtp" title="Link to this heading">¶</a></h3>
 <p>password le password du compte email</p>
 <p>le login <a class="reference external" href="mailto:xyz&#37;&#52;&#48;ophtalmologie&#46;org">xyz<span>&#64;</span>ophtalmologie<span>&#46;</span>org</a>.</p>
 <p>le port 465 ne marche pas en swaks,</p>
 <p>le port 587 qui marche en swaks ne marche pas en odoo. le port 587 semble marcher avec thunderbird.</p>
 </section>
 <section id="gros-problemes">
-<h3>Gros problemes<a class="headerlink" href="#gros-problemes" title="Permalink to this heading">¶</a></h3>
+<h3>Gros problemes<a class="headerlink" href="#gros-problemes" title="Link to this heading">¶</a></h3>
 <p>Je n’arrive plus à envoyer des mails.</p>
 <p>D’ou mise en place de la double authentification sur google mise en place d’un code avec app password.</p>
 <p>Je n’arrive à envoyer les mails depuis odoo que sous admin</p>
@@ -91,12 +88,12 @@ securite de la connection je mets debogage dans odoo et je change SSL/TLS -&gt; 
 enregister test de connection ca prend du temps contrairement à d’habitude. timeout
 securite de la connection à aucun pareil ca prend un temps fou et timeout</p>
 <p>Dans thunderbird si je change le smtp vers mailgun en default je n’ai pas
-l’impression que mailgun fonctionne. Les mails arrivent aux destinataire mais rien
-dans le log de mailgun. je me deman si cela ne passe pas par gmail.</p>
+l’impression que mailgun fonctionne. Les mails arrivent aux destinataires mais rien
+dans le log de mailgun. je me demande si cela ne passe pas par gmail.</p>
 </dd>
 </dl>
 <section id="swaks">
-<h4>swaks<a class="headerlink" href="#swaks" title="Permalink to this heading">¶</a></h4>
+<h4>swaks<a class="headerlink" href="#swaks" title="Link to this heading">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  cat ~/.swaksrc
   -s smtp.mailgun.com
   -tls
@@ -120,8 +117,9 @@ Donc j&#39;ai configuré correctement mailgun.
 En admin depuis odoo
 </pre></div>
 </div>
+</section>
 <section id="mailgun">
-<h5>Mailgun<a class="headerlink" href="#mailgun" title="Permalink to this heading">¶</a></h5>
+<h4>Mailgun<a class="headerlink" href="#mailgun" title="Link to this heading">¶</a></h4>
 <p>mailgun setting/email/outgoing server port 587
 SSL/TLS
 test connection –&gt; ssl unknown protocol.
@@ -134,10 +132,8 @@ TLS/STARTTLS test connection c’est long Gateway time out.</p>
 </section>
 </section>
 </section>
-</section>
-</section>
 <section id="iol-order">
-<h1>iol order<a class="headerlink" href="#iol-order" title="Permalink to this heading">¶</a></h1>
+<h2>iol order<a class="headerlink" href="#iol-order" title="Link to this heading">¶</a></h2>
 <blockquote>
 <div><p>j’enleve tous les followers
 j’envoie a un destinataire par gunmail. et rien ne se passe.</p>
@@ -153,15 +149,20 @@ iol_order email –&gt; timeout
 j’essaie 2525 sans y croire. –&gt; timeout</p>
 <p>l’email avec odoo et gunmail ne marche pas sous admin</p>
 </div></blockquote>
+</section>
+<section id="gmail-en-app-password">
+<h2>gmail en app password<a class="headerlink" href="#gmail-en-app-password" title="Link to this heading">¶</a></h2>
 <p>Test connection test succeeded.</p>
 </section>
 <section id="id1">
-<h1>iol order<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<h2>iol order<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <dl class="simple">
 <dt>timeout</dt><dd><p>je repasse alias domain à localhost.
 timeout</p>
 </dd>
 </dl>
+<section id="modifications-de-l-alias-domain">
+<h3>Modifications de l’alias domain<a class="headerlink" href="#modifications-de-l-alias-domain" title="Link to this heading">¶</a></h3>
 <p>J’ai trouvé ceci</p>
 <p>Avatar
 Amr Essam
@@ -177,19 +178,36 @@ port 25 ne marche pas timeout.
 port 465 test succeed
 port 587 connection test failed.</p>
 <p>J’ai l’impression que cela n’a rien changé je fais un reboot.</p>
+</section>
+<section id="reboot">
+<h3>reboot<a class="headerlink" href="#reboot" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+<section id="en-admin">
+<h2>En admin<a class="headerlink" href="#en-admin" title="Link to this heading">¶</a></h2>
+<section id="test-de-connection">
+<h3>test de connection<a class="headerlink" href="#test-de-connection" title="Link to this heading">¶</a></h3>
 <p>gmail app password port 465 test succeed
 gunmail port 465 test succeed.
 gunmail port 587 test failed.
 gunmail port 25 test failed.</p>
+<section id="id2">
+<h4>iol_order<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
 <p>gmail app password  en admin envoie a deux recipients. OK
 si je mets <a class="reference external" href="mailto:francois&#46;oph&#37;&#52;&#48;gmail&#46;com">francois<span>&#46;</span>oph<span>&#64;</span>gmail<span>&#46;</span>com</a> le mail n’y arrive pas.
 si je ne mets pas d’autre récipient le mail est bien envoyer à tous les follower mais pas au user.</p>
+<section id="en-user-standard">
+<h5>En user standard<a class="headerlink" href="#en-user-standard" title="Link to this heading">¶</a></h5>
 <p>Test connection gmail app password test succeed.
 iol order responsable: francois meme que le user. email ok
 voyons si francois peut envoyer un mail qd responsable n’est pasfrancois mais administrator. email ok
 le responsable de l’objet ne pose pas de probleme pour l’envoie de mail.</p>
 <p>je mets gmail app password en priority apres localhost. cela ne marche plus. Je le remets en 1. Et ok pour iol order
 j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="reference external" href="mailto:cabinet&#46;goeen&#37;&#52;&#48;gmail&#46;com">cabinet<span>&#46;</span>goeen<span>&#64;</span>gmail<span>&#46;</span>com</a> adresse qui n’existe pas .  je ne trouve pas ou j’ai mis cela.</p>
+</section>
+</section>
+</section>
+</section>
 </section>
 
 
@@ -211,18 +229,19 @@ j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="re
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODOO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html">Installation et mise en route du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html">Installation et mise en route du server ODOO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html#post-install-configuration-de-odoo">Post install configuration de odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html#todo">TODO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="odoo16_manage_database.html">Database manager</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html">Developpement de oph_odoo16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">Comment avoir la liste des champs ordonnés pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
-<li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password-admin_odoo16.html">Les password dans odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password-admin_odoo16.html#creation-d-une-database">Creation d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html">Comment filtrer les database dans l’interface database manager?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-databases">Comment lister les databases?</a></li>
@@ -244,10 +263,19 @@ j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="re
 <li class="toctree-l3"><a class="reference internal" href="#gros-problemes">Gros problemes</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#iol-order">iol order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gmail-en-app-password">gmail en app password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">iol order</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modifications-de-l-alias-domain">Modifications de l’alias domain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reboot">reboot</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#iol-order">iol order</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id1">iol order</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#en-admin">En admin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#test-de-connection">test de connection</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="xpath.html">Xpath</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shell.html">shell</a></li>
 </ul>
@@ -284,11 +312,11 @@ j’essaie pour request. Ca marche mais cela envoie aussi un mail a <a class="re
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, laurent FRANCOIS.
+      &#169;2021, laurent FRANCOIS.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
       
       |
       <a href="_sources/emailing_odoo.rst.txt"
