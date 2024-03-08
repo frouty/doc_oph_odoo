@@ -23,3 +23,19 @@ Les commandes::
    n continue execution
    c continue 
 
+Python debugging
+****************
+
+install python library debugger ::
+
+   pip install ipdb
+   import ipdb; ipdb.set_trace()
+   
+Les commandes::
+
+   h <command>
+   pp expression # value of expression
+   n continue execution
+   c continue 
+   q quit
+

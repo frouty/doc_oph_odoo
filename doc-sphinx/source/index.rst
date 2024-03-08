@@ -13,7 +13,6 @@ Welcome to oph odoo doc's documentation!
    odoo_version_python
    installation_server_odoo
    oph_odoo16
-   passwd
    password-admin_odoo16
    document_attachment_storage
    list_database

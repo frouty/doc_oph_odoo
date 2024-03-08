@@ -1,4 +1,4 @@
-Installation et mise en route du server ODDO
+Installation et mise en route du server ODOO
 ############################################
 
 Running ODOO in virtual environnement
