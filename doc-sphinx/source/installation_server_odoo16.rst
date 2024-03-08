@@ -18,15 +18,12 @@ choisir un fichier
 
 wget ce fichier zip
 
-unzip le zip telechargé.
+unzip le zip telechargé::
 
-mkdir /usr/share/font/lenomduzipfile
-
-unzip lezipfile -d /usr/share/font/lenomduzipfile
-
-fc-cache -fv
-
-fc-list
+   mkdir /usr/share/font/lenomduzipfile
+   unzip lezipfile -d /usr/share/font/lenomduzipfile
+   fc-cache -fv
+   fc-list
 
 installation de powerlevel10K
 =============================

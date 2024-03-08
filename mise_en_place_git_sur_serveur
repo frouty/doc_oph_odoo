@@ -1,0 +1,16 @@
+git clone git@github.com:frouty/odoo_oph.git --branch 7.0 --single-branch odoo_oph
+pour cloner oph de mon github repository avec uniquement la branch 7.0.
+Il y a quand meme la branche 8.0.
+Pour cloner aeroo
+git clone git@github.com:frouty/aeroo.git --branch 7.0 --single-branch aeroo_70
+
+pour rajouter un upstream qui pointe vers le repertoire d'origine à savoir Julius. 
+git remote add upstream git@github.com:julius-network-solutions/aeroo.git
+
+Pour synchroniser ma fork aeroo sur le repository de Julius.
+git remote add upstream git@github.com:julius-network-solutions/aeroo.git
+git fetch upstream 7.0 
+pour récupérer uniquement la branche 7.0
+
+Adresse des docuements:
+/usr/openerp.prod/server/openerp/filestore/goeen00

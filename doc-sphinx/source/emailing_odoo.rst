@@ -165,7 +165,7 @@ reboot
 ======
 En admin
 ~~~~~~~~
-test de connection 
+test de connection
 ------------------
 gmail app password port 465 test succeed
 gunmail port 465 test succeed. 
@@ -187,5 +187,4 @@ voyons si francois peut envoyer un mail qd responsable n'est pasfrancois mais ad
 le responsable de l'objet ne pose pas de probleme pour l'envoie de mail.
 
 je mets gmail app password en priority apres localhost. cela ne marche plus. Je le remets en 1. Et ok pour iol order
-j'essaie pour request. Ca marche mais cela envoie aussi un mail a cabinet.goeen@gmail.com adresse qui n'existe pas
- je ne trouve pas ou j'ai mis cela.
+j'essaie pour request. Ca marche mais cela envoie aussi un mail a cabinet.goeen@gmail.com adresse qui n'existe pas .  je ne trouve pas ou j'ai mis cela.
