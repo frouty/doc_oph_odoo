@@ -1,5 +1,14 @@
-Installation et mise en route du server ODOO
-############################################
+Installation et mise en route du server ODOO 16
+###############################################
+
+Fait sur le VPS  ::
+
+   .o LSB modules are available.
+   Distributor ID:   Ubuntu
+   Description:   Ubuntu 22.04.4 LTS
+   Release: 22.04
+   Codename:   jammy
+   
 
 installation de ohmyzsh
 ***********************
@@ -11,6 +20,10 @@ apt install zsh mate wget
 
 installation des fonts
 ======================
+
+::
+
+   apt install fontconfig
 
 Allez sur https://github.com/ryanoasis/nerd-fonts/releases/tag/v2.1.0
 
@@ -65,9 +78,9 @@ Installation and setting odoo
 =============================
 
 Odoo 16 source code sera installé dans 
-   - /opt/odoo/odoo16
+   - /opt/odoo/odoo16/odoo16-server
 Customs addons seront installés dans:
-   - /opt/odoo/custom-odoo16....
+   - /opt/odoo/odoo16/custom-addons
 
 Odoo 16 will run sous le user odoo16
 
@@ -167,10 +180,13 @@ Installation de wkhtmltopdf for generating pdf
 
 Create a log directory, change owner, and set permissions (TODO)
 ----------------------------------------------------------------
+
 ::
 
    sudo mkdir /var/log/odoo16
    sudo chown odoo16:root /var/log/odoo16
+   
+set permission todo
 
 Running ODOO in virtual environnement
 #####################################
@@ -221,7 +237,7 @@ Download Odoo depuis github
 
    mkdir -p /opt/odoo/odoo16
    sudo su - odoo git clone https://github.com/odoo/odoo.git --depth 1 --branch 16.0 /opt/odoo/odoo16/odoo16-server
-   #sudo git clone -b 16.0 https://github.com/odoo/odoo.git /opt/odoo/odoo16-server
+   #sudo git clone -b 16.0 https://github.com/odoo/odoo.git /opt/odoo/odoo16/odoo16-server
    sudo chown -hR root:odoo /opt/odoo/odoo16  <-- root:odoo ou odoo16:root
 
 Création d'un directory pour les customs addons
@@ -240,8 +256,8 @@ Installation des prerequis pour odoo16
    sudo su - odoo16 -s /bin/bash
    source /python-venv/3.10/odoo16/bin/activate
    pip install wheel
-   pip install -r /opt/odoo/odoo16/requirements.txt
-   pip install pylibdmtx
+   pip install -r /opt/odoo/odoo16/odoo16-server/requirements.txt
+   pip install pylibdmtx # aide odoo à imprimer des data matrix barcodes
    
    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
    sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
@@ -260,18 +276,111 @@ Je test en restant dans le virtual env.
 
 Je me connecte http://IP_server:8069 
 
-master password proposé : tmqw-ak6n-3xyh
+J'efface toutes les bases de données créent avant. Je ne fais rien sur les bases de données
 
-password gkvnFWsvjH5x3Kh
+:: 
+   
+   Ctrl C deux fois pour stoper le server 
+   exit
 
-Odoo service file
-=================
+Création du fichier de configuration de odoo 16
+***********************************************
+
+Création
+========
+::
+
+   nano /etc/odoo16.confi
+   
+      [options]
+   #addons_path = /opt/odoo/odoo16/odoo/addons,/opt/odoo/odoo16/addons,/home/odoo16/addons_repo_name
+   addons_path = /opt/odoo/odoo16/odoo116-server/addons, /opt/odoo/odoo16/custlon-addons
+   admin_passwd = admin
+   csv_internal_sep = ,
+   data_dir = /home/odoo16/.local/share/Odoo
+   db_host = False
+   db_maxconn = 64
+   db_name = False
+   db_password = False
+   db_port = False
+   db_sslmode = prefer
+   db_template = template0
+   db_user = False
+   dbfilter =
+   demo = {}
+   email_from = False
+   from_filter = False
+   geoip_database = /usr/share/GeoIP/GeoLite2-City.mmdb
+   gevent_port = 8072
+   http_enable = True
+   http_interface =
+   http_port = 8069
+   import_partial =
+   limit_memory_hard = 2684354560
+   limit_memory_soft = 2147483648
+   limit_request = 8192
+   limit_time_cpu = 60
+   limit_time_real = 120
+   limit_time_real_cron = -1
+   list_db = True
+   # Logging
+   log_db = False
+   log_db_level = warning
+   log_handler = :INFO
+   log_level = info
+   logfile =
+   max_cron_threads = 2
+   osv_memory_age_limit = False
+   osv_memory_count_limit = 0
+   pg_path =
+   pidfile =
+   proxy_mode = False
+   reportgz = False
+   screencasts =
+   screenshots = /tmp/odoo_tests
+   server_wide_modules = base,web
+   smtp_password = False
+   smtp_port = 25
+   smtp_server = localhost
+   smtp_ssl = False
+   smtp_ssl_certificate_filename = False
+   smtp_ssl_private_key_filename = False
+   smtp_user = False
+   syslog = False
+   test_enable = False
+   test_file =
+   test_tags = None
+   transient_age_limit = 1.0
+   translate_modules = ['all']
+   unaccent = False
+   upgrade_path =
+   websocket_keep_alive_timeout = 600
+   websocket_rate_limit_burst = 10
+   websocket_rate_limit_delay = 0.2
+   without_demo = False
+   workers = 0
+   x_sendfile = False  
+
+Set owner ::
+
+   chown odoo16:root /etc/odoo16.conf
+
+Set permission ::
+
+   todo
+
+geoip database, data_dir  cela sert à quoi? TODO 
+
+
+
+Odoo unit service  file
+***********************
 
 est ce qu'il faut le mettre en oeuvre quand on travaill en virtual env?
 
 ::
 
-   nano /etc/systemd/system/odoo16.service
+   nano /lib/systemd/system/odoo16.service
    
    [Unit]
    Description=Odoo16
@@ -280,11 +389,46 @@ est ce qu'il faut le mettre en oeuvre quand on travaill en virtual env?
    # Ubuntu/Debian convention:
    Type=simple
    User=odoo16
-   ExecStart=/opt/odoo/odoo16/odoo-bin -c /etc/odoo16.conf
+   ExecStart=/opt/odoo/odoo16/odoo16-server/odoo-bin -c /etc/odoo16.conf
    [Install]
    WantedBy=default.target
 
-Set permissions ::
+   ou 
+   
+   [Unit]
+   Description=Odoo16
+   After=network.target postgresql.service
+   
+   [Service]
+   Type=simple
+   PermissionsStartOnly=true
+   User=odoo16
+   Group=odoo
+   SyslogIdentifier=odoo16
+   PIDFile=/run/odoo16/odoo16.pid
+   ExecStartPre=/usr/bin/install -d -m755 -o odoo16 -g odoo /run/odoo16
+   ExecStart=/python-venv/3.10/odoo16/bin/python /opt/odoo/odoo16/odoo-bin -c /etc/odoo16.conf --pid=/run/odoo16/odoo16.pid
+   ExecReload=/bin/kill -s HUP $MAINPID
+   ExecStop=/bin/kill -s QUIT $MAINPID
+   
+   [Install]
+   Alias=odoo16.service
+   WantedBy=multi-user.target
+
+Notify systemd that a new unit file exist ::
+   
+   systemctl daemon-reload
+
+Enable the service and ask it to run on boot ::
+ 
+   sudo systemctl enable --now odoo16   <-- cela crée des symlink dans /etc/systemd/system
+      
+
+start your Odoo 16 using systemd ::
+
+   systemctl start odoo16
+
+Set permissions pas necessaire c'est déjà fait par le système ::
 
    sudo chmod 755 /etc/systemd/system/odoo16.service
    sudo chown root: /etc/systemd/system/odoo16.service
@@ -293,22 +437,78 @@ Furthermore, the installation of Odoo was successful if it is shown as active ::
 
    sudo systemctl status odoo16.service
 
-Finally, use the following command to start the Odoo service automatically after restarting the server ::
-   
-   sudo systemctl enable odoo16.service
 
 Use the following command to restart the Odoo service if you have made any modifications to the add-ons so that your instance will reflect the updates ::
 
    sudo systemctl restart odoo16.service
 
+https://<ip du server odoo 16 on le trouve sur hostinger>:8069
+
+On obtient 
+
+
+.. image:: icono/firstdbcreation.png
+   :width: 400
+   :alt: Alternative text
+   
+master password proposé : tmqw-ak6n-3xyh
+
+Database name : dbmars24
+
+email odoo16@ophtalmologie.org
+
+password gkvnFWsvjH5x3Kh
+
+.. image:: icono/firstlogin.png
+   :width: 400
+   :alt: Alternative text
+
+On se logue avec l'email admin defini précedemment et on obtient
+
+.. image:: icono/adminpageacceuil.png
+   :width: 800
+   :alt: Alternative text
+
+Il n'y pas grand chose dans l'interface :
+
+- apps :
+   -  main apps
+   -  theme stores
+   -  Thrid-Party Apps
+- settings :
+   - users & company 
+   
+Creation d'un nouveau user
+**************************
+
+Il y a des: 
+
+-  internal user 
+-  portal user
+
+Quelles sont les différences?
+
+Je crée un nouveau user. je modifie le mot de passe dans le webgui odoo. 
+
+je me connecte avec ce nouveau internal user.
+
+Je n'ai pas d'application avec ce nouveau user.  Je me logue à nouveau sous admin pour installer des apps.
+
+Project : Activate. 
+
+Je vois apparaitre Discuss et Project. Dans Settings il a maintenant :
+ 
+- General settings: on a une interface qui permet d'inviter de nouveau user. 
+- Project
+
+Avec le nouveau user j'ai :
+
+- Discuss
+- Project
+- Apps
 
 Post install configuration de odoo
 ##################################
-
-je me connecte avec mon adress mail et je suis en administrateur. 
-
-Il n'y pas grand chose dans l'interface : discuss, calendar, Contacts, Apps, Settings. 
-
 
 Configuration du server de mail
 *******************************
@@ -317,16 +517,21 @@ Je sais que le SMTP n'est pas configuré car je n'ai pas de mail si j'ai oublié
 
 settings / general settings / Custom email servers
 
-J'ai utilisé mon server de mail à ophtalmologie.org. Le mail de Admin doit etre une adresse mail de ophtalmologie.org.
+J'ai utilisé mon server de mail à ophtalmologie.org. Le mail de Admin doit etre une adresse mail de ophtalmologie.org. Je rajoute
 
-Le server outgoing me dit ok lors du test de connection mais lorsque j'essaie d'inviter new user cela ne fonctionne pas. Pas de message d'erreur. Pas de mail chez le destinataire.
+- odoo16@ophtalmologie.org dans les alias de mail sur hostinger. 
+- bounce@ophtalmologie.org dans les alias sur hostinger et cela fonctionnne
 
-TODO 
+Pour une invitation par mail je recois le mail 
+
+.. image:: icono/mailinvitation.png
+   :width: 800
+   :alt: Alternative text
 
 Installation du module sales
 ############################
 
-TODO 
+TODO
 ####
 
 Installation et creation du virtualenv
@@ -345,6 +550,7 @@ Creation du virtualenv et installation des requirements.
    
    cd /opt/odoo/odoo<version odoo>
    python3 -m venv <venv-directory> # meme directory que odoo ou un autre directory
+   
    cela install bin directory, include dir, lib dir, pyenv.cfg, share dir, link lib64 to lib . Cela crée un <venv-directory>
    source  <venv-directory>/bin/activate
    python --version # pour vérifier que tout a bien marché.

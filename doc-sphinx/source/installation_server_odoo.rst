@@ -67,7 +67,7 @@ Désactivation du venv
 :: 
 
    deactivate
-   which python # on verifie que l'on est bien retourné à la verison systeme de python
+   which python # on verifie que l'on est bien retourné à la verison système de python
    python --version  # on verifie.
 
 
@@ -83,15 +83,7 @@ Installation et setting postgresql
    postgres=#/du list  user pour vérifier que cela marche
    postgres=#quit
 
-Quelques commandes utiles SQL
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-::
 
-   psql $DB_NAME  # Connect to a database.
-    \l  #List all the available databases.
-    \dt  #List all the tables of the $DB_NAME database.
-    \d $TABLE_NAME  #Show the structure of the table $TABLE_NAME.
-    \q  #Quit the psql environment (ctrl + d).
    
 configuration de pg_hba file. ::
 
@@ -116,10 +108,10 @@ creation d'un fichier de conf ::
 running odoo-bin ::
 
    ./odoo-bin -c odoo.conf
-   blabla
+   
    odoo.service.server: HTTP service (werkzeug) running on cobalt.lan:8069
    
-   On se connecte avec localhost:8069
-   me donne un master password for database. Je le range dans le manager de password.
-   bingo
+On se connecte avec localhost:8069
+me donne un master password for database. Je le range dans le manager de password.
+bingo
    

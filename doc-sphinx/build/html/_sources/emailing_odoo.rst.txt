@@ -67,11 +67,11 @@ avec l'objet iol_order, sous user  en enlevant tous les abonnés j'envoie unique
  
  
  Dans thunderbird si je change le smtp vers mailgun en default je n'ai pas 
- l'impression que mailgun fonctionne. Les mails arrivent aux destinataire mais rien 
- dans le log de mailgun. je me deman si cela ne passe pas par gmail.
+ l'impression que mailgun fonctionne. Les mails arrivent aux destinataires mais rien 
+ dans le log de mailgun. je me demande si cela ne passe pas par gmail.
 
 swaks
-^^^^^
+-----
 
 :: 
  
@@ -115,7 +115,7 @@ J'essaie 25 dans odoo Test connection c'est long -> Time out
 *465*  -> test succeeded
 
 iol order
-#########
+*********
  
  j'enleve tous les followers
  j'envoie a un destinataire par gunmail. et rien ne se passe. 
@@ -135,12 +135,12 @@ iol order
  l'email avec odoo et gunmail ne marche pas sous admin
  
 gmail en app password
----------------------
+*********************
 Test connection test succeeded.
  
 iol order
-#########
- 
+*********
+
 timeout
  je repasse alias domain à localhost.
  timeout
@@ -170,9 +170,9 @@ J'ai l'impression que cela n'a rien changé je fais un reboot.
 reboot
 ======
 En admin
-~~~~~~~~
+********
 test de connection
-------------------
+==================
 gmail app password port 465 test succeed
 gunmail port 465 test succeed. 
 gunmail port 587 test failed.

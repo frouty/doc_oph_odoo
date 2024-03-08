@@ -1,11 +1,11 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<<<<<<< HEAD
     <title>Installation et mise en route du server ODOO &#8212; oph odoo doc 0.0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
@@ -15,6 +15,14 @@
     <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
+=======
+    <title>Installation et mise en route du server ODOO 16 &#8212; oph odoo doc 0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=d45e8c67"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Database manager" href="odoo16_manage_database.html" />
@@ -22,8 +30,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
   
@@ -35,14 +44,30 @@
 
           <div class="body" role="main">
             
+<<<<<<< HEAD
   <section id="installation-et-mise-en-route-du-server-odoo">
 <h1>Installation et mise en route du server ODOO<a class="headerlink" href="#installation-et-mise-en-route-du-server-odoo" title="Permalink to this heading">¶</a></h1>
+=======
+  <section id="installation-et-mise-en-route-du-server-odoo-16">
+<h1>Installation et mise en route du server ODOO 16<a class="headerlink" href="#installation-et-mise-en-route-du-server-odoo-16" title="Link to this heading">¶</a></h1>
+<p>Fait sur le VPS</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">o</span> <span class="n">LSB</span> <span class="n">modules</span> <span class="n">are</span> <span class="n">available</span><span class="o">.</span>
+<span class="n">Distributor</span> <span class="n">ID</span><span class="p">:</span>   <span class="n">Ubuntu</span>
+<span class="n">Description</span><span class="p">:</span>   <span class="n">Ubuntu</span> <span class="mf">22.04.4</span> <span class="n">LTS</span>
+<span class="n">Release</span><span class="p">:</span> <span class="mf">22.04</span>
+<span class="n">Codename</span><span class="p">:</span>   <span class="n">jammy</span>
+</pre></div>
+</div>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <section id="installation-de-ohmyzsh">
-<h2>installation de ohmyzsh<a class="headerlink" href="#installation-de-ohmyzsh" title="Permalink to this heading">¶</a></h2>
+<h2>installation de ohmyzsh<a class="headerlink" href="#installation-de-ohmyzsh" title="Link to this heading">¶</a></h2>
 <p>faire google search : <a class="reference external" href="https://ohmyz.sh/">https://ohmyz.sh/</a></p>
 <p>apt install zsh mate wget</p>
 <section id="installation-des-fonts">
-<h3>installation des fonts<a class="headerlink" href="#installation-des-fonts" title="Permalink to this heading">¶</a></h3>
+<h3>installation des fonts<a class="headerlink" href="#installation-des-fonts" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">fontconfig</span>
+</pre></div>
+</div>
 <p>Allez sur <a class="reference external" href="https://github.com/ryanoasis/nerd-fonts/releases/tag/v2.1.0">https://github.com/ryanoasis/nerd-fonts/releases/tag/v2.1.0</a></p>
 <p>choisir un fichier</p>
 <p>wget ce fichier zip</p>
@@ -55,7 +80,7 @@
 </div>
 </section>
 <section id="installation-de-powerlevel10k">
-<h3>installation de powerlevel10K<a class="headerlink" href="#installation-de-powerlevel10k" title="Permalink to this heading">¶</a></h3>
+<h3>installation de powerlevel10K<a class="headerlink" href="#installation-de-powerlevel10k" title="Link to this heading">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 </pre></div>
 </div>
@@ -65,9 +90,9 @@
 <p>Il faudra le faire pour les autres users.</p>
 </section>
 <section id="installation-des-plugins-ohmyzsh">
-<h3>Installation des plugins ohmyzsh<a class="headerlink" href="#installation-des-plugins-ohmyzsh" title="Permalink to this heading">¶</a></h3>
+<h3>Installation des plugins ohmyzsh<a class="headerlink" href="#installation-des-plugins-ohmyzsh" title="Link to this heading">¶</a></h3>
 <section id="zsh-autosuggestion">
-<h4>zsh-autosuggestion<a class="headerlink" href="#zsh-autosuggestion" title="Permalink to this heading">¶</a></h4>
+<h4>zsh-autosuggestion<a class="headerlink" href="#zsh-autosuggestion" title="Link to this heading">¶</a></h4>
 <p><a class="reference external" href="https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md">https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md</a></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd $HOME
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -84,14 +109,14 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 </section>
 </section>
 <section id="installation-and-setting-odoo">
-<h3>Installation and setting odoo<a class="headerlink" href="#installation-and-setting-odoo" title="Permalink to this heading">¶</a></h3>
+<h3>Installation and setting odoo<a class="headerlink" href="#installation-and-setting-odoo" title="Link to this heading">¶</a></h3>
 <dl class="simple">
 <dt>Odoo 16 source code sera installé dans</dt><dd><ul class="simple">
-<li><p>/opt/odoo/odoo16</p></li>
+<li><p>/opt/odoo/odoo16/odoo16-server</p></li>
 </ul>
 </dd>
 <dt>Customs addons seront installés dans:</dt><dd><ul class="simple">
-<li><p>/opt/odoo/custom-odoo16….</p></li>
+<li><p>/opt/odoo/odoo16/custom-addons</p></li>
 </ul>
 </dd>
 </dl>
@@ -103,9 +128,14 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 <p>Le user qui connait le master password pourra creer / effacer les databases.</p>
 <p>Odoo 16 tournera en daemon et demarrera automatiquement quand le server demarre.</p>
 <section id="prerequis">
+<<<<<<< HEAD
 <h4>Prerequis<a class="headerlink" href="#prerequis" title="Permalink to this heading">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">update</span><span class="p">;</span> <span class="n">apt</span> <span class="n">dist</span><span class="o">-</span><span class="n">ugrade</span>
 <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">python3</span><span class="mf">.10</span><span class="o">-</span><span class="n">dev</span> \
+=======
+<h4>Prerequis<a class="headerlink" href="#prerequis" title="Link to this heading">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="n">build</span><span class="o">-</span><span class="n">essential</span> <span class="n">python3</span><span class="mf">.10</span><span class="o">-</span><span class="n">dev</span> \
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <span class="n">python3</span><span class="mf">.10</span><span class="o">-</span><span class="n">venv</span> <span class="n">libsass</span><span class="o">-</span><span class="n">dev</span> <span class="n">libjpeg</span><span class="o">-</span><span class="n">dev</span> \
 <span class="n">libjpeg8</span><span class="o">-</span><span class="n">dev</span> <span class="n">libldap</span><span class="o">-</span><span class="n">dev</span> <span class="n">libldap2</span><span class="o">-</span><span class="n">dev</span> <span class="n">libpq</span><span class="o">-</span><span class="n">dev</span> \
 <span class="n">libsasl2</span><span class="o">-</span><span class="n">dev</span> <span class="n">libxslt1</span><span class="o">-</span><span class="n">dev</span> <span class="n">zlib1g</span><span class="o">-</span><span class="n">dev</span>
@@ -113,14 +143,14 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 </div>
 </section>
 <section id="comment-savoir-si-des-paquets-sont-deja-installes">
-<h4>Comment savoir si des paquets sont déja installés ?<a class="headerlink" href="#comment-savoir-si-des-paquets-sont-deja-installes" title="Permalink to this heading">¶</a></h4>
+<h4>Comment savoir si des paquets sont déja installés ?<a class="headerlink" href="#comment-savoir-si-des-paquets-sont-deja-installes" title="Link to this heading">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="nb">list</span> <span class="o">&lt;</span><span class="n">nom</span> <span class="n">exact</span> <span class="n">du</span> <span class="n">paquet</span><span class="o">&gt;</span> <span class="n">ou</span>
 <span class="n">apt</span><span class="o">-</span><span class="n">cache</span> <span class="n">policy</span> <span class="o">&lt;</span><span class="n">nom</span> <span class="n">exact</span> <span class="n">du</span> <span class="n">paquet</span><span class="o">&gt;</span>
 </pre></div>
 </div>
 </section>
 <section id="creation-du-group-odoo-et-du-linux-user-odoo16">
-<h4>Creation du group odoo et du linux user odoo16<a class="headerlink" href="#creation-du-group-odoo-et-du-linux-user-odoo16" title="Permalink to this heading">¶</a></h4>
+<h4>Creation du group odoo et du linux user odoo16<a class="headerlink" href="#creation-du-group-odoo-et-du-linux-user-odoo16" title="Link to this heading">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">addgroup</span> <span class="n">odoo</span>
 </pre></div>
 </div>
@@ -131,12 +161,12 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 </div>
 </section>
 <section id="setup-postgresql">
-<h4>Setup postgresql<a class="headerlink" href="#setup-postgresql" title="Permalink to this heading">¶</a></h4>
+<h4>Setup postgresql<a class="headerlink" href="#setup-postgresql" title="Link to this heading">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">postgresql</span> <span class="n">postgresql</span><span class="o">-</span><span class="n">contrib</span>
 </pre></div>
 </div>
 <section id="create-a-role">
-<h5>Create a role<a class="headerlink" href="#create-a-role" title="Permalink to this heading">¶</a></h5>
+<h5>Create a role<a class="headerlink" href="#create-a-role" title="Link to this heading">¶</a></h5>
 <p>On crée un role qui a le même nom que le linux account.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo -u postgres createuser --interactive
 
@@ -148,7 +178,7 @@ Shall the new role be allowed to create more new roles? (y/n) n
 </div>
 </section>
 <section id="installation-et-setting-postgresql">
-<h5>Installation et setting postgresql<a class="headerlink" href="#installation-et-setting-postgresql" title="Permalink to this heading">¶</a></h5>
+<h5>Installation et setting postgresql<a class="headerlink" href="#installation-et-setting-postgresql" title="Link to this heading">¶</a></h5>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">postgresql</span>
 <span class="n">sudo</span> <span class="n">su</span> <span class="o">-</span> <span class="n">postgres</span>
 <span class="n">psql</span>
@@ -159,7 +189,7 @@ Shall the new role be allowed to create more new roles? (y/n) n
 </div>
 </section>
 <section id="quelques-commandes-utiles-sql">
-<h5>Quelques commandes utiles SQL<a class="headerlink" href="#quelques-commandes-utiles-sql" title="Permalink to this heading">¶</a></h5>
+<h5>Quelques commandes utiles SQL<a class="headerlink" href="#quelques-commandes-utiles-sql" title="Link to this heading">¶</a></h5>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>psql $DB_NAME  # Connect to a database.
  \l  #List all the available databases.
  \dt  #List all the tables of the $DB_NAME database.
@@ -170,29 +200,44 @@ Shall the new role be allowed to create more new roles? (y/n) n
 </section>
 </section>
 <section id="installation-de-wkhtmltopdf-for-generating-pdf">
-<h4>Installation de wkhtmltopdf for generating pdf<a class="headerlink" href="#installation-de-wkhtmltopdf-for-generating-pdf" title="Permalink to this heading">¶</a></h4>
+<h4>Installation de wkhtmltopdf for generating pdf<a class="headerlink" href="#installation-de-wkhtmltopdf-for-generating-pdf" title="Link to this heading">¶</a></h4>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">xfonts</span><span class="o">-</span><span class="n">base</span> <span class="n">xfonts</span><span class="o">-</span><span class="mi">75</span><span class="n">dpi</span>
 <span class="n">sudo</span> <span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">wkhtmltopdf</span><span class="o">/</span><span class="n">packaging</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="mf">0.12.6.1</span><span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="n">wkhtmltox_0</span><span class="mf">.12.6.1</span><span class="o">-</span><span class="mf">2.</span><span class="n">jammy_amd64</span><span class="o">.</span><span class="n">deb</span>
 <span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">wkhtmltox_0</span><span class="mf">.12.6.1</span><span class="o">-</span><span class="mf">2.</span><span class="n">jammy_amd64</span><span class="o">.</span><span class="n">deb</span>
 </pre></div>
 </div>
 </section>
+<<<<<<< HEAD
 <section id="create-a-log-directory-change-owner-and-set-permissions-todo">
 <h4>Create a log directory, change owner, and set permissions (TODO)<a class="headerlink" href="#create-a-log-directory-change-owner-and-set-permissions-todo" title="Permalink to this heading">¶</a></h4>
+=======
+<section id="create-a-log-directory-change-owner-and-set-permissions">
+<h4>Create a log directory, change owner  and set permissions<a class="headerlink" href="#create-a-log-directory-change-owner-and-set-permissions" title="Link to this heading">¶</a></h4>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">odoo16</span>
 <span class="n">sudo</span> <span class="n">chown</span> <span class="n">odoo16</span><span class="p">:</span><span class="n">root</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">odoo16</span>
 </pre></div>
 </div>
+<p>set permission todo</p>
 </section>
 </section>
 </section>
 </section>
 <section id="running-odoo-in-virtual-environnement">
+<<<<<<< HEAD
 <h1>Running ODOO in virtual environnement<a class="headerlink" href="#running-odoo-in-virtual-environnement" title="Permalink to this heading">¶</a></h1>
+=======
+<h2>Running ODOO in virtual environnement<a class="headerlink" href="#running-odoo-in-virtual-environnement" title="Link to this heading">¶</a></h2>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>différentes versions d’odoo differentes versions de python</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>python3 --version                                                         ─╯
 </pre></div>
 </div>
+<<<<<<< HEAD
+=======
+<section id="setup-python-virtual-environnement">
+<h3>Setup python virtual environnement<a class="headerlink" href="#setup-python-virtual-environnement" title="Link to this heading">¶</a></h3>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>Création d’un dir pour le virtuel environnement qui va faire tourner odoo 16</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">python</span><span class="o">-</span><span class="n">venv</span><span class="o">/</span><span class="mf">3.10</span><span class="o">/</span><span class="n">odoo16</span>
 <span class="n">sudo</span> <span class="n">chown</span> <span class="o">-</span><span class="n">hR</span> <span class="n">odoo16</span><span class="p">:</span><span class="n">root</span> <span class="o">/</span><span class="n">python</span><span class="o">-</span><span class="n">venv</span><span class="o">/</span><span class="mf">3.10</span><span class="o">/</span><span class="n">odoo16</span>
@@ -209,10 +254,28 @@ Shall the new role be allowed to create more new roles? (y/n) n
 <span class="n">exit</span>
 </pre></div>
 </div>
+<<<<<<< HEAD
 <p>Pour faire la suite au travers de ssh il va falloir mettre en place la clefs publique du server odoo  dans <strong>github</strong></p>
+=======
+<section id="download-and-install-odoo-16">
+<h4>Download and install Odoo 16<a class="headerlink" href="#download-and-install-odoo-16" title="Link to this heading">¶</a></h4>
+<p>Pour faire cela au travers de ssh il va falloir mettre en place la clefs publique du server odoo  dans <strong>github</strong></p>
+<section id="creation-d-une-paire-de-clef-sur-le-server-odoo">
+<h5>Creation d’une paire de clef sur le server odoo<a class="headerlink" href="#creation-d-une-paire-de-clef-sur-le-server-odoo" title="Link to this heading">¶</a></h5>
+</section>
+<section id="copie-de-la-clef-publique-sur-github">
+<h5>Copie de la clef publique sur github<a class="headerlink" href="#copie-de-la-clef-publique-sur-github" title="Link to this heading">¶</a></h5>
+</section>
+<section id="download-odoo-depuis-github">
+<h5>Download Odoo depuis github<a class="headerlink" href="#download-odoo-depuis-github" title="Link to this heading">¶</a></h5>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span>
+<<<<<<< HEAD
 <span class="n">sudo</span> <span class="n">su</span> <span class="o">-</span> <span class="n">odoo</span> <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo</span><span class="o">.</span><span class="n">git</span> <span class="o">--</span><span class="n">depth</span> <span class="mi">1</span> <span class="o">--</span><span class="n">branch</span> <span class="mf">16.0</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">odoo16</span><span class="o">-</span><span class="n">server</span>
 <span class="c1">#sudo git clone -b 16.0 https://github.com/odoo/odoo.git /opt/odoo/odoo16-server</span>
+=======
+<span class="n">sudo</span> <span class="n">git</span> <span class="n">clone</span> <span class="o">-</span><span class="n">b</span> <span class="mf">16.0</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo</span><span class="o">.</span><span class="n">git</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">odoo16</span><span class="o">-</span><span class="n">server</span>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <span class="n">sudo</span> <span class="n">chown</span> <span class="o">-</span><span class="n">hR</span> <span class="n">root</span><span class="p">:</span><span class="n">odoo</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span>  <span class="o">&lt;--</span> <span class="n">root</span><span class="p">:</span><span class="n">odoo</span> <span class="n">ou</span> <span class="n">odoo16</span><span class="p">:</span><span class="n">root</span>
 </pre></div>
 </div>
@@ -221,11 +284,18 @@ Shall the new role be allowed to create more new roles? (y/n) n
 <span class="n">chown</span> <span class="o">-</span><span class="n">hR</span> <span class="n">odoo16</span><span class="p">:</span><span class="n">root</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">custom</span><span class="o">-</span><span class="n">odoo16</span>
 </pre></div>
 </div>
+<<<<<<< HEAD
+=======
+</section>
+</section>
+<section id="installation-des-prerequis-pour-odoo16">
+<h4>Installation des prerequis pour odoo16<a class="headerlink" href="#installation-des-prerequis-pour-odoo16" title="Link to this heading">¶</a></h4>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">su</span> <span class="o">-</span> <span class="n">odoo16</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span>
 <span class="n">source</span> <span class="o">/</span><span class="n">python</span><span class="o">-</span><span class="n">venv</span><span class="o">/</span><span class="mf">3.10</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
 <span class="n">pip</span> <span class="n">install</span> <span class="n">wheel</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">pylibdmtx</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">odoo16</span><span class="o">-</span><span class="n">server</span><span class="o">/</span><span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">pylibdmtx</span> <span class="c1"># aide odoo à imprimer des data matrix barcodes</span>
 
 <span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">wkhtmltopdf</span><span class="o">/</span><span class="n">packaging</span><span class="o">/</span><span class="n">releases</span><span class="o">/</span><span class="n">download</span><span class="o">/</span><span class="mf">0.12.6.1</span><span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="n">wkhtmltox_0</span><span class="mf">.12.6.1</span><span class="o">-</span><span class="mf">2.</span><span class="n">jammy_amd64</span><span class="o">.</span><span class="n">deb</span>
 <span class="n">sudo</span> <span class="n">dpkg</span> <span class="o">-</span><span class="n">i</span> <span class="n">wkhtmltox_0</span><span class="mf">.12.6.1</span><span class="o">-</span><span class="mf">2.</span><span class="n">jammy_amd64</span><span class="o">.</span><span class="n">deb</span>
@@ -235,7 +305,11 @@ Shall the new role be allowed to create more new roles? (y/n) n
 </div>
 </section>
 <section id="demarrage-de-odoo-16-en-post-install-immediat">
+<<<<<<< HEAD
 <h1>Démarrage de odoo 16 en post install immédiat<a class="headerlink" href="#demarrage-de-odoo-16-en-post-install-immediat" title="Permalink to this heading">¶</a></h1>
+=======
+<h2>Démarrage de odoo 16 en post install immédiat<a class="headerlink" href="#demarrage-de-odoo-16-en-post-install-immediat" title="Link to this heading">¶</a></h2>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <p>Je test en restant dans le virtual env.</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">odoo</span><span class="o">-</span><span class="nb">bin</span>
@@ -243,6 +317,7 @@ Shall the new role be allowed to create more new roles? (y/n) n
 </div>
 </div></blockquote>
 <p>Je me connecte <a class="reference external" href="http://IP_server:8069">http://IP_server:8069</a></p>
+<<<<<<< HEAD
 <p>master password proposé : tmqw-ak6n-3xyh</p>
 <p>password gkvnFWsvjH5x3Kh</p>
 <p>est ce qu’il faut le mettre en oeuvre quand on travaill en virtual env?</p>
@@ -258,9 +333,153 @@ Shall the new role be allowed to create more new roles? (y/n) n
 <span class="n">ExecStart</span><span class="o">=/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">odoo</span><span class="o">-</span><span class="nb">bin</span> <span class="o">-</span><span class="n">c</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">odoo16</span><span class="o">.</span><span class="n">conf</span>
 <span class="p">[</span><span class="n">Install</span><span class="p">]</span>
 <span class="n">WantedBy</span><span class="o">=</span><span class="n">default</span><span class="o">.</span><span class="n">target</span>
+=======
+<p>J’efface toutes les bases de données créent avant. Je ne fais rien sur les bases de données</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Ctrl</span> <span class="n">C</span> <span class="n">deux</span> <span class="n">fois</span> <span class="n">pour</span> <span class="n">stoper</span> <span class="n">le</span> <span class="n">server</span>
+<span class="n">exit</span>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 </pre></div>
 </div>
-<p>Set permissions</p>
+</section>
+<section id="creation-du-fichier-de-configuration-de-odoo-16">
+<h2>Création du fichier de configuration de odoo 16<a class="headerlink" href="#creation-du-fichier-de-configuration-de-odoo-16" title="Link to this heading">¶</a></h2>
+<section id="creation">
+<h3>Création<a class="headerlink" href="#creation" title="Link to this heading">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">odoo16</span><span class="o">.</span><span class="n">confi</span>
+
+   <span class="p">[</span><span class="n">options</span><span class="p">]</span>
+<span class="c1">#addons_path = /opt/odoo/odoo16/odoo/addons,/opt/odoo/odoo16/addons,/home/odoo16/addons_repo_name</span>
+<span class="n">addons_path</span> <span class="o">=</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">odoo116</span><span class="o">-</span><span class="n">server</span><span class="o">/</span><span class="n">addons</span><span class="p">,</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">custlon</span><span class="o">-</span><span class="n">addons</span>
+<span class="n">admin_passwd</span> <span class="o">=</span> <span class="n">admin</span>
+<span class="n">csv_internal_sep</span> <span class="o">=</span> <span class="p">,</span>
+<span class="n">data_dir</span> <span class="o">=</span> <span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/.</span><span class="n">local</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">Odoo</span>
+<span class="n">db_host</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">db_maxconn</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="n">db_name</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">db_password</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">db_port</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">db_sslmode</span> <span class="o">=</span> <span class="n">prefer</span>
+<span class="n">db_template</span> <span class="o">=</span> <span class="n">template0</span>
+<span class="n">db_user</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">dbfilter</span> <span class="o">=</span>
+<span class="n">demo</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">email_from</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">from_filter</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">geoip_database</span> <span class="o">=</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">GeoIP</span><span class="o">/</span><span class="n">GeoLite2</span><span class="o">-</span><span class="n">City</span><span class="o">.</span><span class="n">mmdb</span>
+<span class="n">gevent_port</span> <span class="o">=</span> <span class="mi">8072</span>
+<span class="n">http_enable</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">http_interface</span> <span class="o">=</span>
+<span class="n">http_port</span> <span class="o">=</span> <span class="mi">8069</span>
+<span class="n">import_partial</span> <span class="o">=</span>
+<span class="n">limit_memory_hard</span> <span class="o">=</span> <span class="mi">2684354560</span>
+<span class="n">limit_memory_soft</span> <span class="o">=</span> <span class="mi">2147483648</span>
+<span class="n">limit_request</span> <span class="o">=</span> <span class="mi">8192</span>
+<span class="n">limit_time_cpu</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="n">limit_time_real</span> <span class="o">=</span> <span class="mi">120</span>
+<span class="n">limit_time_real_cron</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">list_db</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="c1"># Logging</span>
+<span class="n">log_db</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">log_db_level</span> <span class="o">=</span> <span class="n">warning</span>
+<span class="n">log_handler</span> <span class="o">=</span> <span class="p">:</span><span class="n">INFO</span>
+<span class="n">log_level</span> <span class="o">=</span> <span class="n">info</span>
+<span class="n">logfile</span> <span class="o">=</span>
+<span class="n">max_cron_threads</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">osv_memory_age_limit</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">osv_memory_count_limit</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">pg_path</span> <span class="o">=</span>
+<span class="n">pidfile</span> <span class="o">=</span>
+<span class="n">proxy_mode</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">reportgz</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">screencasts</span> <span class="o">=</span>
+<span class="n">screenshots</span> <span class="o">=</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">odoo_tests</span>
+<span class="n">server_wide_modules</span> <span class="o">=</span> <span class="n">base</span><span class="p">,</span><span class="n">web</span>
+<span class="n">smtp_password</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">smtp_port</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">smtp_server</span> <span class="o">=</span> <span class="n">localhost</span>
+<span class="n">smtp_ssl</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">smtp_ssl_certificate_filename</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">smtp_ssl_private_key_filename</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">smtp_user</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">syslog</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">test_enable</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">test_file</span> <span class="o">=</span>
+<span class="n">test_tags</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">transient_age_limit</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">translate_modules</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;all&#39;</span><span class="p">]</span>
+<span class="n">unaccent</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">upgrade_path</span> <span class="o">=</span>
+<span class="n">websocket_keep_alive_timeout</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="n">websocket_rate_limit_burst</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">websocket_rate_limit_delay</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">without_demo</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">workers</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">x_sendfile</span> <span class="o">=</span> <span class="kc">False</span>
+</pre></div>
+</div>
+<p>Set owner</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">chown</span> <span class="n">odoo16</span><span class="p">:</span><span class="n">root</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">odoo16</span><span class="o">.</span><span class="n">conf</span>
+</pre></div>
+</div>
+<p>Set permission</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">todo</span>
+</pre></div>
+</div>
+<p>geoip database, data_dir  cela sert à quoi? TODO</p>
+</section>
+</section>
+<section id="odoo-unit-service-file">
+<h2>Odoo unit service  file<a class="headerlink" href="#odoo-unit-service-file" title="Link to this heading">¶</a></h2>
+<p>est ce qu’il faut le mettre en oeuvre quand on travaill en virtual env?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>nano /lib/systemd/system/odoo16.service
+
+[Unit]
+Description=Odoo16
+Documentation=http://www.odoo.com
+[Service]
+# Ubuntu/Debian convention:
+Type=simple
+User=odoo16
+ExecStart=/opt/odoo/odoo16/odoo16-server/odoo-bin -c /etc/odoo16.conf
+[Install]
+WantedBy=default.target
+
+ou
+
+[Unit]
+Description=Odoo16
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+PermissionsStartOnly=true
+User=odoo16
+Group=odoo
+SyslogIdentifier=odoo16
+PIDFile=/run/odoo16/odoo16.pid
+ExecStartPre=/usr/bin/install -d -m755 -o odoo16 -g odoo /run/odoo16
+ExecStart=/python-venv/3.10/odoo16/bin/python /opt/odoo/odoo16/odoo-bin -c /etc/odoo16.conf --pid=/run/odoo16/odoo16.pid
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s QUIT $MAINPID
+
+[Install]
+Alias=odoo16.service
+WantedBy=multi-user.target
+</pre></div>
+</div>
+<p>Notify systemd that a new unit file exist</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">daemon</span><span class="o">-</span><span class="n">reload</span>
+</pre></div>
+</div>
+<p>Enable the service and ask it to run on boot</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="o">--</span><span class="n">now</span> <span class="n">odoo16</span>   <span class="o">&lt;--</span> <span class="n">cela</span> <span class="n">crée</span> <span class="n">des</span> <span class="n">symlink</span> <span class="n">dans</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span>
+</pre></div>
+</div>
+<p>start your Odoo 16 using systemd</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">start</span> <span class="n">odoo16</span>
+</pre></div>
+</div>
+<p>Set permissions pas necessaire c’est déjà fait par le système</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">chmod</span> <span class="mi">755</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">odoo16</span><span class="o">.</span><span class="n">service</span>
 <span class="n">sudo</span> <span class="n">chown</span> <span class="n">root</span><span class="p">:</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">systemd</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">odoo16</span><span class="o">.</span><span class="n">service</span>
 </pre></div>
@@ -269,33 +488,92 @@ Shall the new role be allowed to create more new roles? (y/n) n
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">status</span> <span class="n">odoo16</span><span class="o">.</span><span class="n">service</span>
 </pre></div>
 </div>
-<p>Finally, use the following command to start the Odoo service automatically after restarting the server</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">enable</span> <span class="n">odoo16</span><span class="o">.</span><span class="n">service</span>
-</pre></div>
-</div>
 <p>Use the following command to restart the Odoo service if you have made any modifications to the add-ons so that your instance will reflect the updates</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">restart</span> <span class="n">odoo16</span><span class="o">.</span><span class="n">service</span>
 </pre></div>
 </div>
+<p><a class="reference external" href="https:/">https:/</a>/&lt;ip du server odoo 16 on le trouve sur hostinger&gt;:8069</p>
+<p>On obtient</p>
+<a class="reference internal image-reference" href="_images/firstdbcreation.png"><img alt="Alternative text" src="_images/firstdbcreation.png" style="width: 400px;" /></a>
+<p>master password proposé : tmqw-ak6n-3xyh</p>
+<p>Database name : dbmars24</p>
+<p>email <a class="reference external" href="mailto:odoo16&#37;&#52;&#48;ophtalmologie&#46;org">odoo16<span>&#64;</span>ophtalmologie<span>&#46;</span>org</a></p>
+<p>password gkvnFWsvjH5x3Kh</p>
+<a class="reference internal image-reference" href="_images/firstlogin.png"><img alt="Alternative text" src="_images/firstlogin.png" style="width: 400px;" /></a>
+<p>On se logue avec l’email admin defini précedemment et on obtient</p>
+<a class="reference internal image-reference" href="_images/adminpageacceuil.png"><img alt="Alternative text" src="_images/adminpageacceuil.png" style="width: 800px;" /></a>
+<p>Il n’y pas grand chose dans l’interface :</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>apps :</dt><dd><ul>
+<li><p>main apps</p></li>
+<li><p>theme stores</p></li>
+<li><p>Thrid-Party Apps</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>settings :</dt><dd><ul>
+<li><p>users &amp; company</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </section>
+<<<<<<< HEAD
+=======
+<section id="creation-d-un-nouveau-user">
+<h2>Creation d’un nouveau user<a class="headerlink" href="#creation-d-un-nouveau-user" title="Link to this heading">¶</a></h2>
+<p>Il y a :</p>
+<ul class="simple">
+<li><p>internal user</p></li>
+<li><p>portal user</p></li>
+</ul>
+<p>Je crée un nouveau user. je modifie le mot de passe dans le webgui odoo.</p>
+<p>je me connecte avec ce nouveau internal user.</p>
+<p>J’ai pas d’application avec ce nouveau user.  Je me logue à nouveau sous admin pour installer des apps.</p>
+<p>Project : Activate.</p>
+<p>Je vois apparaitre discuss et Project. Dans Settings il a maintenant :</p>
+<ul class="simple">
+<li><p>General settings: on a une interface qui permet d’inviter de nouveau user.</p></li>
+<li><p>Project</p></li>
+</ul>
+<p>Avec le nouveau user j’ai :</p>
+<ul class="simple">
+<li><p>Discuss</p></li>
+<li><p>Project</p></li>
+<li><p>Apps</p></li>
+</ul>
+</section>
+</section>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <section id="post-install-configuration-de-odoo">
-<h1>Post install configuration de odoo<a class="headerlink" href="#post-install-configuration-de-odoo" title="Permalink to this heading">¶</a></h1>
-<p>je me connecte avec mon adress mail et je suis en administrateur.</p>
-<p>Il n’y pas grand chose dans l’interface : discuss, calendar, Contacts, Apps, Settings.</p>
+<h1>Post install configuration de odoo<a class="headerlink" href="#post-install-configuration-de-odoo" title="Link to this heading">¶</a></h1>
 <section id="configuration-du-server-de-mail">
-<h2>Configuration du server de mail<a class="headerlink" href="#configuration-du-server-de-mail" title="Permalink to this heading">¶</a></h2>
+<h2>Configuration du server de mail<a class="headerlink" href="#configuration-du-server-de-mail" title="Link to this heading">¶</a></h2>
 <p>Je sais que le SMTP n’est pas configuré car je n’ai pas de mail si j’ai oublié mon mot de passe.</p>
 <p>settings / general settings / Custom email servers</p>
-<p>J’ai utilisé mon server de mail à ophtalmologie.org. Le mail de Admin doit etre une adresse mail de ophtalmologie.org.</p>
-<p>Le server outgoing me dit ok lors du test de connection mais lorsque j’essaie d’inviter new user cela ne fonctionne pas. Pas de message d’erreur. Pas de mail chez le destinataire.</p>
-<p>TODO</p>
+<p>J’ai utilisé mon server de mail à ophtalmologie.org. Le mail de Admin doit etre une adresse mail de ophtalmologie.org. Je rajoute</p>
+<ul class="simple">
+<li><p><a class="reference external" href="mailto:odoo16&#37;&#52;&#48;ophtalmologie&#46;org">odoo16<span>&#64;</span>ophtalmologie<span>&#46;</span>org</a> dans les alias de mail sur hostinger.</p></li>
+<li><p><a class="reference external" href="mailto:bounce&#37;&#52;&#48;ophtalmologie&#46;org">bounce<span>&#64;</span>ophtalmologie<span>&#46;</span>org</a> dans les alias sur hostinger et cela fonctionnne</p></li>
+</ul>
+<p>Pour une invitation par mail je recois le mail</p>
+<a class="reference internal image-reference" href="_images/mailinvitation.png"><img alt="Alternative text" src="_images/mailinvitation.png" style="width: 800px;" /></a>
 </section>
+<<<<<<< HEAD
+=======
+<section id="installation-du-module-sales">
+<h2>Installation du module sales<a class="headerlink" href="#installation-du-module-sales" title="Link to this heading">¶</a></h2>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 </section>
 <section id="installation-du-module-sales">
 <h1>Installation du module sales<a class="headerlink" href="#installation-du-module-sales" title="Permalink to this heading">¶</a></h1>
 </section>
 <section id="todo">
-<h1>TODO<a class="headerlink" href="#todo" title="Permalink to this heading">¶</a></h1>
+<h1>TODO<a class="headerlink" href="#todo" title="Link to this heading">¶</a></h1>
 <p>Installation et creation du virtualenv</p>
 <p>install pip3 et virtualenv:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="n">python3</span><span class="o">-</span><span class="n">venv</span>
@@ -362,8 +640,13 @@ Shall the new role be allowed to create more new roles? (y/n) n
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODOO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
+<<<<<<< HEAD
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation et mise en route du server ODOO</a><ul>
+=======
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation et mise en route du server ODOO 16</a><ul>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <li class="toctree-l2"><a class="reference internal" href="#installation-de-ohmyzsh">installation de ohmyzsh</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#installation-des-fonts">installation des fonts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installation-de-powerlevel10k">installation de powerlevel10K</a></li>
@@ -373,8 +656,20 @@ Shall the new role be allowed to create more new roles? (y/n) n
 </li>
 </ul>
 </li>
+<<<<<<< HEAD
 <li class="toctree-l1"><a class="reference internal" href="#running-odoo-in-virtual-environnement">Running ODOO in virtual environnement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="#demarrage-de-odoo-16-en-post-install-immediat">Démarrage de odoo 16 en post install immédiat</a></li>
+=======
+<li class="toctree-l2"><a class="reference internal" href="#demarrage-de-odoo-16-en-post-install-immediat">Démarrage de odoo 16 en post install immédiat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creation-du-fichier-de-configuration-de-odoo-16">Création du fichier de configuration de odoo 16</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creation">Création</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#odoo-unit-service-file">Odoo unit service  file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creation-d-un-nouveau-user">Creation d’un nouveau user</a></li>
+</ul>
+</li>
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
 <li class="toctree-l1"><a class="reference internal" href="#post-install-configuration-de-odoo">Post install configuration de odoo</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#configuration-du-server-de-mail">Configuration du server de mail</a></li>
 </ul>
@@ -385,10 +680,10 @@ Shall the new role be allowed to create more new roles? (y/n) n
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html">Developpement de oph_odoo16</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">Comment avoir la liste des champs ordonnés pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="oph_odoo16.html#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
-<li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password-admin_odoo16.html">Les password dans odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="password-admin_odoo16.html#creation-d-une-database">Creation d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html">Comment filtrer les database dans l’interface database manager?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-databases">Comment lister les databases?</a></li>
@@ -442,11 +737,11 @@ Shall the new role be allowed to create more new roles? (y/n) n
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2021, laurent FRANCOIS.
+      &#169;2021, laurent FRANCOIS.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
       
       |
       <a href="_sources/installation_server_odoo16.rst.txt"
