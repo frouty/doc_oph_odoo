@@ -1,4 +1,4 @@
-Installation et mise en route du server ODDO
+Installation et mise en route du server ODOO
 ############################################
 
 installation de ohmyzsh
@@ -18,7 +18,7 @@ choisir un fichier
 
 wget ce fichier zip
 
-unzip le zip telechargé::
+unzip le zip telechargé ::
 
    mkdir /usr/share/font/lenomduzipfile
    unzip lezipfile -d /usr/share/font/lenomduzipfile
@@ -54,7 +54,7 @@ https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
 
    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
    
-    git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+   git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 
 :: 
 
@@ -86,7 +86,8 @@ Odoo 16 tournera en daemon et demarrera automatiquement quand le server demarre.
 Prerequis
 ---------
 :: 
-
+   
+   apt update; apt dist-ugrade
    apt install python3-pip build-essential python3.10-dev \
    python3.10-venv libsass-dev libjpeg-dev \
    libjpeg8-dev libldap-dev libldap2-dev libpq-dev \
@@ -164,15 +165,15 @@ Installation de wkhtmltopdf for generating pdf
    sudo wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
    sudo dpkg -i wkhtmltox_0.12.6.1-2.jammy_amd64.deb
 
-Create a log directory and set permissions
-------------------------------------------
+Create a log directory, change owner, and set permissions (TODO)
+----------------------------------------------------------------
 ::
 
    sudo mkdir /var/log/odoo16
    sudo chown odoo16:root /var/log/odoo16
 
 Running ODOO in virtual environnement
-*************************************
+#####################################
 
 différentes versions d'odoo differentes versions de python
 
@@ -207,7 +208,7 @@ Activation du virtual env
 Download and install Odoo 16
 ----------------------------
 
-Pour faire cela au travers de ssh il va falloir mettre en place la clefs publique du server odoo  dans **github** 
+Pour faire la suite au travers de ssh il va falloir mettre en place la clefs publique du server odoo  dans **github** 
 
 Creation d'une paire de clef sur le server odoo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -220,15 +221,16 @@ Download Odoo depuis github
 ::
 
    mkdir -p /opt/odoo/odoo16
-   sudo git clone -b 16.0 https://github.com/odoo/odoo.git /opt/odoo/odoo16
+   sudo su - odoo git clone https://github.com/odoo/odoo.git --depth 1 --branch 16.0 /opt/odoo/odoo16/odoo16-server
+   #sudo git clone -b 16.0 https://github.com/odoo/odoo.git /opt/odoo/odoo16-server
    sudo chown -hR root:odoo /opt/odoo/odoo16  <-- root:odoo ou odoo16:root
 
 Création d'un directory pour les customs addons
 
 ::
 
-   mkdir /opt/odoo/custom-odoo16
-   chown -hR odoo16:root /opt/odoo/custom-odoo16
+   mkdir /opt/odoo/odoo16/custom-odoo16
+   chown -hR odoo16:root /opt/odoo/odoo16/custom-odoo16
    
 
 Installation des prerequis pour odoo16
@@ -249,7 +251,7 @@ Installation des prerequis pour odoo16
 
 
 Démarrage de odoo 16 en post install immédiat
-*********************************************
+#############################################
 
 Je test en restant dans le virtual env.
    
@@ -323,7 +325,7 @@ Le server outgoing me dit ok lors du test de connection mais lorsque j'essaie d'
 TODO 
 
 Installation du module sales
-****************************
+############################
 
 TODO 
 ####
