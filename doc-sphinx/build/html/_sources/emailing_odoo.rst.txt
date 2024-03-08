@@ -23,6 +23,7 @@ Le mot de passe de app password est dans le gestionnaire de mots de passe.
 
 Dans configuration / general setting /configure outgoing mail servers
 paramétrer le server smtp avec : 
+
    - priority: la plus basse (donc haute priority)
    - server smtp : smtp.gmail.com
    - port smtp: 465 
@@ -68,18 +69,21 @@ avec l'objet iol_order, sous user  en enlevant tous les abonnés j'envoie unique
  Dans thunderbird si je change le smtp vers mailgun en default je n'ai pas 
  l'impression que mailgun fonctionne. Les mails arrivent aux destinataire mais rien 
  dans le log de mailgun. je me deman si cela ne passe pas par gmail.
- 
- swaks
- ~~~~~
-cat ~/.swaksrc
--s smtp.mailgun.com
--tls
--au postmaster@sandboxbedfc73aa96947c5b430639577c3c3a9.mailgun.org
--ap 895f7c1c5478b69ed5f1b3acb04f799c-523596d9-a57f14f2
--f francois.oph@gmail.com
--p 587
 
-$swaks -t francois.oph@gmail.com --body 'de swak' --h-Subject 'DE SWAK 3eme'
+swaks
+^^^^^
+
+:: 
+ 
+   cat ~/.swaksrc
+   -s smtp.mailgun.com
+   -tls
+   -au postmaster@sandboxbedfc73aa96947c5b430639577c3c3a9.mailgun.org
+   -ap 895f7c1c5478b69ed5f1b3acb04f799c-523596d9-a57f14f2
+   -f francois.oph@gmail.com
+   -p 587
+
+   $swaks -t francois.oph@gmail.com --body 'de swak' --h-Subject 'DE SWAK 3eme'
 
  En CLI swaks ne marche pas timeout. J'ai mis le port à 587 et c'est bon . Les autres ports 25 et 465
  ne fonctionne pas.  
@@ -92,24 +96,26 @@ $swaks -t francois.oph@gmail.com --body 'de swak' --h-Subject 'DE SWAK 3eme'
  
  
  En admin depuis odoo
- ~~~~~~~~~~~~~~~~~~~~
- Mailgun
- -------
- mailgun setting/email/outgoing server port 587
-  SSL/TLS
-  test connection --> ssl unknown protocol.
- TLS/STARTTLS test connection c'est long Gateway time out.
- Je repasse sous lfs et là pareil le meme msg d'erreur./
+
+Mailgun
+-------
+
+mailgun setting/email/outgoing server port 587
+SSL/TLS
+test connection --> ssl unknown protocol.
+TLS/STARTTLS test connection c'est long Gateway time out.
+
+Je repasse sous lfs et là pareil le meme msg d'erreur./
  
- en cli avec swaks je vois que gunmail fonctionne.
+en cli avec swaks je vois que gunmail fonctionne.
  
- peut etre un probleme  de port. gunmail ecoute sur 25-587-465
+peut etre un probleme  de port. gunmail ecoute sur 25-587-465
  
- J'essaie 25 dans odoo Test connection c'est long -> Time out
- *465*  -> test succeeded
- 
- iol order
- #########
+J'essaie 25 dans odoo Test connection c'est long -> Time out
+*465*  -> test succeeded
+
+iol order
+#########
  
  j'enleve tous les followers
  j'envoie a un destinataire par gunmail. et rien ne se passe. 
@@ -128,20 +134,20 @@ $swaks -t francois.oph@gmail.com --body 'de swak' --h-Subject 'DE SWAK 3eme'
  
  l'email avec odoo et gunmail ne marche pas sous admin
  
- gmail en app password.
- ---------------------
- Test connection test succeeded.
+gmail en app password
+---------------------
+Test connection test succeeded.
  
- iol order
- #########
+iol order
+#########
  
- timeout
+timeout
  je repasse alias domain à localhost.
  timeout
  
- Modifications de l'alias domain
- ===============================
- J'ai trouvé ceci
+Modifications de l'alias domain
+===============================
+J'ai trouvé ceci
  
 Avatar
 Amr Essam

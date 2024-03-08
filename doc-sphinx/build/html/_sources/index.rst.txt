@@ -7,12 +7,17 @@ Welcome to oph odoo doc's documentation!
 ########################################
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 	
    odoo_version_python
-   installation_server_odoo
+   installation_server_odoo16
+   odoo16_manage_database
    oph_odoo16
+<<<<<<< HEAD
+=======
+   passwd
+>>>>>>> branch 'master' of git@github.com:frouty/doc_oph_odoo.git
    password-admin_odoo16
    document_attachment_storage
    list_database

@@ -1,26 +1,29 @@
+
 <!DOCTYPE html>
 
-<html lang="en" data-content_root="./">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Developpement de oph_odoo16 &#8212; oph odoo doc 0.0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
-    <script src="_static/documentation_options.js?v=d45e8c67"></script>
-    <script src="_static/doctools.js?v=888ff710"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Les password dans odoo" href="passwd.html" />
-    <link rel="prev" title="Installation et mise en route du server ODDO" href="installation_server_odoo.html" />
+    <link rel="prev" title="Database manager" href="odoo16_manage_database.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-
   
-  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
   
@@ -33,17 +36,17 @@
           <div class="body" role="main">
             
   <section id="developpement-de-oph-odoo16">
-<h1>Developpement de oph_odoo16<a class="headerlink" href="#developpement-de-oph-odoo16" title="Link to this heading">¶</a></h1>
+<h1>Developpement de oph_odoo16<a class="headerlink" href="#developpement-de-oph-odoo16" title="Permalink to this heading">¶</a></h1>
 <p>odoo server est fonctionnel dans /opt/odoo/odoo16/</p>
 <section id="mise-en-place-du-systeme-de-fichier">
-<h2>Mise en place du systeme de fichier<a class="headerlink" href="#mise-en-place-du-systeme-de-fichier" title="Link to this heading">¶</a></h2>
+<h2>Mise en place du systeme de fichier<a class="headerlink" href="#mise-en-place-du-systeme-de-fichier" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">custom</span><span class="o">/</span><span class="n">addons</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">custom</span><span class="o">/</span><span class="n">addons</span>
 <span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">frouty</span><span class="o">/</span><span class="n">oph_odoo16</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
 </section>
 <section id="update-du-fichier-odoo-conf">
-<h2>Update du fichier odoo.conf<a class="headerlink" href="#update-du-fichier-odoo-conf" title="Link to this heading">¶</a></h2>
+<h2>Update du fichier odoo.conf<a class="headerlink" href="#update-du-fichier-odoo-conf" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">addons_path</span> <span class="o">=</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">odoo</span><span class="o">-</span><span class="n">server16</span><span class="o">/</span><span class="n">addons</span><span class="p">,</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="n">custom</span><span class="o">/</span><span class="n">addons</span>
 <span class="c1"># ne pas mettre /opt/odoo/odoo16/custom/addons/oph_odoo</span>
 </pre></div>
@@ -59,13 +62,13 @@
 </div>
 </section>
 <section id="passer-en-mode-developper-dans-le-webgui">
-<h2>Passer en mode developper dans le webgui<a class="headerlink" href="#passer-en-mode-developper-dans-le-webgui" title="Link to this heading">¶</a></h2>
+<h2>Passer en mode developper dans le webgui<a class="headerlink" href="#passer-en-mode-developper-dans-le-webgui" title="Permalink to this heading">¶</a></h2>
 <p>Aller à : Settings ‣ Activate the developer mode.</p>
 <p>Il y a aussi une extension odoo debug. Mais je n’ai pas trop bien réussi à la faire marcher.</p>
 <p><a class="reference external" href="https://www.odoo.com/documentation/16.0/applications/general/developer_mode.html#developer-mode">https://www.odoo.com/documentation/16.0/applications/general/developer_mode.html#developer-mode</a></p>
 </section>
 <section id="comment-demarrer-le-server">
-<h2>Comment démarrer le server<a class="headerlink" href="#comment-demarrer-le-server" title="Link to this heading">¶</a></h2>
+<h2>Comment démarrer le server<a class="headerlink" href="#comment-demarrer-le-server" title="Permalink to this heading">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span>
 <span class="n">python</span> <span class="o">--</span><span class="n">version</span> <span class="c1"># on verifie si notre venv est actif.</span>
 <span class="n">source</span>  <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">odoo</span><span class="o">/</span><span class="n">odoo16</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
@@ -76,7 +79,7 @@
 </section>
 </section>
 <section id="comment-avoir-la-liste-des-champs-ordonnes-pour-une-table">
-<h1>Comment avoir la liste des champs ordonnés pour une table<a class="headerlink" href="#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table" title="Link to this heading">¶</a></h1>
+<h1>Comment avoir la liste des champs ordonnés pour une table<a class="headerlink" href="#comment-avoir-la-liste-des-champs-ordonnes-pour-une-table" title="Permalink to this heading">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">psql</span>
 <span class="n">SELECT</span> <span class="n">column_name</span>
 <span class="n">FROM</span> <span class="n">information_schema</span><span class="o">.</span><span class="n">columns</span>
@@ -87,7 +90,7 @@
 </div>
 </section>
 <section id="comment-avoir-la-liste-des-champs-pour-une-table">
-<h1>Comment avoir la liste des champs pour une table<a class="headerlink" href="#comment-avoir-la-liste-des-champs-pour-une-table" title="Link to this heading">¶</a></h1>
+<h1>Comment avoir la liste des champs pour une table<a class="headerlink" href="#comment-avoir-la-liste-des-champs-pour-une-table" title="Permalink to this heading">¶</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">psql</span>
 \<span class="n">d</span><span class="o">+</span> <span class="n">nomdelatable</span>
 </pre></div>
@@ -114,7 +117,10 @@
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="odoo_version_python.html">Version de python et odoo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo.html">Installation et mise en route du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html">Installation et mise en route du server ODDO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html#post-install-configuration-de-odoo">Post install configuration de odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_server_odoo16.html#todo">TODO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="odoo16_manage_database.html">Database manager</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Developpement de oph_odoo16</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#mise-en-place-du-systeme-de-fichier">Mise en place du systeme de fichier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#update-du-fichier-odoo-conf">Update du fichier odoo.conf</a></li>
@@ -126,6 +132,8 @@
 <li class="toctree-l1"><a class="reference internal" href="#comment-avoir-la-liste-des-champs-pour-une-table">Comment avoir la liste des champs pour une table</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html">Les password dans odoo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passwd.html#creation-d-une-database">Creation d’une database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password-admin_odoo16.html">Les password dans odoo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="password-admin_odoo16.html#creation-d-une-database">Creation d’une database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="document_attachment_storage.html">Document attachment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html">Comment filtrer les database dans l’interface database manager?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="list_database.html#comment-lister-les-databases">Comment lister les databases?</a></li>
@@ -149,7 +157,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="installation_server_odoo.html" title="previous chapter">Installation et mise en route du server ODDO</a></li>
+      <li>Previous: <a href="odoo16_manage_database.html" title="previous chapter">Database manager</a></li>
       <li>Next: <a href="passwd.html" title="next chapter">Les password dans odoo</a></li>
   </ul></li>
 </ul>
@@ -177,11 +185,11 @@
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &#169;2021, laurent FRANCOIS.
+      &copy;2021, laurent FRANCOIS.
       
       |
-      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
-      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
       <a href="_sources/oph_odoo16.rst.txt"
